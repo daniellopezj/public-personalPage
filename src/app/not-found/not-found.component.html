@@ -1,0 +1,19 @@
+<app-main-headers></app-main-headers>
+<div class="main">
+  <div class="container col-lg-4 col-md-6 col-sm-12">
+    <h2 class="title font-weight-bold">
+      {{ "GENERAL.NOT_FOUND_TITLE" | translate }}
+    </h2>
+    <img class="img img-success" src="/assets/not-found.svg" alt="not found" />
+    <p class="subtitle">{{ "GENERAL.NOT_FOUND_DESCRIPTION" | translate }}</p>
+    <div>
+      <button
+        name="goHome"
+        class="btn btn-outline-primary ml-2 text-capitalize mt-5"
+        [routerLink]="['/']"
+      >
+        {{ "GENERAL.RETURN_HOME" | translate }}
+      </button>
+    </div>
+  </div>
+</div>
