@@ -1,0 +1,49 @@
+@import "../../shared.scss";
+
+.main {
+  min-height: 80vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  box-shadow: $shadow-custom-sm;
+}
+
+.container {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.subtitle {
+  color: $text-color-1;
+  font-weight: 500;
+}
+.img-success {
+  height: 22rem;
+  padding: 1.5rem;
+}
+
+//phone
+@media print, screen and (max-width: 740px) {
+  .img-success {
+    height: auto;
+    padding: 0;
+  }
+  .container {
+    padding: 1rem;
+  }
+}
+
+//tablet
+@media print, screen and (max-width: 1140px) and (min-width: 740px) {
+  .main {
+    min-height: 60vh;
+  }
+  .img-success {
+    height: 18rem;
+    padding: 1.5rem;
+  }
+}
+
+//desktop
+@media print, screen and (min-width: 1140px) {
+}
