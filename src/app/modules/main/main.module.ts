@@ -5,12 +5,16 @@ import { MainRoutingModule } from './main-routing.module';
 import { MainComponent } from './main.component';
 import { SharedModule } from '../shared/shared.module';
 import { MainViewComponent } from './components/main-view/main-view.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 
 @NgModule({
   declarations: [
     MainComponent,
-    MainViewComponent
+    MainViewComponent,
+    AboutMeComponent,
+    SkillsComponent
   ],
   imports: [
     CommonModule,

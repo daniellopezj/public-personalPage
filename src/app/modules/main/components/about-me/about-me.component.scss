@@ -1,29 +1,31 @@
 @import "./src/shared.scss";
-.container-main-view {
-  margin: 2rem 0;
-  margin-bottom: 0;
+.container-about-me {
   width: 100%;
+  background-color: $base-color;
+  min-height: 600px;
+  display: flex;
 }
 
-.content-view {
+.content-about-me {
   margin: 0 auto;
   padding: 3rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  max-width: $big-max-width;
-  padding-bottom: 0;
+  max-width: 40%;
+  padding-bottom: 10rem;
+  color: $white-color;
 }
 
-.title-work {
+.title {
   font-size: 2.5rem;
   font-weight: bolder;
   margin: 0;
   margin-bottom: 1rem;
 }
 
-.description-text {
+.description {
   margin: 0;
   font-size: 1.3rem;
   font-weight: initial;
@@ -33,7 +35,8 @@
 .logo-container {
   display: flex;
   justify-content: center;
-  margin: 5rem 0 ;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
 }
 
 .around-image {
