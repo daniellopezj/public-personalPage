@@ -1,1 +1,34 @@
-<p>footer works!</p>
+<section class="footer">
+  <div class="section">
+    <div class="container-start-project">
+      <div class="start-project">
+        <h1 class="item-start-project title-start-project">Start a project</h1>
+        <span class="item-start-project"
+          >Interested in working together? We should queue up a chat. I’ll buy
+          the coffee.</span
+        >
+        <div class="item-start-project">
+          <button class="button btn-contact is-outlined">Let's do this</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="section-footer">
+    <div class="container-info-footer">
+        <img class="custom-logo" src="../../../../../assets/logo-inverse.png" alt="logo">
+      <div class="motivation-text">
+        <h1>Living, learning, & leveling up one day at a time.</h1>
+      </div>
+      <div class="controls">
+        <div class="item-link" *ngFor="let item of controls">
+          <fa-icon [icon]="item.icon"></fa-icon>
+        </div>
+      </div>
+      <div class="copy-right">Handcrafted by Me &copy; 2022</div>
+      <div class="copy-right">
+        <span class="small-text"> Made with </span>
+        <span class="bold"> Angular</span>
+      </div>
+    </div>
+  </footer>
+</section>

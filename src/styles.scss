@@ -1,4 +1,5 @@
 @import "./shared.scss";
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Roboto:wght@100&display=swap');
 
 html,
 body {
@@ -6,4 +7,31 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.button {
+  background-color: #fff;
+  border-color: #dbdbdb;
+  border-width: 1px;
+  color: #363636;
+  cursor: pointer;
+  justify-content: center;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: calc(0.5em - 1px);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.is-outlined {
+  background-color: #0000;
+  border-color: $base-color;
+  color: $base-color;
+}
+.is-outlined:hover {
+  background-color: $base-color;
+  border-color: $base-color;
+  color: #fff;
 }
