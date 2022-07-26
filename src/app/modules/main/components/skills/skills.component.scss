@@ -8,19 +8,16 @@
 }
 
 .container-skills {
-  padding: 5rem 1.5rem;
+  padding: 5rem 1.5rem 0;
 }
 
 .box-skills {
   display: flex;
-  padding: 3.5rem 1.25rem;
   margin: 0 auto;
   margin-top: -15rem;
-  background-color: #141c3a;
-  // background-color: $white-color;
-  box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%), 0 0 0 1px #141c3a;
+  background-color: $white-color;
+  box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
   border-radius: 12px;
-  color: $white-color;
   max-width: $big-max-width;
 }
 
@@ -35,4 +32,9 @@
   flex-grow: 1;
   display: flex;
   justify-content: center;
+  border-right: 1px solid #E6ECF8;
+  border-bottom: 1px solid #E6ECF8;
+  padding: 3.5rem 1.25rem;
+
+
 }

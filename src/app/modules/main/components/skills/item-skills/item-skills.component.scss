@@ -1,0 +1,36 @@
+@import "./src/shared.scss";
+
+.container-item {
+  padding: 3rem 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container-icon {
+  padding: 12px 17px;
+  border-radius: 50%;
+  background-color: $second-color;
+  font-size: 2rem;
+  margin: auto;
+}
+
+.description {
+  margin-top: 2rem;
+}
+
+.title-property {
+  color: $base-color;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.list-tools {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}

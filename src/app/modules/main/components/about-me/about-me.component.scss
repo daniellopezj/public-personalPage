@@ -13,7 +13,7 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  max-width: 40%;
+  max-width: 50%;
   padding-bottom: 10rem;
   color: $white-color;
 }
@@ -28,29 +28,6 @@
 .description {
   margin: 0;
   font-size: 1.3rem;
-  font-weight: initial;
+  font-weight: bold;
   margin-bottom: 1rem;
-}
-
-.logo-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;
-  margin-bottom: 5rem;
-}
-
-.around-image {
-  background-color: $base-color;
-  height: 240px;
-  border-radius: 50%;
-}
-
-.custom-logo {
-  height: 240px;
-  border-radius: 50%;
-}
-
-.view-footer {
-  display: flex;
-  justify-content: center;
 }
