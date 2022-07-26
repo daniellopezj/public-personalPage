@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-
+  public skills: any[] = []
   constructor() { }
 
   ngOnInit(): void {

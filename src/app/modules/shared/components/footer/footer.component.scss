@@ -6,6 +6,8 @@
   flex-direction: column;
   position: relative;
   background-color: $base-color;
+  padding: 1rem 1.5rem 4rem;
+  color: #fff;
 }
 
 .section {
@@ -68,11 +70,6 @@
   border-color: $base-color;
   color: #fff;
   transition: all 0.2s ease-in-out;
-}
-
-.footer {
-  color: #fff;
-  padding: 1rem 1.5rem 4rem;
 }
 
 .motivation-text {
