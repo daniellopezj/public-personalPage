@@ -1,0 +1,17 @@
+<section #recomendations class="section-recomendations">
+  <div class="container-recomendations">
+    <div class="box-recomendations">
+      <div #testimonyComponent >
+        <app-testimony [testimony]="currentTestimony"> </app-testimony>
+      </div>
+    </div>
+    <div class="controls">
+      <span
+        *ngFor="let item of testimonies; let i = index"
+        (click)="controlDot(i)"
+        class="dot"
+        [ngClass]="{ 'dot-active': activeDot === i }"
+      ></span>
+    </div>
+  </div>
+</section>

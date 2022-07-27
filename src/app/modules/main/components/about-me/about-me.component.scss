@@ -1,0 +1,33 @@
+@import "./src/shared.scss";
+.container-about-me {
+  width: 100%;
+  background-color: $base-color;
+  min-height: 600px;
+  display: flex;
+}
+
+.content-about-me {
+  margin: 0 auto;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 50%;
+  padding-bottom: 10rem;
+  color: $white-color;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.description {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,13 @@
+<div class="container-item">
+  <div class="container-icon">
+    <fa-icon [icon]="skillItem.icon"></fa-icon>
+  </div>
+  <h1>{{ skillItem.title }}</h1>
+  <span class="description">{{ skillItem.description }}</span>
+  <span class="title-property">{{ skillItem.titleLanguage }}</span>
+  <span class="item-language">{{ skillItem.itemsLanguage }}</span>
+  <span class="title-property">{{ skillItem.titleTools }}</span>
+  <div class="list-tools" *ngFor="let tool of skillItem.itemsTools">
+    <span class="item-tool">{{ tool }}</span>
+  </div>
+</div>
