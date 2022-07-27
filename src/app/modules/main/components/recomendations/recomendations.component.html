@@ -1,27 +1,17 @@
 <section #recomendations class="section-recomendations">
   <div class="container-recomendations">
     <div class="box-recomendations">
-      <div class="box-content">
-        <section class="slider-wrapper">
-          <div class="slides-container" id="slides-container">
-            <app-testimony [testimony]="currentTestimony"> </app-testimony>
-            <button
-              class="slide-arrow"
-              id="slide-arrow-prev"
-              (click)="previusControl()"
-            >
-              &#8249;
-            </button>
-            <button
-              class="slide-arrow"
-              id="slide-arrow-next"
-              (click)="nextControl()"
-            >
-              &#8250;
-            </button>
-          </div>
-        </section>
+      <div #testimonyComponent >
+        <app-testimony [testimony]="currentTestimony"> </app-testimony>
       </div>
+    </div>
+    <div class="controls">
+      <span
+        *ngFor="let item of testimonies; let i = index"
+        (click)="controlDot(i)"
+        class="dot"
+        [ngClass]="{ 'dot-active': activeDot === i }"
+      ></span>
     </div>
   </div>
 </section>

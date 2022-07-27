@@ -1,7 +1,8 @@
-  <h1>{{ testimony?.id }}</h1>
-<div class="wrapper-testimony">
+<div class="wrapper-testimony ">
   <div class="avatar-container">
-
-    <img  class="custom-avatar" [src]="testimony?.avatar"  alt="avatar">
+    <img class="custom-avatar" [src]="testimony?.avatar" alt="avatar" />
   </div>
+  <span class="description">"{{ testimony?.description }}"</span>
+  <span class="name">{{ testimony?.name }}</span>
+  <span class="proffesion">{{ testimony?.profession }}</span>
 </div>

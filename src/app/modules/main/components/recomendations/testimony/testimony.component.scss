@@ -2,7 +2,11 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: 2rem auto;
+  text-align: center;
+  font-size: 1.2rem;
 }
+
 
 .avatar-container {
   display: flex;
@@ -13,4 +17,19 @@
   height: 110px;
   width: 110px;
   border-radius: 50%;
+}
+
+.description {
+  margin: 2rem auto;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.name {
+  font-weight: bolder;
+}
+
+.proffesion {
+  font-size: 1rem;
 }
