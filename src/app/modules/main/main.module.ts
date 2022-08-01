@@ -11,6 +11,8 @@ import { ItemSkillsComponent } from './components/skills/item-skills/item-skills
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RecomendationsComponent } from './components/recomendations/recomendations.component';
 import { TestimonyComponent } from './components/recomendations/testimony/testimony.component';
+import { JobsComponent } from './components/jobs/jobs.component';
+import { CollaborationsComponent } from './components/collaborations/collaborations.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { TestimonyComponent } from './components/recomendations/testimony/testim
     SkillsComponent,
     ItemSkillsComponent,
     RecomendationsComponent,
-    TestimonyComponent
+    TestimonyComponent,
+    JobsComponent,
+    CollaborationsComponent
   ],
   imports: [
     CommonModule,

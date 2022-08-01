@@ -1,16 +1,5 @@
 @import "./src/shared.scss";
 
-.section-skills {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 1rem 1.5rem 4rem;
-}
-
-.container-skills {
-  padding: 5rem 1.5rem 0;
-}
-
 .box-skills {
   display: flex;
   margin: 0 auto;
@@ -35,6 +24,4 @@
   border-right: 1px solid #E6ECF8;
   border-bottom: 1px solid #E6ECF8;
   padding: 3.5rem 1.25rem;
-
-
 }

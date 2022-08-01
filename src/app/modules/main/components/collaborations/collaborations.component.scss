@@ -1,0 +1,75 @@
+@import "./src/shared.scss";
+
+.content-collaborations {
+  margin: 10rem auto;
+  border-top: 1px solid #e6ecf8;
+  padding-top: 7rem;
+}
+
+.container-companies {
+  max-width: $big-max-width;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.custom-logo {
+  cursor: pointer;
+  margin: 20px 80px;
+  height: 100px;
+  width: 130px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.main-text {
+  text-align: center;
+  margin: 0 20%;
+  margin-bottom: 3rem;
+}
+
+.collaborate-container {
+  margin-top: 4rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  font-size: 1.3rem;
+  font-weight: initial;
+}
+
+.container-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.btn-contact {
+  font-weight: 400;
+  font-size: 20px;
+  background-color: #0000;
+  color: $base-color;
+  border-radius: 9999px;
+  border: 2px solid $base-color;
+  padding: 0.8rem 50px;
+}
+
+.is-outlined:hover {
+  background-color: $base-color;
+  border-color: $base-color;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.collaborate-container {
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #e6ecf8;
+}

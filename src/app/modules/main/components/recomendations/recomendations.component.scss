@@ -3,11 +3,16 @@
 .section-recomendations {
   display: flex;
   flex-direction: column;
-  padding: 1rem 1.5rem 4rem;
 }
 
 .container-recomendations {
-  padding: 5rem 1.5rem;
+  padding: 6rem 1.5rem;
+}
+
+.title{
+  font-size: 2rem;
+  font-weight: bolder;
+  margin: 0;
 }
 
 .box-recomendations {
@@ -23,6 +28,18 @@
   width: 100%;
   justify-content: center;
 }
+
+.main-text{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.description {
+  margin: 2rem auto;
+  font-size: 1.3rem;
+  font-weight: initial;
+}
+
 
 .dot {
   cursor: pointer;
