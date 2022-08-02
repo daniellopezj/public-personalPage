@@ -1,0 +1,24 @@
+<section #collaborations class="container-main-view">
+  <div class="content-view content-collaborations">
+    <div class="main-text">
+      <h2 class="title">My Recent Work</h2>
+      <span class="description"
+        >Here are a few past design projects I've worked on. Want to see more?
+        Email me.</span
+      >
+    </div>
+    <div class="container-jobs">
+      <div class="card-job" *ngFor="let job of jobs; let i = index">
+        <figure class="custom-figure">
+          <img class="job-image" [src]="job.image" alt="logo" />
+          <figcaption class="figcaption">
+            <h3 class="job-description">{{ job.description }}</h3>
+            <a [href]="job.link" target="_blank" class="go-to-website">
+              Visit Website <fa-icon class="icon-angle-right" [icon]="faAngleRight"></fa-icon
+            ></a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
