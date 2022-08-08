@@ -1,7 +1,12 @@
-<section #recomendations class="section-recomendations">
-  <div class="container-recomendations">
+
+    <section #recomendations class="section-recomendations container-main-view">
+      <div class="content-view container-recomendations">
+    <div class="main-text">
+      <h1 class="title">Testimonials</h1>
+      <span class="description">People I've worked with have said some nice things...</span>
+    </div>
     <div class="box-recomendations">
-      <div #testimonyComponent >
+      <div #testimonyComponent>
         <app-testimony [testimony]="currentTestimony"> </app-testimony>
       </div>
     </div>

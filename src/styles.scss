@@ -1,6 +1,6 @@
 @import "./shared.scss";
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Roboto:wght@100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 html,
 body {
   text-rendering: optimizeLegibility;
@@ -10,14 +10,21 @@ body {
   font-family: 'Hind Siliguri', sans-serif;
 }
 
+h1{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+h2{
+  font-family: 'Open Sans', sans-serif;
+}
+
 .button {
+  cursor: pointer;
   background-color: #fff;
   border-color: #dbdbdb;
   border-width: 1px;
   color: #363636;
-  cursor: pointer;
   justify-content: center;
-  padding-bottom: calc(0.5em - 1px);
   padding-left: 1em;
   padding-right: 1em;
   padding-top: calc(0.5em - 1px);
@@ -25,13 +32,18 @@ body {
   white-space: nowrap;
 }
 
-.is-outlined {
-  background-color: #0000;
-  border-color: $base-color;
-  color: $base-color;
+.container-main-view {
+  margin: 2rem 0;
+  width: 100%;
 }
-.is-outlined:hover {
-  background-color: $base-color;
-  border-color: $base-color;
-  color: #fff;
+
+.content-view {
+  margin: 0 auto;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: $big-max-width;
+  padding-bottom: 0;
 }
