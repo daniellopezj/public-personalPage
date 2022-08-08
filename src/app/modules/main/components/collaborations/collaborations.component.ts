@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-collaborations',
   templateUrl: './collaborations.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CollaborationsComponent implements OnInit {
   private path = '../../../../../assets/companies'
-
+  public faMessage = faEnvelope
   public companies = [
     {
       logo: `${this.path}/asitur.jpg`
