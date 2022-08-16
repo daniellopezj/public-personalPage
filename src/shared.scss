@@ -6,3 +6,34 @@ $big-max-width: 1200px;
 .w-100 {
   width: 100%;
 }
+
+.p-0 {
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-6 {
+  width: 50%;
+}
+.col-12 {
+  width: 100%;
+}
+
+input, textarea {
+  outline: none;
+  -webkit-appearance: none;
+  align-items: center;
+  border: 1px solid #dbdbdb;
+  font-size: 1.4rem;
+  border-radius: 4px;
+  box-shadow: none;
+  display: inline-flex;
+  justify-content: flex-start;
+  padding: calc(0.5em - 1px);
+
+  // vertical-align: top;
+}

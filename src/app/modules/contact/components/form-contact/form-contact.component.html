@@ -1,0 +1,47 @@
+<div class="content-view p-0" *ngIf="loaded">
+  <div class="container-form">
+    <form [formGroup]="formContact">
+      <div class="row">
+        <div class="col-6 input-container">
+          <label for="name">Nombre</label>
+          <input
+            type="text"
+            class=""
+            formControlName="name"
+            placeholder=""
+            name="name"
+          />
+          <app-valite-control [control]="form['name']"></app-valite-control>
+        </div>
+        <div class="col-6 input-container">
+          <label for="email">Email</label>
+          <input type="text" class="form-control" placeholder="" name="email" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 input-container">
+          <label for="message">Mensaje</label>
+          <textarea
+            class="form-control"
+            name="message"
+            id="message"
+            cols="30"
+            rows="5"
+          ></textarea>
+        </div>
+      </div>
+    </form>
+    <div class="row">
+      <div class="col-12 input-container">
+        <div class="container-button">
+          <button
+            class="button btn-contact is-outlined"
+            [disabled]="formContact.invalid"
+          >
+            submit
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

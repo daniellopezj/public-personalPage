@@ -1,0 +1,6 @@
+<div
+  *ngIf="control?.invalid && (control?.dirty || control?.touched)"
+  class="alert alert-danger"
+>
+  <div *ngIf="control?.errors?.['required']">Name is required.</div>
+</div>
