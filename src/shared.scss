@@ -37,3 +37,8 @@ input, textarea {
 
   // vertical-align: top;
 }
+
+
+.form-control.ng-invalid.ng-dirty {
+  border-color: red !important;
+}
