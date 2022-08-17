@@ -4,14 +4,14 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { ValiteControlComponent } from '@/app/components/base-components/valite-control/valite-control.component';
+import { ValidateControlComponent } from '@/app/components/base-components/validate-control/validate-control.component';
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    ValiteControlComponent
+    ValidateControlComponent
   ],
   imports: [
     CommonModule,
@@ -21,7 +21,7 @@ import { ValiteControlComponent } from '@/app/components/base-components/valite-
   exports: [
     HeaderComponent,
     FooterComponent,
-    ValiteControlComponent,
+    ValidateControlComponent,
   ]
 })
 export class SharedModule { }

@@ -17,3 +17,8 @@ export type Testimony = {
   name: string
   profession: string
 }
+
+export type validationMessage = {
+  key: string,
+  message: string
+}
