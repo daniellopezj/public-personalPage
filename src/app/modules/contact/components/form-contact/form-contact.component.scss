@@ -1,0 +1,45 @@
+@import "./src/shared.scss";
+
+.container-form {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0.75rem;
+  box-sizing: border-box;
+}
+
+
+
+.container-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.btn-contact {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  background-color: white;
+  color: $base-color;
+  border-radius: 9999px;
+  border: 2px solid white;
+  padding: 0.8rem 80px;
+  border: 2px solid $base-color;
+}
+
+.is-outlined:hover {
+  color: white;
+  background-color: $base-color;
+  transition: all 0.2s ease-in-out;
+}

@@ -1,0 +1,66 @@
+<div class="content-view p-0" *ngIf="loaded">
+  <div class="container-form">
+    <form [formGroup]="formContact">
+      <div class="row">
+        <div class="col-6 input-container">
+          <label for="name">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="name"
+            placeholder=""
+            name="name"
+          />
+          <app-validate-control
+            [control]="form['name']"
+            [message]="inputValidate('name')"
+          ></app-validate-control>
+        </div>
+        <div class="col-6 input-container">
+          <label for="email">Email</label>
+          <input
+            formControlName="email"
+            type="text"
+            class="form-control"
+            placeholder=""
+            name="email"
+          />
+          <app-validate-control
+            [control]="form['email']"
+            [message]="inputValidate('email')"
+          ></app-validate-control>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 input-container">
+          <label for="message">Mensaje</label>
+          <textarea
+            formControlName="message"
+            class="form-control"
+            name="message"
+            id="message"
+            cols="30"
+            rows="5"
+          ></textarea>
+          <app-validate-control
+            [control]="form['message']"
+            [message]="inputValidate('message')"
+          ></app-validate-control>
+        </div>
+      </div>
+    </form>
+    <div class="row">
+      <div class="col-12 input-container">
+        <div class="container-button">
+          <button
+            class="button btn-contact is-outlined"
+            (click)="sendMessage()"
+            >
+            <!-- [disabled]="formContact.invalid || " -->
+            submit
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
