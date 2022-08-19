@@ -1,4 +1,4 @@
-<div class="content-view p-0" *ngIf="loaded">
+<div class="content-view p-0" >
   <div class="container-form">
     <form [formGroup]="formContact">
       <div class="row">
@@ -55,9 +55,13 @@
           <button
             class="button btn-contact is-outlined"
             (click)="sendMessage()"
-            >
-            <!-- [disabled]="formContact.invalid || " -->
-            submit
+            appLoadingBtn
+            [loadingFlag]="sending"
+            [disabled]="sending"
+            [textInitial]="'Submit'"
+            [textLoading]="'sending'"
+          >
+
           </button>
         </div>
       </div>

@@ -12,6 +12,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./modules/contact/contact.module').then((m) => m.ContactModule),
   },
+  {
+    path: 'success',
+    loadChildren: () =>
+      import('./modules/success-message/success-message.module').then((m) => m.SuccessMessageModule),
+  },
 ];
 
 @NgModule({

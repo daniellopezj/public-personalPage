@@ -1,0 +1,44 @@
+@import "./src/shared.scss";
+
+.custom-container {
+  padding: 2rem 0 1rem 0;
+  margin-top: 5rem;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  width: 20%;
+  align-items: center;
+  margin: auto;
+  margin-top: -2rem;
+}
+
+.around-image {
+  background-color: $base-color;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.custom-avatar {
+  height: 120px;
+  border-radius: 50%;
+}
+
+.container-last-section {
+  width: 100%;
+  margin-top: -5rem;
+  padding: 5rem 0;
+  border-top: 1px solid rgb(117, 16, 245, 0.2);
+}
+
+.title-container {
+  max-width: 60%;
+  margin: auto;
+  margin-top: 2rem;
+  h1 {
+    font-size: 36px;
+    font-weight: 100;
+  }
+}

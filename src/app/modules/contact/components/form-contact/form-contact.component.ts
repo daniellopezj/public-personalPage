@@ -12,7 +12,7 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 export class FormContactComponent implements OnInit {
 
   public formContact: FormGroup;
-  public loaded = false
+  public sending = false
   public validations = [
     {
       input: 'name',
@@ -64,7 +64,6 @@ export class FormContactComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.loaded = true
   }
 
 
@@ -81,6 +80,7 @@ export class FormContactComponent implements OnInit {
   }
 
   sendMessage() {
+    this.sending = true
     if (this.formContact.invalid) {
       this.form['name'].markAsDirty()
       this.form['email'].markAsDirty()
@@ -90,7 +90,9 @@ export class FormContactComponent implements OnInit {
     emailjs.send(environment.serviceMailID, environment.templateMailID, this.formContact.value, environment.publicKeyMailID)
       .then((result: EmailJSResponseStatus) => {
         console.log(result.text);
+        this.sending = false
       }, (error) => {
+        this.sending = false
         console.log(error.text);
       });
   }
