@@ -33,12 +33,46 @@
   border-top: 1px solid rgb(117, 16, 245, 0.2);
 }
 
-.title-container {
+.body-success {
   max-width: 60%;
   margin: auto;
   margin-top: 2rem;
-  h1 {
-    font-size: 36px;
-    font-weight: 100;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.image-send-message{
+  margin: 2rem 0;
+  max-width: 250px;
+}
+
+
+
+.container-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.btn-contact {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  border-radius: 9999px;
+  border: 2px solid white;
+  padding: 0.8rem 80px;
+  border: 2px solid $base-color;
+  background-color: $base-color;
+  color: white;
+}
+
+.is-outlined:hover {
+  color: $base-color;
+  background-color: white;
+  transition: all 0.2s ease-in-out;
 }
