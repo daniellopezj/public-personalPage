@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ValidateControlComponent } from '@/app/components/base-components/validate-control/validate-control.component';
 import { LoadingBtnDirective } from './directives/loading-btn.directive';
-
+import { TranslateModule } from '@ngx-translate/core';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -17,7 +17,8 @@ import { LoadingBtnDirective } from './directives/loading-btn.directive';
   imports: [
     CommonModule,
     RouterModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    TranslateModule,
   ],
   exports: [
     HeaderComponent,

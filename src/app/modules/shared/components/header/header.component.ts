@@ -9,6 +9,7 @@ import {
 } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
+import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -17,9 +18,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
+  faAngleDown = faAngleDown
+  faAngleUp = faAngleUp
   @Input() solid: boolean = false;
-
+  public hoverLanguage = false
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
     let element = document.querySelector('.main-container') as HTMLElement;

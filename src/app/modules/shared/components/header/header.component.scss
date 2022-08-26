@@ -55,3 +55,39 @@
   color: #fff;
   transition: all 0.2s ease-in-out;
 }
+
+.items-languages {
+  display: none;
+}
+
+.language-button {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.language-button:hover .items-languages {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: inline-block;
+  height: 120px;
+  background-color: #0ff;
+  width: auto;
+  padding: 10px;
+}
+
+.language-button:hover {
+  fa-icon{
+    transform: rotateZ(-180deg);
+  }
+}
+
+// .arrow-icon {
+//   transition: all 0.5s ease-out;
+// }
+
+.arrow-icon {
+  display: inline-block;
+  // transform: rotate(180deg);
+  transition: all 0.3s ease-out;
+}
