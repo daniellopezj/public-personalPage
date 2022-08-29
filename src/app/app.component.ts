@@ -1,6 +1,8 @@
-import {  Component, Inject, PLATFORM_ID, OnInit } from '@angular/core';
+import { Component, Inject, PLATFORM_ID, OnInit } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { TranslateService } from '@ngx-translate/core';
+import { CookieService } from 'ngx-cookie-service';
+import { SharedService } from './services/shared.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,32 +12,26 @@ export class AppComponent {
   title = 'personalPage';
   constructor(
     private translate: TranslateService,
-    @Inject(PLATFORM_ID) private platformId:any
+    @Inject(PLATFORM_ID) private platformId: any,
+    private cookieService: CookieService,
+    private sharedService: SharedService,
   ) {
     this.checkLanguage();
-    // this.sharedService.checkLanguage();
-    // this.sharedService.changeLanguage.subscribe((res:any) => {
-    //   translate.setDefaultLang(res?.language);
-    // });
+    this.sharedService.changeLanguage.subscribe((res:any) => {
+      translate.setDefaultLang(res?.language);
+    });
   }
 
   checkLanguage(): any {
     if (isPlatformBrowser(this.platformId)) {
-      // const nav = navigator as any;
-      // const userLang: any = nav?.language || nav?.userLanguage;
-      // const initialLanguage = userLang.split('-')[0] || 'es';
-      // const labelLanguage = initialLanguage === 'es' ? 'SPANISH' : 'ENGLISH';
-      // this.translate.setDefaultLang(initialLanguage.toLowerCase());
-      // this.cookieService.set(
-      //   'languageSelect',
-      //   JSON.stringify({
-      //     name: labelLanguage,
-      //     language: initialLanguage,
-      //     country: initialLanguage,
-      //   }),
-      //   null,
-      //   '/'
-      // );
+      const currentLanguage = this.cookieService.get('languageSelect')
+      if (currentLanguage) {
+        this.translate.setDefaultLang(currentLanguage)
+        return
+      }
+      const initialLanguage = window.navigator.language.split('-')[0] || 'es';
+      this.translate.setDefaultLang(initialLanguage.toLowerCase());
+      this.cookieService.set('languageSelect', initialLanguage, 4);
       this.translate.setDefaultLang('en');
     } else {
       this.translate.setDefaultLang('es');

@@ -14,15 +14,29 @@
         (mouseover)="hoverLanguage = true"
         (mouseout)="hoverLanguage = false"
       >
-        Español
-        <fa-icon
-          [icon]="faAngleDown"
-          class="arrow-icon fade"
-        ></fa-icon>
-        <div class="items-languages">items</div>
+        <img
+          src="{{ '../../../../../assets/' + selectLanguage.flag + '.png' }}"
+          alt="{{ selectLanguage.text }}"
+        />
+        <span> {{ selectLanguage.text }}</span>
+        <fa-icon [icon]="faAngleDown" class="arrow-icon fade"></fa-icon>
+        <div class="container-languages">
+          <div class="items-languages">
+            <div
+              class="language"
+              (click)="changeLanguage(language.value)"
+              *ngFor="let language of languages"
+            >
+              <img
+                src="{{ '../../../../../assets/' + language.flag + '.png' }}"
+                alt=""
+              />
+              <span>{{ language.text }}</span>
+            </div>
+          </div>
+        </div>
       </button>
       <button class="button btn-contact is-outlined">Say Hello</button>
     </div>
   </nav>
 </div>
-
