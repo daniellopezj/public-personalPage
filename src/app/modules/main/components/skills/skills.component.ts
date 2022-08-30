@@ -1,6 +1,7 @@
 import { Skill } from '@/types/general.types';
 import { Component, OnInit } from '@angular/core';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import {  faPersonCircleCheck, faGears, faChalkboard} from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
@@ -9,7 +10,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 export class SkillsComponent implements OnInit {
   public skills: Skill[] = [
     {
-      icon: faGithub,
+      icon: faChalkboard,
       title: 'Frontend Developer',
       description: 'Me gusta codificar desde cero y poder construir grandes soluciones para cualquier persona en el mundo',
       titleLanguage: 'Disfruto desarrollar:',
@@ -18,7 +19,7 @@ export class SkillsComponent implements OnInit {
       itemsTools: ['Angular/React/Vue', 'Cypress', 'Pinia', 'Redux', 'Rxjs', 'Html/css', 'Sass/less', 'Responsive design', 'Git'],
     },
     {
-      icon: faGithub,
+      icon: faGears,
       title: 'Backend Developer',
       description: 'Valoro la elaboración de codigo pensando en su mantenibilidad y aplicando patrones de diseño.',
       titleLanguage: 'me gusta pensar en:',
@@ -27,7 +28,7 @@ export class SkillsComponent implements OnInit {
       itemsTools: ['Node js', 'Express', 'AWS', 'Mongo db', 'Mysql', 'Jest', 'Mocha', 'WebSocket', 'Microservicios'],
     },
     {
-      icon: faGithub,
+      icon: faPersonCircleCheck,
       title: 'Calidez Humana',
       description: 'Para crecer en el mundo del desarrollo ademas de los conocimientos tecnicos es importante la calidad humana.',
       titleLanguage: 'Con que me identifico:',

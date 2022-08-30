@@ -1,20 +1,25 @@
 <section #collaborations class="container-main-view">
   <div class="content-view content-collaborations">
     <div class="main-text">
-      <h2 class="title">My Recent Work</h2>
+      <h2 class="title">Mi trabajo reciente</h2>
       <span class="description"
-        >Here are a few past design projects I've worked on. Want to see more?
-        Email me.</span
-      >
+        >Aqui hay algunos proyectos de desarrollo en los que he trabajado
+        ¿Quieres ver más?
+        <a class="link-github" href="https://github.com/daniellopezj01" target="_blank">
+          click aqui</a
+        >
+      </span>
     </div>
     <div class="container-jobs">
       <div class="card-job" *ngFor="let job of jobs; let i = index">
         <figure class="custom-figure">
           <img class="job-image" [src]="job.image" alt="logo" />
           <figcaption class="figcaption">
-            <h3 class="job-description">{{ job.description }}</h3>
+            <h3 >{{ job.title }}</h3>
+            <h4 class="job-description">{{ job.description }}</h4>
             <a [href]="job.link" target="_blank" class="go-to-website">
-              Visit Website <fa-icon class="icon-angle-right" [icon]="faAngleRight"></fa-icon
+             {{job.type === 'video'?  'View video ':'Visit Website'}}
+              <fa-icon class="icon-angle-right" [icon]="faAngleRight"></fa-icon
             ></a>
           </figcaption>
         </figure>
