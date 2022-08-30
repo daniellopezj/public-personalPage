@@ -1,3 +1,5 @@
+import { SharedService } from '@/app/services/shared.service';
+import { IfStmt } from '@angular/compiler';
 import {
   Component,
   OnInit,
@@ -9,17 +11,22 @@ import {
 } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
+import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
 
+type typeLanguage = {
+  value: 'es' | 'en'
+  text: string,
+  flag: string
+}
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
+
 export class HeaderComponent implements OnInit {
-
   @Input() solid: boolean = false;
-
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
     let element = document.querySelector('.main-container') as HTMLElement;
@@ -29,35 +36,52 @@ export class HeaderComponent implements OnInit {
       element.classList.remove('scroll-nav');
     }
   }
-  itemsHeader = [
+  faAngleDown = faAngleDown
+  faAngleUp = faAngleUp
+
+
+  public hoverLanguage = false
+  public languages: typeLanguage[] = [
     {
-      title: 'Pagos',
-      route: ['plans']
+      value: 'en',
+      text: 'Ingles',
+      flag: 'flag-EN'
     },
     {
-      title: 'Nosotros',
-      route: ['about']
-    },
-    {
-      title: 'Ayuda',
-      route: ['help']
-    },
-    {
-      title: 'Pagar Factura',
-      route: ['payments'],
-      active: true
+      value: 'es',
+      text: 'Español',
+      flag: 'flag-ES'
     }
   ]
 
+  public selectLanguage: typeLanguage = {
+    value: 'en',
+    text: 'Ingles',
+    flag: 'flag-EN'
+  }
+
   constructor(
-    private router: Router,
+    private sharedService: SharedService,
   ) { }
 
   ngOnInit(): void {
+    this.setLanguageHeader()
+    this.sharedService.changeLanguage.subscribe(() => {
+      this.setLanguageHeader()
+    })
   }
 
-  goTo(route: string[]) {
-    this.router.navigate(route)
+  setLanguageHeader() {
+    const currentLanguage = this.sharedService.getLanguageSelect()
+    const language = this.languages.find(i => i.value === currentLanguage)
+    if (language) {
+      this.selectLanguage = language
+    }
+  }
+
+  changeLanguage(language: 'es' | 'en') {
+    this.sharedService.setLanguage(language)
+
   }
 
 }

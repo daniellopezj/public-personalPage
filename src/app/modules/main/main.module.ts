@@ -1,3 +1,4 @@
+import { TranslateModule } from '@ngx-translate/core';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -31,7 +32,8 @@ import { CollaborationsComponent } from './components/collaborations/collaborati
     CommonModule,
     MainRoutingModule,
     SharedModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    TranslateModule
   ]
 })
 export class MainModule { }
