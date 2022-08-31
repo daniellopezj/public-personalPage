@@ -17,6 +17,8 @@ export class SharedService {
 
   setLanguage(language: 'es' | 'en') {
     if (isPlatformBrowser(this.platformId)) {
+      this.translate.setDefaultLang(language);
+      this.translate.use(language)
       this.cookieService.set('languageSelect', language, 4);
       this.changeLanguage.emit(language);
     }

@@ -16,9 +16,10 @@
       >
         <img
           src="{{ '../../../../../assets/' + selectLanguage.flag + '.png' }}"
-          alt="{{ selectLanguage.text }}"
+          alt="{{ selectLanguage.text | translate }}"
         />
-        <span> {{ selectLanguage.text }}</span>
+
+        <span> {{ selectLanguage.text | translate }}</span>
         <fa-icon [icon]="faAngleDown" class="arrow-icon fade"></fa-icon>
         <div class="container-languages">
           <div class="items-languages">
@@ -31,14 +32,14 @@
                 src="{{ '../../../../../assets/' + language.flag + '.png' }}"
                 alt=""
               />
-              <span>{{ language.text }}</span>
+              <span>{{ language.text | translate }}</span>
             </div>
           </div>
         </div>
       </button>
       <button class="button btn-contact is-outlined">
         <!-- Say Hello -->
-        Decir Hola
+        {{ "HEADER.DECIR_HOLA" | translate }}
       </button>
     </div>
   </nav>

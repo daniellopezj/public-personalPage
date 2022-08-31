@@ -1,5 +1,48 @@
 {
   "GENERAL": {
-    "TEST": "esto es un test"
+    "IDIOMA_INGLES": "Ingles",
+    "IDIOMA_ESPANOL": "Español"
+  },
+  "HEADER": {
+    "DECIR_HOLA": "Decir Hola"
+  },
+  "MAIN_VIEW": {
+    "TITULO": "Desarrollador de Software y freelancer",
+    "DESCRIPCION": "Amante de los nuevos desafios, siempre buscando la mejor solución."
+  },
+  "ABOUT_ME": {
+    "TITULO": "Hola, Soy Daniel. Encantado de conocerte.",
+    "DESCRIPCION": "Desde que comence en el mundo del desarrollo he participado en grandes proyectos por mas de 3 años, he trabajado de forma remota para agencias de diferentes paises y he tenido la oportunidad de encontrar personas talentosas que han contribuido a mi crecimiento profesional. me destaco por mi disciplina y mi compromiso con el aprendizaje continuo, busco mejorar dia a dia. Me encanta lo que hago."
+  },
+  "SKILLS": {
+    "ITEM1":{
+      "TITULO1": "Desarrollador Frontend",
+      "DESCRIPCION1": "Me gusta codificar desde cero y poder construir grandes soluciones para cualquier persona en el mundo",
+      "SUBTITULO1": "Disfruto desarrollar:",
+      "SUBTITULO2": "especialidades"
+    },
+    "ITEM2":{
+      "TITULO1": "Desarrollador Backend",
+      "DESCRIPCION1": "Valoro la elaboración de codigo pensando en su mantenibilidad y aplicando patrones de diseño.",
+      "SUBTITULO1": "me gusta pensar en:",
+      "DESCRIPCION2": "Seguridad, escalabilidad, disponibilidad.",
+      "SUBTITULO2": "especialidades"
+    },
+    "ITEM3":{
+      "TITULO1": "Calidez Humana",
+      "DESCRIPCION1": "Para crecer en el mundo del desarrollo ademas de los conocimientos tecnicos es importante la calidad humana.",
+      "SUBTITULO1": "Me identifico con:",
+      "DESCRIPCION2": "disciplina, empatia, compromiso.",
+      "SUBTITULO2": "habilidades generales:",
+      "HERRAMIENTA1":"Respeto por los demas",
+      "HERRAMIENTA2":"Deseo de aprender",
+      "HERRAMIENTA3":"Buena comunicación",
+      "HERRAMIENTA4":"Gestión del tiempo",
+      "HERRAMIENTA5":"Inteligencia emocional",
+      "HERRAMIENTA6":"Adapatación al cambio",
+      "HERRAMIENTA7":"Empatia",
+      "HERRAMIENTA8":"Innovación",
+      "HERRAMIENTA9":"Liderazgo"
+    }
   }
 }
