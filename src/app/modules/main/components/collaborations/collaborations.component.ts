@@ -10,19 +10,24 @@ export class CollaborationsComponent implements OnInit {
   public faMessage = faEnvelope
   public companies = [
     {
-      logo: `${this.path}/asitur.jpg`
+      logo: `${this.path}/asitur.jpg`,
+      link: 'https://asitur.es/'
     },
     {
-      logo: `${this.path}/visyon.jpg`
+      logo: `${this.path}/visyon.jpg`,
+      link: 'https://visyon360.com/'
     },
     {
-      logo: `${this.path}/kiteris.png`
+      logo: `${this.path}/kiteris.png`,
+      link: 'https://www.kiteris.com/'
     },
     {
-      logo: `${this.path}/mochileros.png`
+      logo: `${this.path}/mochileros.png`,
+      link: 'https://mochileros.com.mx/'
     },
     {
-      logo: `${this.path}/leanga.jpg`
+      logo: `${this.path}/leanga.jpg`,
+      link: 'https://leangasoftware.es/'
     },
   ]
   constructor() { }
