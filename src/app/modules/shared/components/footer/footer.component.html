@@ -3,17 +3,14 @@
     <div class="container-start-project">
       <div class="start-project">
         <h1 class="item-start-project title-start-project">
-          Iniciar un proyecto
-          <!-- Start a project -->
+          {{ "FOOTER.INICIAR_PROYECTO" | translate }}
         </h1>
         <span class="item-start-project">
-          ¿Interesado en trabajar juntos? Deberíamos reunirnos y conversar. Yo
-          compro el café.
+          {{ "FOOTER.ENCONTRARNOS" | translate }}
         </span>
         <div class="item-start-project">
           <button class="button btn-contact is-outlined">
-            Hagámoslo
-            <!-- Let's do this -->
+            {{ "FOOTER.HAGAMOSLO" | translate }}
           </button>
         </div>
       </div>
@@ -27,16 +24,20 @@
         alt="logo"
       />
       <div class="motivation-text">
-        <h1>Viviendo, aprendiendo y mejorando día a día.</h1>
+        <h1>
+          {{ "FOOTER.MOTIVACION" | translate }}
+        </h1>
       </div>
       <div class="controls">
         <div class="item-link" *ngFor="let item of controls">
           <fa-icon [icon]="item.icon"></fa-icon>
         </div>
       </div>
-      <div class="copy-right">creado por mí &copy; 2022</div>
       <div class="copy-right">
-        <span class="small-text"> Hecho con </span>
+        {{ "FOOTER.CREADO_POR" | translate }} &copy; 2022
+      </div>
+      <div class="copy-right">
+        <span class="small-text"> {{ "FOOTER.CREADO_CON" | translate }} </span>
         <span class="bold"> Angular</span>
       </div>
     </div>

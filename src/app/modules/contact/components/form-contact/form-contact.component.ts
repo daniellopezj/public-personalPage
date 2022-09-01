@@ -18,7 +18,7 @@ export class FormContactComponent implements OnInit {
       input: 'name',
       validations: [{
         key: 'required',
-        message: 'Nombre es requerido'
+        message: 'VALIDATIONS.NOMBRE_REQUERIDO'
       }]
     },
     {
@@ -26,11 +26,11 @@ export class FormContactComponent implements OnInit {
       validations: [
         {
           key: 'required',
-          message: 'Email es requerido'
+          message: 'VALIDATIONS.EMAIL_REQUERIDO'
         },
         {
           key: 'pattern',
-          message: 'Email no es valido "example@example.com"'
+          message: 'VALIDATIONS.EMAIL_INVALIDO'
         },
       ]
     },
@@ -39,15 +39,15 @@ export class FormContactComponent implements OnInit {
       validations: [
         {
           key: 'required',
-          message: 'El mensaje es requerido'
+          message: 'VALIDATIONS.MENSAJE_REQUERIDO'
         },
         {
           key: 'minlength',
-          message: 'El mensaje debe contener minimo 30 caracteres'
+          message: 'VALIDATIONS.MENSAJE_LONGITUD_MINIMA'
         },
         {
           key: 'maxlength',
-          message: 'El mensaje debe contener maximo 500 caracteres'
+          message: 'VALIDATIONS.MENSAJE_LONGITUD_MAXIMA'
         }
       ]
     }
@@ -85,6 +85,7 @@ export class FormContactComponent implements OnInit {
       this.form['name'].markAsDirty()
       this.form['email'].markAsDirty()
       this.form['message'].markAsDirty()
+      this.sending = false
       return
     }
     emailjs.send(environment.serviceMailID, environment.templateMailID, this.formContact.value, environment.publicKeyMailID)

@@ -2,8 +2,7 @@
   <div class="content-view content-collaborations">
     <div class="main-text">
       <h2 class="title">
-        Estoy orgulloso de haber colaborado con algunas compañías increíbles:
-        <!-- I'm proud to have collaborated with some awesome companies: -->
+        {{ "COLLABORATIONS.TITULO" | translate }}
       </h2>
     </div>
     <div class="container-companies">
@@ -26,18 +25,16 @@
 <div class="container-main-view collaborate-container">
   <div class="content-view">
     <h2>
-      ¿Interesada en colaborar conmigo?
-      <!-- Interested in collaborating with me? -->
+      {{ "COLLABORATIONS.SUBTITULO" | translate }}
     </h2>
-    <span class="description"
-      >Siempre estoy abierto a discutir el trabajo de desarrollo de productos o
-      las oportunidades de asociación.</span
-    >
+    <span class="description">
+      {{ "COLLABORATIONS.DESCRIPCION" | translate }}
+    </span>
     <div class="container-button">
       <button class="button btn-contact is-outlined">
         <fa-icon [icon]="faMessage" class="icon-message"></fa-icon>
-        Iniciar una conversación
-        <!-- Start a conversation -->
+        {{ "COLLABORATIONS.INICIAR_CONVERSACION" | translate }}
+
       </button>
     </div>
   </div>

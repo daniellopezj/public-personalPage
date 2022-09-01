@@ -17,6 +17,12 @@ const routes: Routes = [
     loadChildren: () =>
       import('./modules/success-message/success-message.module').then((m) => m.SuccessMessageModule),
   },
+  {
+    path: 'notFound',
+    loadChildren: () =>
+      import('./not-found/not-found.module').then((m) => m.NotFoundModule),
+  },
+  { path: '**', redirectTo: 'notFound', pathMatch: 'full' }
 ];
 
 @NgModule({

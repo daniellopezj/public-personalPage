@@ -12,39 +12,39 @@ export class JobsComponent implements OnInit {
     {
       image: `${this.path}/mochileros.png`,
       title: 'Mochileros',
-      description: 'Plataforma de venta de tours a nivel mundial',
+      description: 'JOBS.TRABAJO1.DESCRIPCION',
       link: 'https://mochileros.com.mx/'
     },
     {
       image: `${this.path}/kitagil.png`,
       title: 'kitagil',
-      description: 'Manejo de inventarios para empresas',
+      description: 'JOBS.TRABAJO2.DESCRIPCION',
       link: 'https://kitagil.com/'
     },
     {
       image: `${this.path}/asitur.png`,
       title: 'Asitur',
-      description: 'plataforma de venta de seguros a nivel Europeo',
+      description: 'JOBS.TRABAJO3.DESCRIPCION',
       link: 'https://www.loom.com/share/93cbe42dfade43259b31997aae6f8377',
       type:'video'
     },
     {
       image: `${this.path}/vuelos-sabre.png`,
       title: 'mochileros Vuelos',
-      description: 'Aplicacion para venta de vuelos. Integración con "sabre"',
+      description: 'JOBS.TRABAJO4.DESCRIPCION',
       link: 'https://www.loom.com/share/d3f3076ecac24c19b3574e6451cbd70f',
       type:'video'
     },
     {
       image: `${this.path}/visyon.png`,
       title: 'visyion 360',
-      description: 'Metaverso para autos cupra',
+      description: 'JOBS.TRABAJO5.DESCRIPCION',
       link: 'https://metahype-develop.visyonappsdev.com/landing'
     },
     {
       image: `${this.path}/task.png`,
       title: 'ahuam',
-      description: 'Administración de tareas para empresas',
+      description: 'JOBS.TRABAJO6.DESCRIPCION',
       link: 'https://leanga.ahuam.com/#/oauth/login'
     },
 

@@ -13,9 +13,10 @@
   <div class="content-view p-0">
     <div class="body-success">
       <h2 class="description-text">
-        !Genial! Juntos vamos a crear grandes cosas
+        {{ "SUCCESS.TITULO" | translate }}
       </h2>
-      <h4>tu mensaje ha sido enviado, en breve me pondre en contacto</h4>
+      <h4>
+        {{ "SUCCESS.DESCRIPCION" | translate }}</h4>
       <img
         class="image-send-message"
         src="../../../../assets/send-email.svg"
@@ -23,7 +24,7 @@
       />
       <div class="container-button">
         <button class="button btn-contact is-outlined" [routerLink]="['/']">
-          Continuar
+          {{ "SUCCESS.CONTINUAR" | translate }}
         </button>
       </div>
     </div>

@@ -8,7 +8,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TestimonyComponent implements OnInit {
 
-  @Input() public testimony: Testimony | null = null;
+  @Input() public testimony: Testimony = {
+    avatar: '',
+    description: '',
+    name: '',
+    id: 0,
+    profession: ''
+  };
   @Input() public checked: boolean = false;
 
   constructor() { }

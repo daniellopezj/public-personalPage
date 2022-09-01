@@ -13,16 +13,16 @@ export class RecomendationsComponent implements OnInit {
     {
       id: 0,
       avatar: `${this.path}/alexander.jpg`,
-      description: 'Conozco a Daniel hace más de cinco años, fui su profesor de programación y puedo dar fe de sus habilidades técnicas, sus excelentes habilidades en términos de trabajo en equipo, comunicación, solución de problemas y liderazgo, y su disciplina y dedicación al trabajo. Además he tenido la oportunidad de compartir con Daniel y se que es una persona confiable. Entonces considero que el puede ser una excelente incorporación para cualquier equipo de trabajo.',
+      description: 'RECOMMENDATIONS.TESTIMONIO1.DESCRIPCION',
       name: 'Alexander Castro',
-      profession: 'Ingeniero de Software'
+      profession: 'RECOMMENDATIONS.TESTIMONIO1.PROFESION'
     },
     {
       id: 1,
       avatar: `${this.path}/leifer.jpg`,
-      description: 'Daniel es un excelente desarrollador proactivo ante todo y siempre en busca de las mejores practicas, hemos participado y aun seguimos en desarrollo conjunto de plataformas que cuentan con un excelente rendimiento en tecnologías modernas.',
+      description: 'RECOMMENDATIONS.TESTIMONIO2.DESCRIPCION',
       name: 'Leifer Mendez',
-      profession: 'Desarrollador de Software, creador de contenido'
+      profession: 'RECOMMENDATIONS.TESTIMONIO2.PROFESION'
     },
   ]
   private currentIndex = 0

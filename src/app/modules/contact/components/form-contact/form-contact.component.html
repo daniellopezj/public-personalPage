@@ -1,9 +1,9 @@
-<div class="content-view p-0" >
+<div class="content-view p-0">
   <div class="container-form">
     <form [formGroup]="formContact">
       <div class="row">
         <div class="col-6 input-container">
-          <label for="name">Nombre</label>
+          <label for="name">{{ "FORM_CONTACT.NOMBRE" | translate }}</label>
           <input
             type="text"
             class="form-control"
@@ -17,7 +17,7 @@
           ></app-validate-control>
         </div>
         <div class="col-6 input-container">
-          <label for="email">Email</label>
+          <label for="email">{{ "FORM_CONTACT.EMAIL" | translate }}</label>
           <input
             formControlName="email"
             type="text"
@@ -33,7 +33,7 @@
       </div>
       <div class="row">
         <div class="col-12 input-container">
-          <label for="message">Mensaje</label>
+          <label for="message">{{ "FORM_CONTACT.MENSAJE" | translate }}</label>
           <textarea
             formControlName="message"
             class="form-control"
@@ -58,11 +58,9 @@
             appLoadingBtn
             [loadingFlag]="sending"
             [disabled]="sending"
-            [textInitial]="'Enviar'"
-            [textLoading]="'Enviando'"
-          >
-
-          </button>
+            [textInitial]="'FORM_CONTACT.ENVIAR' | translate"
+            [textLoading]="'FORM_CONTACT.ENVIANDO' | translate"
+          ></button>
         </div>
       </div>
     </div>

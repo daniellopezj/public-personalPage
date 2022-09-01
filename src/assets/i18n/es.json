@@ -15,34 +15,112 @@
     "DESCRIPCION": "Desde que comence en el mundo del desarrollo he participado en grandes proyectos por mas de 3 años, he trabajado de forma remota para agencias de diferentes paises y he tenido la oportunidad de encontrar personas talentosas que han contribuido a mi crecimiento profesional. me destaco por mi disciplina y mi compromiso con el aprendizaje continuo, busco mejorar dia a dia. Me encanta lo que hago."
   },
   "SKILLS": {
-    "ITEM1":{
+    "ITEM1": {
       "TITULO1": "Desarrollador Frontend",
       "DESCRIPCION1": "Me gusta codificar desde cero y poder construir grandes soluciones para cualquier persona en el mundo",
       "SUBTITULO1": "Disfruto desarrollar:",
       "SUBTITULO2": "especialidades"
     },
-    "ITEM2":{
+    "ITEM2": {
       "TITULO1": "Desarrollador Backend",
       "DESCRIPCION1": "Valoro la elaboración de codigo pensando en su mantenibilidad y aplicando patrones de diseño.",
       "SUBTITULO1": "me gusta pensar en:",
       "DESCRIPCION2": "Seguridad, escalabilidad, disponibilidad.",
       "SUBTITULO2": "especialidades"
     },
-    "ITEM3":{
+    "ITEM3": {
       "TITULO1": "Calidez Humana",
       "DESCRIPCION1": "Para crecer en el mundo del desarrollo ademas de los conocimientos tecnicos es importante la calidad humana.",
       "SUBTITULO1": "Me identifico con:",
       "DESCRIPCION2": "disciplina, empatia, compromiso.",
       "SUBTITULO2": "habilidades generales:",
-      "HERRAMIENTA1":"Respeto por los demas",
-      "HERRAMIENTA2":"Deseo de aprender",
-      "HERRAMIENTA3":"Buena comunicación",
-      "HERRAMIENTA4":"Gestión del tiempo",
-      "HERRAMIENTA5":"Inteligencia emocional",
-      "HERRAMIENTA6":"Adapatación al cambio",
-      "HERRAMIENTA7":"Empatia",
-      "HERRAMIENTA8":"Innovación",
-      "HERRAMIENTA9":"Liderazgo"
+      "HERRAMIENTA1": "Respeto por los demas",
+      "HERRAMIENTA2": "Deseo de aprender",
+      "HERRAMIENTA3": "Buena comunicación",
+      "HERRAMIENTA4": "Gestión del tiempo",
+      "HERRAMIENTA5": "Inteligencia emocional",
+      "HERRAMIENTA6": "Adapatación al cambio",
+      "HERRAMIENTA7": "Empatia",
+      "HERRAMIENTA8": "Innovación",
+      "HERRAMIENTA9": "Liderazgo"
     }
+  },
+  "JOBS": {
+    "TITULO": "Mi trabajo reciente",
+    "DESCRIPCION": "Aqui hay algunos proyectos de desarrollo en los que he trabajado ¿Quieres ver más?",
+    "CLICK": "click aquí",
+    "VER_VIDEO": "Ver video",
+    "VISITAR_WEB": "Visitar sitio web",
+    "TRABAJO1": {
+      "DESCRIPCION": "Plataforma de venta de tours a nivel mundial"
+    },
+    "TRABAJO2": {
+      "DESCRIPCION": "Manejo de inventarios para empresas"
+    },
+    "TRABAJO3": {
+      "DESCRIPCION": "Plataforma de venta de seguros a nivel Europeo"
+    },
+    "TRABAJO4": {
+      "DESCRIPCION": "Aplicacion para venta de vuelos. Integración con 'sabre'"
+    },
+    "TRABAJO5": {
+      "DESCRIPCION": "Metaverso para autos cupra"
+    },
+    "TRABAJO6": {
+      "DESCRIPCION": "Administración de tareas para empresas"
+    }
+  },
+  "COLLABORATIONS": {
+    "TITULO": "Estoy orgulloso de haber colaborado con algunas compañías increíbles.",
+    "SUBTITULO": " ¿Interesada en colaborar conmigo?",
+    "DESCRIPCION": "Siempre estoy abierto a conversar sobre nuevos proyectos de desarrollo u oportunidades de asociación.",
+    "INICIAR_CONVERSACION": "Iniciar una conversación"
+  },
+  "RECOMMENDATIONS": {
+    "TITULO": "Testimonios",
+    "DESCRIPCION": " Las personas con las que he trabajado han dicho algunas cosas bonitas...",
+    "TESTIMONIO1": {
+      "DESCRIPCION": "Conozco a Daniel hace más de cinco años, fui su profesor de programación y puedo dar fe de sus habilidades técnicas, sus excelentes habilidades en términos de trabajo en equipo, comunicación, solución de problemas y liderazgo, y su disciplina y dedicación al trabajo. Además he tenido la oportunidad de compartir con Daniel y se que es una persona confiable. Entonces considero que el puede ser una excelente incorporación para cualquier equipo de trabajo.",
+      "PROFESION": "Ingeniero de Software"
+    },
+    "TESTIMONIO2": {
+      "DESCRIPCION": "Daniel es un excelente desarrollador proactivo ante todo y siempre en busca de las mejores practicas, hemos participado y aun seguimos en desarrollo conjunto de plataformas que cuentan con un excelente rendimiento en tecnologías modernas.",
+      "PROFESION": "Desarrollador de Software, creador de contenido"
+    }
+  },
+  "FOOTER": {
+    "INICIAR_PROYECTO": "Iniciar un proyecto",
+    "ENCONTRARNOS": "¿Interesado en trabajar juntos? Deberíamos reunirnos y conversar. Yo compro el café.",
+    "HAGAMOSLO": "Hagámoslo",
+    "MOTIVACION": "Viviendo, aprendiendo y mejorando día a día.",
+    "CREADO_POR": "creado por mí",
+    "CREADO_CON": "Hecho con"
+  },
+  "HEADER_CONTACT": {
+    "TITULO": "Gracias por tomar el tiempo para comunicarte. ¿Cómo puedo ayudarte hoy?"
+  },
+  "FORM_CONTACT": {
+    "NOMBRE": "Nombre",
+    "EMAIL": "Email",
+    "MENSAJE": "Mensaje",
+    "ENVIAR": "Enviar",
+    "ENVIANDO": "Enviando"
+  },
+  "VALIDATIONS": {
+    "NOMBRE_REQUERIDO": "Nombre es requerido",
+    "EMAIL_REQUERIDO": "Email es requerido",
+    "EMAIL_INVALIDO": "Email no es valido 'example@example.com'",
+    "MENSAJE_REQUERIDO": "El mensaje es requerido",
+    "MENSAJE_LONGITUD_MINIMA": "El mensaje debe contener minimo 30 caracteres",
+    "MENSAJE_LONGITUD_MAXIMA": "El mensaje debe contener maximo 500 caracteres"
+  },
+  "SUCCESS": {
+    "TITULO": "!Genial! Juntos vamos a crear grandes cosas",
+    "DESCRIPCION": "tu mensaje ha sido enviado, en breve me pondre en contacto",
+    "CONTINUAR": "Continuar"
+  },
+  "NOT_FOUND": {
+    "TITULO": "parece que estas perdido. ¿Quizás probar con una página diferente?",
+    "RETORNAR": "Volver al Inicio"
   }
 }
