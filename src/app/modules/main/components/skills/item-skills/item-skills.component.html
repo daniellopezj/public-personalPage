@@ -2,12 +2,12 @@
   <div class="container-icon">
     <fa-icon [icon]="skill.icon"></fa-icon>
   </div>
-  <h1>{{ skill.title }}</h1>
-  <span class="description">{{ skill.description }}</span>
-  <span class="title-property">{{ skill.titleLanguage }}</span>
-  <span class="item-language">{{ skill.itemsLanguage }}</span>
-  <span class="title-property">{{ skill.titleTools }}</span>
+  <h1>{{ skill.title | translate }}</h1>
+  <span class="description">{{ skill.description | translate }}</span>
+  <span class="title-property">{{ skill.titleLanguage | translate }}</span>
+  <span class="item-language">{{ skill.itemsLanguage | translate }}</span>
+  <span class="title-property">{{ skill.titleTools | translate }}</span>
   <div class="list-tools" *ngFor="let tool of skill.itemsTools">
-    <span class="item-tool">{{ tool }}</span>
+    <span class="item-tool">{{ tool | translate }}</span>
   </div>
 </div>

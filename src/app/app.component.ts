@@ -17,8 +17,8 @@ export class AppComponent {
     private sharedService: SharedService,
   ) {
     this.checkLanguage();
-    this.sharedService.changeLanguage.subscribe((res:any) => {
-      translate.setDefaultLang(res?.language);
+    this.sharedService.changeLanguage.subscribe((res: 'es' | 'en') => {
+      this.translate.setDefaultLang(res);
     });
   }
 
@@ -30,9 +30,10 @@ export class AppComponent {
         return
       }
       const initialLanguage = window.navigator.language.split('-')[0] || 'es';
+
       this.translate.setDefaultLang(initialLanguage.toLowerCase());
+      this.translate.use(initialLanguage.toLowerCase());
       this.cookieService.set('languageSelect', initialLanguage, 4);
-      this.translate.setDefaultLang('en');
     } else {
       this.translate.setDefaultLang('es');
     }

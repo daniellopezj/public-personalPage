@@ -12,6 +12,7 @@ import {
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
+import { TranslateService } from '@ngx-translate/core';
 
 type typeLanguage = {
   value: 'es' | 'en'
@@ -44,19 +45,19 @@ export class HeaderComponent implements OnInit {
   public languages: typeLanguage[] = [
     {
       value: 'en',
-      text: 'Ingles',
+      text: 'GENERAL.IDIOMA_INGLES',
       flag: 'flag-EN'
     },
     {
       value: 'es',
-      text: 'Español',
+      text: 'GENERAL.IDIOMA_ESPANOL',
       flag: 'flag-ES'
     }
   ]
 
   public selectLanguage: typeLanguage = {
     value: 'en',
-    text: 'Ingles',
+    text: 'GENERAL.IDIOMA_ESPANOL',
     flag: 'flag-EN'
   }
 
@@ -81,7 +82,6 @@ export class HeaderComponent implements OnInit {
 
   changeLanguage(language: 'es' | 'en') {
     this.sharedService.setLanguage(language)
-
   }
 
 }

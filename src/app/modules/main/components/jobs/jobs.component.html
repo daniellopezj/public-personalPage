@@ -1,13 +1,17 @@
 <section #collaborations class="container-main-view">
   <div class="content-view content-collaborations">
     <div class="main-text">
-      <h2 class="title">Mi trabajo reciente</h2>
-      <span class="description"
-        >Aqui hay algunos proyectos de desarrollo en los que he trabajado
-        ¿Quieres ver más?
-        <a class="link-github" href="https://github.com/daniellopezj01" target="_blank">
-          click aqui</a
+      <h2 class="title">{{ "JOBS.TITULO" | translate }}</h2>
+      <span class="description">
+        {{ "JOBS.DESCRIPCION" | translate }}
+
+        <a
+          class="link-github"
+          href="https://github.com/daniellopezj01"
+          target="_blank"
         >
+          {{ "JOBS.CLICK" | translate }}
+        </a>
       </span>
     </div>
     <div class="container-jobs">
@@ -15,10 +19,14 @@
         <figure class="custom-figure">
           <img class="job-image" [src]="job.image" alt="logo" />
           <figcaption class="figcaption">
-            <h3 >{{ job.title }}</h3>
-            <h4 class="job-description">{{ job.description }}</h4>
+            <h3>{{ job.title | translate }}</h3>
+            <h4 class="job-description">{{ job.description | translate }}</h4>
             <a [href]="job.link" target="_blank" class="go-to-website">
-             {{job.type === 'video'?  'View video ':'Visit Website'}}
+              {{
+                job.type === "video"
+                  ? ("JOBS.VER_VIDEO" | translate)
+                  : ("JOBS.VISITAR_WEB" | translate)
+              }}
               <fa-icon class="icon-angle-right" [icon]="faAngleRight"></fa-icon
             ></a>
           </figcaption>

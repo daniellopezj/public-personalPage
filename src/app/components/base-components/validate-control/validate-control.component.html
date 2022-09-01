@@ -1,11 +1,18 @@
-<div
-  *ngIf="control?.invalid && control?.dirty "
-  class="alert alert-danger"
->
-<span></span>
-  <div *ngIf="control?.errors?.['required']">{{ getMessage("required") }}</div>
-  <div *ngIf="control?.errors?.['email']">{{ getMessage("email") }}</div>
-  <div *ngIf="control?.errors?.['minlength']">{{ getMessage("minlength") }}</div>
-  <div *ngIf="control?.errors?.['maxlength']">{{ getMessage("maxlength") }}</div>
-  <div *ngIf="control?.errors?.['pattern']">{{ getMessage("pattern") }}</div>
+<div *ngIf="control?.invalid && control?.dirty" class="alert alert-danger">
+  <span></span>
+  <div *ngIf="control?.errors?.['required']">
+    {{ getMessage("required") | translate }}
+  </div>
+  <div *ngIf="control?.errors?.['email']">
+    {{ getMessage("email") | translate }}
+  </div>
+  <div *ngIf="control?.errors?.['minlength']">
+    {{ getMessage("minlength") | translate }}
+  </div>
+  <div *ngIf="control?.errors?.['maxlength']">
+    {{ getMessage("maxlength") | translate }}
+  </div>
+  <div *ngIf="control?.errors?.['pattern']">
+    {{ getMessage("pattern") | translate }}
+  </div>
 </div>

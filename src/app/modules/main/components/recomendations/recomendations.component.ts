@@ -8,34 +8,21 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 })
 export class RecomendationsComponent implements OnInit {
   @ViewChild('testimonyComponent') testimonyComponent: ElementRef | undefined;
+  private path = '../../../../../assets/reviews'
   public testimonies: Testimony[] = [
     {
       id: 0,
-      avatar: 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Timisoara_-_Regional_Business_Centre.jpg',
-      description: 'Matt was a real pleasure to work with and we look forward to working with him again. He’s definitely the kind of designer you can trust with a project from start to finish.',
-      name: 'Pascal Tremblay',
-      profession: 'Creative Lead, Good Kind'
+      avatar: `${this.path}/alexander.jpg`,
+      description: 'RECOMMENDATIONS.TESTIMONIO1.DESCRIPCION',
+      name: 'Alexander Castro',
+      profession: 'RECOMMENDATIONS.TESTIMONIO1.PROFESION'
     },
     {
       id: 1,
-      avatar: 'https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg',
-      description: 'Matt was a real pleasure to work with and we look forward to working with him again. He’s definitely the kind of designer you can trust with a project from start to finish.',
-      name: 'Pascal Tremblay',
-      profession: 'Creative Lead, Good Kind'
-    },
-    {
-      id: 2,
-      avatar: 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Timisoara_-_Regional_Business_Centre.jpg',
-      description: 'Matt was a real pleasure to work with and we look forward to working with him again. He’s definitely the kind of designer you can trust with a project from start to finish.',
-      name: 'Pascal Tremblay',
-      profession: 'Creative Lead, Good Kind'
-    },
-    {
-      id: 3,
-      avatar: 'https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg',
-      description: 'Matt was a real pleasure to work with and we look forward to working with him again. He’s definitely the kind of designer you can trust with a project from start to finish.',
-      name: 'Pascal Tremblay',
-      profession: 'Creative Lead, Good Kind'
+      avatar: `${this.path}/leifer.jpg`,
+      description: 'RECOMMENDATIONS.TESTIMONIO2.DESCRIPCION',
+      name: 'Leifer Mendez',
+      profession: 'RECOMMENDATIONS.TESTIMONIO2.PROFESION'
     },
   ]
   private currentIndex = 0

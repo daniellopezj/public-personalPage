@@ -1,7 +1,7 @@
 import { Skill } from '@/types/general.types';
 import { Component, OnInit } from '@angular/core';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import {  faPersonCircleCheck, faGears, faChalkboard} from '@fortawesome/free-solid-svg-icons';
+import { faPersonCircleCheck, faGears, faChalkboard } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
@@ -11,30 +11,30 @@ export class SkillsComponent implements OnInit {
   public skills: Skill[] = [
     {
       icon: faChalkboard,
-      title: 'Frontend Developer',
-      description: 'Me gusta codificar desde cero y poder construir grandes soluciones para cualquier persona en el mundo',
-      titleLanguage: 'Disfruto desarrollar:',
+      title: 'SKILLS.ITEM1.TITULO1',
+      description: 'SKILLS.ITEM1.DESCRIPCION1',
+      titleLanguage: 'SKILLS.ITEM1.SUBTITULO1',
       itemsLanguage: 'typeScript, JavaScript, Web Application',
-      titleTools: 'especialidades',
+      titleTools: 'SKILLS.ITEM1.SUBTITULO2',
       itemsTools: ['Angular/React/Vue', 'Cypress', 'Pinia', 'Redux', 'Rxjs', 'Html/css', 'Sass/less', 'Responsive design', 'Git'],
     },
     {
       icon: faGears,
-      title: 'Backend Developer',
-      description: 'Valoro la elaboración de codigo pensando en su mantenibilidad y aplicando patrones de diseño.',
-      titleLanguage: 'me gusta pensar en:',
-      itemsLanguage: 'Seguridad, escalabilidad, disponibilidad.',
-      titleTools: 'Especialidades',
+      title: 'SKILLS.ITEM2.TITULO1',
+      description: 'SKILLS.ITEM2.DESCRIPCION1',
+      titleLanguage: 'SKILLS.ITEM2.SUBTITULO1',
+      itemsLanguage: 'SKILLS.ITEM2.DESCRIPCION2',
+      titleTools: 'SKILLS.ITEM2.SUBTITULO2',
       itemsTools: ['Node js', 'Express', 'AWS', 'Mongo db', 'Mysql', 'Jest', 'Mocha', 'WebSocket', 'Microservicios'],
     },
     {
       icon: faPersonCircleCheck,
-      title: 'Calidez Humana',
-      description: 'Para crecer en el mundo del desarrollo ademas de los conocimientos tecnicos es importante la calidad humana.',
-      titleLanguage: 'Con que me identifico:',
-      itemsLanguage: 'disciplina, empatia, compromiso',
-      titleTools: 'habilidades generales:',
-      itemsTools: ['Respeto por los demas', 'Deseo de aprender', 'Buena comunicación', 'Gestión del tiempo', 'Inteligencia emocional', 'Adapatación al cambio', 'Empatia', 'Innovación', 'Liderazgo'],
+      title: 'SKILLS.ITEM3.TITULO1',
+      description: 'SKILLS.ITEM3.DESCRIPCION1',
+      titleLanguage: 'SKILLS.ITEM3.SUBTITULO1',
+      itemsLanguage: 'SKILLS.ITEM3.DESCRIPCION2',
+      titleTools: 'SKILLS.ITEM3.SUBTITULO2',
+      itemsTools: ['SKILLS.ITEM3.HERRAMIENTA1','SKILLS.ITEM3.HERRAMIENTA2','SKILLS.ITEM3.HERRAMIENTA3','SKILLS.ITEM3.HERRAMIENTA4','SKILLS.ITEM3.HERRAMIENTA5','SKILLS.ITEM3.HERRAMIENTA6','SKILLS.ITEM3.HERRAMIENTA7','SKILLS.ITEM3.HERRAMIENTA8','SKILLS.ITEM3.HERRAMIENTA9',],
     }
   ]
   constructor() { }

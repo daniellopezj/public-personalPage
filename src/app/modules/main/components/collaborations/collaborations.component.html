@@ -1,32 +1,40 @@
 <section #collaborations class="container-main-view">
   <div class="content-view content-collaborations">
     <div class="main-text">
-      <h1 class="title">
-        I'm proud to have collaborated with some awesome companies:
-      </h1>
+      <h2 class="title">
+        {{ "COLLABORATIONS.TITULO" | translate }}
+      </h2>
     </div>
     <div class="container-companies">
-      <img
+      <a
         *ngFor="let company of companies; let i = index"
-        class="custom-logo"
-        [src]="company.logo"
-        alt="logo"
-      />
+        [href]="company.link"
+        target="_blank"
+      >
+        <img
+          class="custom-logo"
+          [src]="company.logo"
+          alt="logo"
+          href="https://www.google.com/"
+        />
+      </a>
     </div>
   </div>
 </section>
 
 <div class="container-main-view collaborate-container">
   <div class="content-view">
-    <h2>Interested in collaborating with me?</h2>
-    <span class="description"
-      >I’m always open to discussing product design work or partnership
-      opportunities.</span
-    >
+    <h2>
+      {{ "COLLABORATIONS.SUBTITULO" | translate }}
+    </h2>
+    <span class="description">
+      {{ "COLLABORATIONS.DESCRIPCION" | translate }}
+    </span>
     <div class="container-button">
       <button class="button btn-contact is-outlined">
-        <fa-icon  [icon]="faMessage" class="icon-message"></fa-icon>
-        Start a conversation
+        <fa-icon [icon]="faMessage" class="icon-message"></fa-icon>
+        {{ "COLLABORATIONS.INICIAR_CONVERSACION" | translate }}
+
       </button>
     </div>
   </div>

@@ -2,31 +2,42 @@
   <div class="section">
     <div class="container-start-project">
       <div class="start-project">
-        <h1 class="item-start-project title-start-project">Start a project</h1>
-        <span class="item-start-project"
-          >Interested in working together? We should queue up a chat. I’ll buy
-          the coffee.</span
-        >
+        <h1 class="item-start-project title-start-project">
+          {{ "FOOTER.INICIAR_PROYECTO" | translate }}
+        </h1>
+        <span class="item-start-project">
+          {{ "FOOTER.ENCONTRARNOS" | translate }}
+        </span>
         <div class="item-start-project">
-          <button class="button btn-contact is-outlined">Let's do this</button>
+          <button class="button btn-contact is-outlined">
+            {{ "FOOTER.HAGAMOSLO" | translate }}
+          </button>
         </div>
       </div>
     </div>
   </div>
   <footer class="section-footer">
     <div class="container-info-footer">
-        <img class="custom-logo" src="../../../../../assets/logo-inverse.png" alt="logo">
+      <img
+        class="custom-logo"
+        src="../../../../../assets/logo-inverse.png"
+        alt="logo"
+      />
       <div class="motivation-text">
-        <h1>Living, learning, & leveling up one day at a time.</h1>
+        <h1>
+          {{ "FOOTER.MOTIVACION" | translate }}
+        </h1>
       </div>
       <div class="controls">
         <div class="item-link" *ngFor="let item of controls">
           <fa-icon [icon]="item.icon"></fa-icon>
         </div>
       </div>
-      <div class="copy-right">Handcrafted by Me &copy; 2022</div>
       <div class="copy-right">
-        <span class="small-text"> Made with </span>
+        {{ "FOOTER.CREADO_POR" | translate }} &copy; 2022
+      </div>
+      <div class="copy-right">
+        <span class="small-text"> {{ "FOOTER.CREADO_CON" | translate }} </span>
         <span class="bold"> Angular</span>
       </div>
     </div>
