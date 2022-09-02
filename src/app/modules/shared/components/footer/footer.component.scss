@@ -33,7 +33,7 @@
   align-items: center;
 }
 
-.custom-logo{
+.custom-logo {
   height: 60px;
 }
 
@@ -109,4 +109,20 @@
 
 .bold {
   font-weight: bold;
+}
+
+//phone
+@media print, screen and (max-width: $max-screen-phone) {
+  .start-project {
+    flex-direction: column;
+  }
+}
+
+//tablet
+@media print,
+  screen and (max-width: $min-screen-tablet) and (min-width: $max-screen-tablet) {
+}
+
+//desktop
+@media print, screen and (min-width: $min-screen-desktop) {
 }
