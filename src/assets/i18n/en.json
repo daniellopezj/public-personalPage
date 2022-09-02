@@ -1,3 +1,126 @@
 {
-
+  "GENERAL": {
+    "IDIOMA_INGLES": "English",
+    "IDIOMA_ESPANOL": "Spanish"
+  },
+  "HEADER": {
+    "DECIR_HOLA": "Say Hello"
+  },
+  "MAIN_VIEW": {
+    "TITULO": "Software developer and freelancer",
+    "DESCRIPCION": "Lover of new challenges, always looking for the best solution."
+  },
+  "ABOUT_ME": {
+    "TITULO": "Hi, I'm Daniel. Pleased to meet you.",
+    "DESCRIPCION": "Since I started in the world of development I have participated in large projects for more than 3 years, I have worked remotely for agencies from different countries and I have had the opportunity to meet talented people who have contributed to my professional growth. I stand out for my discipline and my commitment to continuous learning, I seek to improve day by day. I love what I do."
+  },
+  "SKILLS": {
+    "ITEM1": {
+      "TITULO1": "Frontend Developer",
+      "DESCRIPCION1": "I like to code from scratch and be able to build great solutions for anyone in the world",
+      "SUBTITULO1": "I enjoy developing:",
+      "SUBTITULO2": "Specialties"
+    },
+    "ITEM2": {
+      "TITULO1": "Backend Developer",
+      "DESCRIPCION1": "I value the elaboration of code considering its maintainability and applying design patterns.",
+      "SUBTITULO1": "I like to think of:",
+      "DESCRIPCION2": "Security, scalability, availability.",
+      "SUBTITULO2": "Specialties"
+    },
+    "ITEM3": {
+      "TITULO1": "Human warmth",
+      "DESCRIPCION1": "To grow in the world of development, in addition to technical knowledge, human quality is important.",
+      "SUBTITULO1": "I identify with:",
+      "DESCRIPCION2": "Discipline, empathy, commitment.",
+      "SUBTITULO2": "General skills::",
+      "HERRAMIENTA1": "Respeto por los demas",
+      "HERRAMIENTA2": "Respect for others",
+      "HERRAMIENTA3": "Good communication",
+      "HERRAMIENTA4": "Time management",
+      "HERRAMIENTA5": "Emotional intelligence",
+      "HERRAMIENTA6": "Adaptation to change",
+      "HERRAMIENTA7": "Empathy",
+      "HERRAMIENTA8": "Innovation",
+      "HERRAMIENTA9": "Leadership"
+    }
+  },
+  "JOBS": {
+    "TITULO": "My recent work",
+    "DESCRIPCION": "Here are some development projects I've worked on. Want to see more?",
+    "CLICK": "click here",
+    "VER_VIDEO": "Watch video",
+    "VISITAR_WEB": "Visit website",
+    "TRABAJO1": {
+      "DESCRIPCION": "Worldwide tour sales platform"
+    },
+    "TRABAJO2": {
+      "DESCRIPCION": "Inventory management for companies"
+    },
+    "TRABAJO3": {
+      "DESCRIPCION": "Insurance sales platform at European level"
+    },
+    "TRABAJO4": {
+      "DESCRIPCION": "Application for sale of flights. Integration with 'sabre'"
+    },
+    "TRABAJO5": {
+      "DESCRIPCION": "Metaverse for cupra cars"
+    },
+    "TRABAJO6": {
+      "DESCRIPCION": "Business task management"
+    }
+  },
+  "COLLABORATIONS": {
+    "TITULO": "I'm proud to have collaborated with some amazing companies.",
+    "SUBTITULO": "Interested in collaborating with me?",
+    "DESCRIPCION": "I am always open to discuss new development projects or partnership opportunities.",
+    "INICIAR_CONVERSACION": "Start a conversation"
+  },
+  "RECOMMENDATIONS": {
+    "TITULO": "Testimonials",
+    "DESCRIPCION": "People I've worked with have said some nice things...",
+    "TESTIMONIO1": {
+      "DESCRIPCION": "I have known Daniel for more than five years, I was his programming teacher and I can attest to his technical skills, his excellent skills in terms of teamwork, communication, problem solving and leadership, and his discipline and dedication to work. I have also had the opportunity to share with Daniel and I know that he is a reliable person. So I think he can be an excellent addition to any work team.",
+      "PROFESION": "Software engineer"
+    },
+    "TESTIMONIO2": {
+      "DESCRIPCION": "Daniel is an excellent proactive developer above all else and always looking for the best practices, we have participated and still continue in the joint development of platforms that have excellent performance in modern technologies.",
+      "PROFESION": "Software developer, content creator"
+    }
+  },
+  "FOOTER": {
+    "INICIAR_PROYECTO": "Start a project",
+    "ENCONTRARNOS": "Interested in working together? We should meet and talk. I buy the coffee.",
+    "HAGAMOSLO": "let's do this",
+    "MOTIVACION": "Living, learning and improving day by day.",
+    "CREADO_POR": "created by me",
+    "CREADO_CON": "Made with"
+  },
+  "HEADER_CONTACT": {
+    "TITULO": "Thank you for taking the time to communicate. How can I help you today?"
+  },
+  "FORM_CONTACT": {
+    "NOMBRE": "Name",
+    "EMAIL": "Email",
+    "MENSAJE": "Message",
+    "ENVIAR": "Send",
+    "ENVIANDO": "Sending"
+  },
+  "VALIDATIONS": {
+    "NOMBRE_REQUERIDO": "Name is required",
+    "EMAIL_REQUERIDO": "Email is required",
+    "EMAIL_INVALIDO": "Email is not valid 'example@example.com'",
+    "MENSAJE_REQUERIDO": "The message is required",
+    "MENSAJE_LONGITUD_MINIMA": "The message must contain at least 30 character",
+    "MENSAJE_LONGITUD_MAXIMA": "The message must contain a maximum of 500 characters"
+  },
+  "SUCCESS": {
+    "TITULO": "!Cool! Together we will create great things",
+    "DESCRIPCION": "Your message has been sent, I will contact you shortly",
+    "CONTINUAR": "Continue"
+  },
+  "NOT_FOUND": {
+    "TITULO": "It seems that you are lost. Maybe try a different page?",
+    "RETORNAR": "Return home"
+  }
 }
