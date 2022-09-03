@@ -52,3 +52,20 @@ textarea {
   max-width: $big-max-width;
   padding-bottom: 0;
 }
+
+
+//phone
+@media print, screen and (max-width: $max-screen-phone) {
+  .content-view {
+    padding: 0.5rem;
+  }
+}
+
+//tablet
+@media print,
+  screen and (max-width: $min-screen-tablet) and (min-width: $max-screen-tablet) {
+}
+
+//desktop
+@media print, screen and (min-width: $min-screen-desktop) {
+}

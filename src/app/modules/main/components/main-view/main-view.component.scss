@@ -43,3 +43,26 @@
 .setup {
   height: 270px;
 }
+
+//phone
+@media print, screen and (max-width: $max-screen-phone) {
+  .setup {
+    width: 100%;
+    height: auto;
+  }
+  .around-image {
+    height: 160px;
+  }
+  .custom-logo {
+    height: 160px;
+  }
+}
+
+//tablet
+@media print,
+  screen and (max-width: $min-screen-tablet) and (min-width: $max-screen-tablet) {
+}
+
+//desktop
+@media print, screen and (min-width: $min-screen-desktop) {
+}

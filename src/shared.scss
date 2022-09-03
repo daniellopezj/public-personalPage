@@ -3,10 +3,10 @@ $second-color: #5be9b9;
 $white-color: #ffffff;
 $big-max-width: 1200px;
 
-$max-screen-phone:740px;
-$min-screen-tablet:740px;
-$max-screen-tablet:1140px;
-$min-screen-desktop:600px;
+$max-screen-phone: 740px;
+$min-screen-tablet: 740px;
+$max-screen-tablet: 1140px;
+$min-screen-desktop: 600px;
 
 .w-100 {
   width: 100%;
@@ -49,4 +49,19 @@ textarea {
 :disabled {
   opacity: 0.5 !important;
   cursor: initial;
+}
+
+//phone
+@media print, screen and (max-width: $max-screen-phone) {
+  $big-max-width: 100%;
+
+}
+
+//tablet
+@media print,
+  screen and (max-width: $min-screen-tablet) and (min-width: $max-screen-tablet) {
+}
+
+//desktop
+@media print, screen and (min-width: $min-screen-desktop) {
 }

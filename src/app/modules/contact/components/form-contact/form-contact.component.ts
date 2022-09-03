@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { environment } from '@/environments/environment';
 import { validationMessage } from '@/types/general.types';
 import { Component, OnInit } from '@angular/core';
@@ -55,6 +56,7 @@ export class FormContactComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
+    private router: Router
   ) {
     this.formContact = this.formBuilder.group({
       name: ['', [Validators.required]],
@@ -92,6 +94,7 @@ export class FormContactComponent implements OnInit {
       .then((result: EmailJSResponseStatus) => {
         console.log(result.text);
         this.sending = false
+        this.router.navigate(['success'])
       }, (error) => {
         this.sending = false
         console.log(error.text);
