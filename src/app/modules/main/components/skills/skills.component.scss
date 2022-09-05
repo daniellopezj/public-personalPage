@@ -13,17 +13,20 @@
 .box-content {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  max-height: 100%;
 }
 
 .item-type-skill {
-  flex-basis: 0;
-  flex-grow: 1;
+  flex: 1;
   display: flex;
   justify-content: center;
   border-right: 1px solid #e6ecf8;
   border-bottom: 1px solid #e6ecf8;
-  padding: 3.5rem 1.25rem;
+  padding: 5rem 3rem;
+  align-self: stretch;
+  height: max-content;
 }
 
 //phone
@@ -32,11 +35,24 @@
     width: 100%;
     flex-direction: column;
   }
+  .box-skills {
+    box-shadow: initial;
+    border-radius: 0;
+  }
+  .item-type-skill {
+    padding: 3rem !important;
+    margin-bottom: 1rem;
+    box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+
+  }
 }
 
 //tablet
 @media print,
-  screen and (max-width: $min-screen-tablet) and (min-width: $max-screen-tablet) {
+  screen and (min-width: $min-screen-tablet) and (max-width: $max-screen-tablet) {
+  .item-type-skill {
+    padding: 2.5rem 1rem !important;
+  }
 }
 
 //desktop

@@ -14,12 +14,16 @@
       </div>
     </div>
     <div class="controls">
-      <span
+      <div
+        class="container-dot"
         *ngFor="let item of testimonies; let i = index"
-        (click)="controlDot(i)"
-        class="dot"
-        [ngClass]="{ 'dot-active': activeDot === i }"
-      ></span>
+      >
+        <span
+          (click)="controlDot(i)"
+          class="dot"
+          [ngClass]="{ 'dot-active': activeDot === i }"
+        ></span>
+      </div>
     </div>
   </div>
 </section>

@@ -14,7 +14,7 @@
   flex-wrap: wrap;
 }
 
-a{
+a {
   display: flex;
   justify-content: inherit;
   flex-wrap: wrap;
@@ -86,4 +86,78 @@ a{
 
 .icon-message {
   margin-right: 8px;
+}
+
+//phone
+@media print, screen and (max-width: $max-screen-phone) {
+  .content-collaborations {
+    margin: 3rem auto;
+    padding-top: 2rem;
+  }
+  .title {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  .main-text {
+    margin: 0;
+    margin-bottom: 0;
+  }
+  .container-companies {
+    max-width: initial;
+  }
+  .custom-logo {
+    margin: 30px;
+    width: 125px;
+  }
+
+  .collaborate-with-me {
+    h2 {
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+  }
+  .description {
+    font-size: 1rem;
+    font-weight: initial;
+  }
+
+  .collaborate-container {
+    margin-top: 0;
+    padding-bottom: 0;
+    padding: 2rem 0;
+  }
+
+  .btn-contact {
+    font-size: 1rem;
+    padding: 0.6rem 30px;
+  }
+}
+
+//tablet
+@media print,
+  screen and (min-width: $min-screen-tablet) and (max-width: $max-screen-tablet) {
+  .content-collaborations {
+    margin: 3rem auto;
+    padding-top: 0;
+  }
+  .main-text {
+    margin: 0;
+  }
+  .description {
+    font-size: 1.1rem;
+    font-weight: initial;
+  }
+
+  .btn-contact {
+    font-size: 1.1rem;
+    padding: 0.7rem 35px;
+  }
+  .custom-logo {
+    margin: 30px;
+    width: 125px;
+  }
+}
+
+//desktop
+@media print, screen and (min-width: $min-screen-desktop) {
 }

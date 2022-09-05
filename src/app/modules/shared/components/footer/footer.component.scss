@@ -81,6 +81,8 @@
 
 .controls {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 2rem 0;
 }
 
@@ -113,14 +115,53 @@
 
 //phone
 @media print, screen and (max-width: $max-screen-phone) {
+  .container-start-project {
+    padding: 1.5rem 1.25rem;
+    margin-top: -7rem;
+  }
   .start-project {
     flex-direction: column;
+    span {
+      font-size: 0.9rem;
+    }
+
+    button {
+      font-size: 1rem;
+    }
+  }
+
+  .item-start-project {
+    margin-bottom: 1rem;
+  }
+  .title-start-project {
+    font-size: 1.3rem;
+  }
+  .custom-logo {
+    height: 50px;
+  }
+  .section {
+    padding: 3.5rem 1.5rem;
+  }
+  .motivation-text{
+    h1{
+      font-size: 1.3rem;
+    }
+  }
+  .item-link{
+    margin-bottom: 7px;
   }
 }
 
 //tablet
 @media print,
-  screen and (max-width: $min-screen-tablet) and (min-width: $max-screen-tablet) {
+  screen and (min-width: $min-screen-tablet) and (max-width: $max-screen-tablet) {
+  .main-text {
+    margin: 0;
+  }
+  .description {
+    font-size: 1.1rem;
+    font-weight: initial;
+  }
 }
 
 //desktop

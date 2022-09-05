@@ -59,11 +59,15 @@ textarea {
   .content-view {
     padding: 0.5rem;
   }
+  .container-main-view {
+    margin: 1rem 0;
+    width: 100%;
+  }
 }
 
 //tablet
 @media print,
-  screen and (max-width: $min-screen-tablet) and (min-width: $max-screen-tablet) {
+screen and (min-width: $min-screen-tablet) and ( max-width:$max-screen-tablet) {
 }
 
 //desktop

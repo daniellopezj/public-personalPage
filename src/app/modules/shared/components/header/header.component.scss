@@ -140,11 +140,25 @@
     width: auto;
     min-width: 90%;
   }
+
+  .custom-logo {
+    height: 40px;
+  }
+  .title {
+    font-size: 1.3rem;
+  }
+  .main-container {
+    padding-top: 0;
+  }
+  .custom-nav {
+    margin: 0;
+    padding: 0 0.5rem;
+  }
 }
 
 //tablet
 @media print,
-  screen and (max-width: $min-screen-tablet) and (min-width: $max-screen-tablet) {
+  screen and (min-width: $min-screen-tablet) and (max-width: $max-screen-tablet) {
 }
 
 //desktop
