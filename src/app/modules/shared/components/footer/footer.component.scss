@@ -142,12 +142,12 @@
   .section {
     padding: 3.5rem 1.5rem;
   }
-  .motivation-text{
-    h1{
+  .motivation-text {
+    h1 {
       font-size: 1.3rem;
     }
   }
-  .item-link{
+  .item-link {
     margin-bottom: 7px;
   }
 }
@@ -155,12 +155,20 @@
 //tablet
 @media print,
   screen and (min-width: $min-screen-tablet) and (max-width: $max-screen-tablet) {
-  .main-text {
-    margin: 0;
+  .title-start-project {
+    font-size: 1.5rem;
   }
-  .description {
-    font-size: 1.1rem;
-    font-weight: initial;
+  .start-project {
+    span {
+      font-size: 0.9rem;
+    }
+
+    button {
+      font-size: 1rem;
+    }
+  }
+  .container-start-project {
+    padding: 2.5rem 1.25rem;
   }
 }
 

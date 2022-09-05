@@ -2,7 +2,7 @@
   <div class="container-form">
     <form [formGroup]="formContact">
       <div class="row">
-        <div class="col-6 input-container">
+        <div class="col-6 col-sm-12 input-container">
           <label for="name">{{ "FORM_CONTACT.NOMBRE" | translate }}</label>
           <input
             type="text"
@@ -16,7 +16,7 @@
             [message]="inputValidate('name')"
           ></app-validate-control>
         </div>
-        <div class="col-6 input-container">
+        <div class="col-6 col-sm-12 input-container">
           <label for="email">{{ "FORM_CONTACT.EMAIL" | translate }}</label>
           <input
             formControlName="email"

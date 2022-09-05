@@ -43,13 +43,10 @@
   flex-direction: column;
 }
 
-
-.image-send-message{
+.image-send-message {
   margin: 2rem 0;
   max-width: 250px;
 }
-
-
 
 .container-button {
   display: flex;
@@ -75,4 +72,45 @@
   color: $base-color;
   background-color: white;
   transition: all 0.2s ease-in-out;
+}
+
+//phone
+@media print, screen and (max-width: $max-screen-phone) {
+  .custom-container {
+    margin-top: 2rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  .body-success {
+    max-width: 90%;
+    margin-top: 0rem;
+  }
+  .image-send-message {
+    max-width: 200px;
+    margin: 3rem 0 ;
+  }
+  h4 {
+    margin-top: 0;
+    font-weight: initial;
+  }
+  .container-button {
+    margin-top: 2rem;
+  }
+  .btn-contact {
+    padding: 0.8rem 60px;
+  }
+}
+
+//tablet
+@media print,
+  screen and (min-width: $min-screen-tablet) and (max-width: $max-screen-tablet) {
+  .body-success {
+    max-width: 70%;
+    margin-top: 0rem;
+  }
+}
+
+//desktop
+@media print, screen and (min-width: $min-screen-desktop) {
 }

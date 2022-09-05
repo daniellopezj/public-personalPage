@@ -54,7 +54,9 @@ textarea {
 //phone
 @media print, screen and (max-width: $max-screen-phone) {
   $big-max-width: 100%;
-
+  .col-sm-12 {
+    width: 100%;
+  }
 }
 
 //tablet

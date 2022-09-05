@@ -13,11 +13,9 @@
   width: 100%;
 }
 
-
 .custom-logo {
   cursor: pointer !important;
   height: 50px;
-
 }
 
 fa-icon {
@@ -64,4 +62,45 @@ fa-icon {
     font-size: 36px;
     font-weight: 100;
   }
+}
+
+//phone
+@media print, screen and (max-width: $max-screen-phone) {
+  .custom-container {
+    padding-top: 1rem;
+  }
+  .custom-nav {
+    width: 90%;
+    margin: auto;
+  }
+  .title-container {
+    max-width: 90%;
+    margin-top: 0;
+    h1 {
+      font-size: 1.3rem;
+    }
+  }
+  .container-last-section {
+    padding-bottom: 2rem;
+  }
+}
+
+//tablet
+@media print,
+  screen and (min-width: $min-screen-tablet) and (max-width: $max-screen-tablet) {
+  .custom-nav {
+    width: 90%;
+    margin: auto;
+  }
+  .title-container {
+    max-width: 70%;
+    margin-top: 0;
+    h1 {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+//desktop
+@media print, screen and (min-width: $min-screen-desktop) {
 }
