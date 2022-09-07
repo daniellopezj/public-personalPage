@@ -16,8 +16,6 @@
   box-sizing: border-box;
 }
 
-
-
 .container-button {
   display: flex;
   align-items: center;
@@ -42,4 +40,25 @@
   color: white;
   background-color: $base-color;
   transition: all 0.2s ease-in-out;
+}
+
+
+//phone
+@media print, screen and (max-width: $max-screen-phone) {
+  .container-form {
+    width: 90%;
+  }
+
+}
+
+//tablet
+@media print,
+  screen and (min-width: $min-screen-tablet) and ( max-width:$max-screen-tablet) {
+    .container-form {
+      width: 70%;
+    }
+}
+
+//desktop
+@media print, screen and (min-width: $min-screen-desktop) {
 }

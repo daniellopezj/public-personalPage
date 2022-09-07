@@ -3,16 +3,15 @@ import { IfStmt } from '@angular/compiler';
 import {
   Component,
   OnInit,
-
-  Inject,
-  PLATFORM_ID,
   HostListener,
   Input,
 } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
-import { Router } from '@angular/router';
+
 import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
-import { TranslateService } from '@ngx-translate/core';
+import { DeviceDetectorService } from 'ngx-device-detector';
+import {
+  faEllipsisVertical
+} from '@fortawesome/free-solid-svg-icons'
 
 type typeLanguage = {
   value: 'es' | 'en'
@@ -37,11 +36,12 @@ export class HeaderComponent implements OnInit {
       element.classList.remove('scroll-nav');
     }
   }
-  faAngleDown = faAngleDown
-  faAngleUp = faAngleUp
-
-
+  public faAngleDown = faAngleDown
+  public faAngleUp = faAngleUp
+  public faEllipsisVertical = faEllipsisVertical;
   public hoverLanguage = false
+  public showPopUp = false
+
   public languages: typeLanguage[] = [
     {
       value: 'en',
@@ -63,6 +63,7 @@ export class HeaderComponent implements OnInit {
 
   constructor(
     private sharedService: SharedService,
+    public deviceService: DeviceDetectorService,
   ) { }
 
   ngOnInit(): void {

@@ -4,6 +4,8 @@
     "IDIOMA_ESPANOL": "Spanish"
   },
   "HEADER": {
+    "IDIOMA":"Language",
+    "CONTACTO":"Contact",
     "DECIR_HOLA": "Say Hello"
   },
   "MAIN_VIEW": {

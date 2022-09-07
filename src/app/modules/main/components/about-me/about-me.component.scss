@@ -26,3 +26,43 @@
   font-weight: bold;
   margin-bottom: 1rem;
 }
+
+//phone
+@media print, screen and (max-width: $max-screen-phone) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 1rem !important;
+    font-weight: initial;
+  }
+  .container-about-me {
+    margin: 1.5rem 0;
+  }
+  .content-about-me {
+    max-width: 90%;
+    padding-top: 2rem;
+    padding-bottom: 60%;
+  }
+}
+
+//tablet
+@media print,
+  screen and (min-width: $min-screen-tablet) and (max-width: $max-screen-tablet) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 1.1rem !important;
+    font-weight: initial !important;
+  }
+  .content-about-me {
+    max-width: 80%;
+    padding-top: 0;
+    padding-bottom: 20%;
+  }
+}
+
+//desktop
+@media print, screen and (min-width: $min-screen-desktop) {
+}

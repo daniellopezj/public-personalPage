@@ -43,3 +43,38 @@
 .setup {
   height: 270px;
 }
+
+//phone
+@media print, screen and (max-width: $max-screen-phone) {
+  .setup {
+    width: 100%;
+    height: auto;
+  }
+  .around-image {
+    height: 160px;
+  }
+  .custom-logo {
+    height: 160px;
+  }
+  .title-work {
+    font-size: 1.5rem;
+  }
+  h2{
+    font-size: 0.9rem !important;
+  }
+}
+
+//tablet
+@media print,
+  screen and (min-width: $min-screen-tablet) and ( max-width:$max-screen-tablet) {
+  .title-work {
+    font-size: 1.8rem !important;
+  }
+  h2{
+    font-size: 1.1rem !important;
+  }
+}
+
+//desktop
+@media print, screen and (min-width: $min-screen-desktop) {
+}

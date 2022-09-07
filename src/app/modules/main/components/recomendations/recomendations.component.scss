@@ -9,7 +9,7 @@
   padding: 6rem 1.5rem;
 }
 
-.title{
+.title {
   font-size: 2rem;
   font-weight: bolder;
   margin: 0;
@@ -29,7 +29,7 @@
   justify-content: center;
 }
 
-.main-text{
+.main-text {
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -39,7 +39,6 @@
   font-size: 1.3rem;
   font-weight: initial;
 }
-
 
 .dot {
   cursor: pointer;
@@ -75,4 +74,41 @@
   100% {
     opacity: 1;
   }
+}
+
+//phone
+@media print, screen and (max-width: $max-screen-phone) {
+  .container-recomendations {
+    padding: 3rem 1.5rem;
+  }
+  .title {
+    font-size: 1.3rem !important;
+    font-weight: bold;
+  }
+  .description {
+    font-size: 1rem;
+    font-weight: initial;
+  }
+  .dot {
+    padding: 2px;
+  }
+  .container-dot {
+    padding: 10px;
+  }
+}
+
+//tablet
+@media print,
+  screen and (min-width: $min-screen-tablet) and (max-width: $max-screen-tablet) {
+  .main-text {
+    margin: 0;
+  }
+  .description {
+    font-size: 1.1rem;
+    font-weight: initial;
+  }
+}
+
+//desktop
+@media print, screen and (min-width: $min-screen-desktop) {
 }

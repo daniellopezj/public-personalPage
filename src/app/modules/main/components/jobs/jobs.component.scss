@@ -127,9 +127,46 @@ h3 {
   text-decoration: initial;
   color: #1a8cff;
   font-weight: 600;
+  white-space: break-spaces;
 }
 
 .link-github:hover {
   color: #0066cd;
   text-decoration: underline;
+}
+
+//phone
+@media print, screen and (max-width: $max-screen-phone) {
+  .content-collaborations {
+    margin: 3rem auto;
+    border-top: 0;
+  }
+  .title {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  .description {
+    font-size: 1rem;
+  }
+  .card-job {
+    width: 100%;
+  }
+}
+
+//tablet
+@media print,
+  screen and (min-width: $min-screen-tablet) and (max-width: $max-screen-tablet) {
+  .card-job {
+    width: 50%;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 1.1rem;
+  }
+}
+
+//desktop
+@media print, screen and (min-width: $min-screen-desktop) {
 }

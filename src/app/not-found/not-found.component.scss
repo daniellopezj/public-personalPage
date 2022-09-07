@@ -33,7 +33,7 @@
   border-top: 1px solid rgb(117, 16, 245, 0.2);
 }
 
-.body-success {
+.body-not-found {
   max-width: 60%;
   margin: auto;
   margin-top: 2rem;
@@ -43,13 +43,10 @@
   flex-direction: column;
 }
 
-
-.image-not-found{
+.image-not-found {
   margin: 2rem 0;
   max-width: 400px;
 }
-
-
 
 .container-button {
   display: flex;
@@ -75,4 +72,35 @@
   color: white;
   background-color: $base-color;
   transition: all 0.2s ease-in-out;
+}
+
+//phone
+@media print, screen and (max-width: $max-screen-phone) {
+  .image-not-found {
+    max-width: 60%;
+  }
+  .description-text{
+    font-size: 1.3rem;
+  }
+  .btn-contact {
+    padding: 0.6rem 55px;
+  }
+  .body-not-found {
+    max-width: 90%;
+  }
+}
+
+//tablet
+@media print,
+  screen and (min-width: $min-screen-tablet) and (max-width: $max-screen-tablet) {
+  .body-not-found {
+    max-width: 70%;
+  }
+  .description-text{
+    font-size: 1.5rem;
+  }
+}
+
+//desktop
+@media print, screen and (min-width: $min-screen-desktop) {
 }

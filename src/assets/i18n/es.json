@@ -4,6 +4,8 @@
     "IDIOMA_ESPANOL": "Español"
   },
   "HEADER": {
+    "IDIOMA":"Idioma",
+    "CONTACTO":"Contacto",
     "DECIR_HOLA": "Decir Hola"
   },
   "MAIN_VIEW": {
