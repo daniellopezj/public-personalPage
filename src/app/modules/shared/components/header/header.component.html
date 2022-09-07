@@ -52,7 +52,7 @@
       >
         <fa-icon class="custom-icon-pop-up" [icon]="faEllipsisVertical"></fa-icon>
         <div class="pop-up-container-small" *ngIf="showPopUp">
-            <span class="pop-up-title">Idioma</span>
+            <span class="pop-up-title">{{ "HEADER.IDIOMA" | translate }}</span>
             <div class="items-languages">
               <div
                 class="language"
@@ -66,7 +66,7 @@
                 <span class="text-language">{{ language.text | translate }}</span>
               </div>
             </div>
-            <span class="pop-up-title">contacto</span>
+            <span class="pop-up-title">{{ "HEADER.CONTACTO" | translate }}</span>
             <button class="button btn-contact is-outlined small-contact">
               {{ "HEADER.DECIR_HOLA" | translate }}
             </button>
