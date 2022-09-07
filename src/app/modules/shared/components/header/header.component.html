@@ -46,24 +46,30 @@
       <button
         name="managerMenu"
         (click)="showPopUp = !showPopUp"
+        (clickOutside)="showPopUp = false"
         aria-label="search"
         class="btn animated pop-up-button"
       >
-        <fa-icon [icon]="faEllipsisVertical"></fa-icon>
+        <fa-icon class="custom-icon-pop-up" [icon]="faEllipsisVertical"></fa-icon>
         <div class="pop-up-container-small" *ngIf="showPopUp">
-          <div class="items-languages">
-            <div
-              class="language"
-              (click)="changeLanguage(language.value)"
-              *ngFor="let language of languages"
-            >
-              <img
-                src="{{ '../../../../../assets/' + language.flag + '.png' }}"
-                alt=""
-              />
-              <span>{{ language.text | translate }}</span>
+            <span class="pop-up-title">Idioma</span>
+            <div class="items-languages">
+              <div
+                class="language"
+                (click)="changeLanguage(language.value)"
+                *ngFor="let language of languages"
+              >
+                <img
+                  src="{{ '../../../../../assets/' + language.flag + '.png' }}"
+                  alt=""
+                />
+                <span class="text-language">{{ language.text | translate }}</span>
+              </div>
             </div>
-          </div>
+            <span class="pop-up-title">contacto</span>
+            <button class="button btn-contact is-outlined small-contact">
+              {{ "HEADER.DECIR_HOLA" | translate }}
+            </button>
         </div>
       </button>
     </div>

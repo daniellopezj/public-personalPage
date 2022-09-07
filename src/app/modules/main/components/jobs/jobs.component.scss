@@ -156,6 +156,9 @@ h3 {
 //tablet
 @media print,
   screen and (min-width: $min-screen-tablet) and (max-width: $max-screen-tablet) {
+  .card-job {
+    width: 50%;
+  }
   .title {
     font-size: 1.5rem;
   }

@@ -7,12 +7,14 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ValidateControlComponent } from '@/app/components/base-components/validate-control/validate-control.component';
 import { LoadingBtnDirective } from './directives/loading-btn.directive';
 import { TranslateModule } from '@ngx-translate/core';
+import { ClickOutSideDirective } from './directives/click-out-side.directive';
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
     ValidateControlComponent,
     LoadingBtnDirective,
+    ClickOutSideDirective,
   ],
   imports: [
     CommonModule,
@@ -25,6 +27,7 @@ import { TranslateModule } from '@ngx-translate/core';
     FooterComponent,
     ValidateControlComponent,
     LoadingBtnDirective,
+    ClickOutSideDirective
   ]
 })
 export class SharedModule { }
