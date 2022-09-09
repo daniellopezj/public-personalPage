@@ -12,8 +12,8 @@
         alt="logo"
       />
       <div class="container-button">
-        <button class="button btn-contact is-outlined" [routerLink]="['/']">
-        {{ "NOT_FOUND.RETORNAR" | translate }}
+        <button class="button btn-contact is-outlined" (click)="goTo('')">
+          {{ "NOT_FOUND.RETORNAR" | translate }}
         </button>
       </div>
     </div>

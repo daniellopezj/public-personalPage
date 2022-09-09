@@ -9,7 +9,10 @@
           {{ "FOOTER.ENCONTRARNOS" | translate }}
         </span>
         <div class="item-start-project">
-          <button class="button btn-contact is-outlined">
+          <button
+            class="button btn-contact is-outlined"
+            (click)="goTo('contact')"
+          >
             {{ "FOOTER.HAGAMOSLO" | translate }}
           </button>
         </div>
@@ -29,9 +32,14 @@
         </h1>
       </div>
       <div class="controls">
-        <div class="item-link" *ngFor="let item of controls">
+        <a
+          class="item-link"
+          *ngFor="let item of controls"
+          [href]="item.link"
+          target="_blank"
+        >
           <fa-icon [icon]="item.icon"></fa-icon>
-        </div>
+        </a>
       </div>
       <div class="copy-right">
         {{ "FOOTER.CREADO_POR" | translate }} &copy; 2022

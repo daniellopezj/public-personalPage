@@ -12,6 +12,7 @@ import { DeviceDetectorService } from 'ngx-device-detector';
 import {
   faEllipsisVertical
 } from '@fortawesome/free-solid-svg-icons'
+import { Router } from '@angular/router';
 
 type typeLanguage = {
   value: 'es' | 'en'
@@ -64,6 +65,7 @@ export class HeaderComponent implements OnInit {
   constructor(
     private sharedService: SharedService,
     public deviceService: DeviceDetectorService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -83,6 +85,10 @@ export class HeaderComponent implements OnInit {
 
   changeLanguage(language: 'es' | 'en') {
     this.sharedService.setLanguage(language)
+  }
+
+  goTo(route: string) {
+    this.router.navigate([route])
   }
 
 }
