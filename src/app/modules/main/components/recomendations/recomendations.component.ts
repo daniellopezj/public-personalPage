@@ -1,24 +1,24 @@
 import { Testimony } from '@/types/general.types';
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-recomendations',
   templateUrl: './recomendations.component.html',
   styleUrls: ['./recomendations.component.scss']
 })
-export class RecomendationsComponent implements OnInit {
+export class RecomendationsComponent  {
   @ViewChild('testimonyComponent') testimonyComponent: ElementRef | undefined;
   private path = '../../../../../assets/reviews'
   public testimonies: Testimony[] = [
     {
-      id: 0,
+      idTestimony: 0,
       avatar: `${this.path}/alexander.jpg`,
       description: 'RECOMMENDATIONS.TESTIMONIO1.DESCRIPCION',
       name: 'Alexander Castro',
       profession: 'RECOMMENDATIONS.TESTIMONIO1.PROFESION'
     },
     {
-      id: 1,
+      idTestimony: 1,
       avatar: `${this.path}/leifer.jpg`,
       description: 'RECOMMENDATIONS.TESTIMONIO2.DESCRIPCION',
       name: 'Leifer Mendez',
@@ -31,8 +31,6 @@ export class RecomendationsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
 
   nextControl() {
     if (this.currentIndex === this.testimonies.length - 1) {

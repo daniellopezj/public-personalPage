@@ -1,7 +1,7 @@
 import { Router } from '@angular/router';
 import { environment } from '@/environments/environment';
 import { validationMessage } from '@/types/general.types';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
@@ -10,7 +10,7 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
   templateUrl: './form-contact.component.html',
   styleUrls: ['./form-contact.component.scss']
 })
-export class FormContactComponent implements OnInit {
+export class FormContactComponent {
 
   public formContact: FormGroup;
   public sending = false
@@ -64,10 +64,6 @@ export class FormContactComponent implements OnInit {
       message: ['', [Validators.required, Validators.minLength(30), Validators.maxLength(500)]],
     });
   }
-
-  ngOnInit(): void {
-  }
-
 
   inputValidate(key: string): validationMessage[] {
     const listValidationes = this.validations.find(i => i.input === key)

@@ -11,7 +11,7 @@ export type Skill = {
 }
 
 export type Testimony = {
-  id: number
+  idTestimony: number
   avatar: string
   description: string
   name: string

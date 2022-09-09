@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 @Component({
@@ -6,7 +6,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './collaborations.component.html',
   styleUrls: ['./collaborations.component.scss']
 })
-export class CollaborationsComponent implements OnInit {
+export class CollaborationsComponent  {
   private path = '../../../../../assets/companies'
   public faMessage = faEnvelope
   public companies = [
@@ -32,9 +32,6 @@ export class CollaborationsComponent implements OnInit {
     },
   ]
   constructor(private router: Router) { }
-
-  ngOnInit(): void {
-  }
 
   goTo(route: string) {
     this.router.navigate([route])

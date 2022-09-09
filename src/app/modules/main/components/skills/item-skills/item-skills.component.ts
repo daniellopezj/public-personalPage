@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Skill } from '@/types/general.types'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -7,7 +7,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
   templateUrl: './item-skills.component.html',
   styleUrls: ['./item-skills.component.scss']
 })
-export class ItemSkillsComponent implements OnInit {
+export class ItemSkillsComponent  {
   @Input() public skill: Skill = {
     icon: faGithub,
     title: '',
@@ -18,8 +18,4 @@ export class ItemSkillsComponent implements OnInit {
     itemsTools: [''],
   } as Skill
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }
