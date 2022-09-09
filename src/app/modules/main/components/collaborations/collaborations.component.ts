@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-collaborations',
@@ -30,9 +31,12 @@ export class CollaborationsComponent implements OnInit {
       link: 'https://leangasoftware.es/'
     },
   ]
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  goTo(route: string) {
+    this.router.navigate([route])
+  }
 }

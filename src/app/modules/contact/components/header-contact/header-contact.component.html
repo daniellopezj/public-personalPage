@@ -1,17 +1,13 @@
 <div class="content-view custom-container">
   <nav class="custom-nav">
-    <div [routerLink]="['/']">
+    <div (click)="goTo('')">
       <img
         class="custom-logo"
         src="../../../../../assets/logo.png"
         alt="logo"
       />
     </div>
-    <fa-icon
-      [routerLink]="['/']"
-      [icon]="faXmark"
-      class="icon-message"
-    ></fa-icon>
+    <fa-icon (click)="goTo('')" [icon]="faXmark" class="icon-message"></fa-icon>
   </nav>
   <div class="logo-container">
     <div class="around-image">

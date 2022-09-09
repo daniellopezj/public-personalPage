@@ -16,14 +16,15 @@
         {{ "SUCCESS.TITULO" | translate }}
       </h2>
       <h4>
-        {{ "SUCCESS.DESCRIPCION" | translate }}</h4>
+        {{ "SUCCESS.DESCRIPCION" | translate }}
+      </h4>
       <img
         class="image-send-message"
         src="../../../../assets/send-email.svg"
         alt="logo"
       />
       <div class="container-button">
-        <button class="button btn-contact is-outlined" [routerLink]="['/']">
+        <button class="button btn-contact is-outlined" (click)="goTo('')">
           {{ "SUCCESS.CONTINUAR" | translate }}
         </button>
       </div>

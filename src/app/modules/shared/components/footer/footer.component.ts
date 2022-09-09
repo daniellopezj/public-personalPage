@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 import { faLinkedinIn, faGithub, faGitlab, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -10,33 +11,31 @@ import { faLinkedinIn, faGithub, faGitlab, faInstagram, faTwitter } from '@forta
 export class FooterComponent implements OnInit {
   public controls = [
     {
-      icon: faTwitter,
-      link: ''
+      icon: faLinkedinIn,
+      link: 'https://www.linkedin.com/in/daniel-lopezj/'
     },
     {
-      icon: faLinkedinIn,
-      link: ''
+      icon: faTwitter,
+      link: 'https://twitter.com/daniellopezj01'
     },
     {
       icon: faGithub,
-      link: ''
+      link: 'https://github.com/daniellopezj01'
     },
-    {
-      icon: faGitlab,
-      link: ''
-    },
+
     {
       icon: faInstagram,
-      link: ''
+      link: 'https://www.instagram.com/daniellopezzj/'
     },
-    {
-      icon: faEnvelope,
-      link: ''
-    }
+
   ]
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  goTo(route: string) {
+    this.router.navigate([route])
   }
 
 }

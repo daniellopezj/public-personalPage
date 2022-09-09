@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-success',
@@ -7,10 +8,13 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 })
 export class SuccessComponent implements OnInit {
   faXmark = faXmark
-  constructor() { }
+  constructor( private router: Router) { }
 
   ngOnInit(): void {
-    console.log('success')
+
   }
 
+  goTo(route: string) {
+    this.router.navigate([route])
+  }
 }

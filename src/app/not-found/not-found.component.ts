@@ -13,7 +13,7 @@ export class NotFoundComponent implements OnInit {
   }
 
 
-  goTo() {
-    this.router.navigate(['/']);
+  goTo(route: string) {
+    this.router.navigate([route]);
   }
 }
