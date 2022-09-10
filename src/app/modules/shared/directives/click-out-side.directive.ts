@@ -4,7 +4,10 @@ import {
   EventEmitter,
   Output,
   HostListener,
+  PLATFORM_ID,
+  Inject,
 } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Directive({
   // eslint-disable-next-line @angular-eslint/directive-selector
@@ -15,11 +18,13 @@ export class ClickOutSideDirective {
   @Output() clickOutside: EventEmitter<any> = new EventEmitter();
 
   @HostListener('document:click', ['$event.target']) onMouseEnter(targetElement: any) {
-    const clickedInside = this.elementRef.nativeElement.contains(targetElement);
-    if (!clickedInside) {
-      this.clickOutside.emit(null);
+    if (isPlatformBrowser(this.platformId)) {
+      const clickedInside = this.elementRef.nativeElement.contains(targetElement);
+      if (!clickedInside) {
+        this.clickOutside.emit(null);
+      }
     }
   }
-  constructor(private elementRef: ElementRef) { }
+  constructor(private elementRef: ElementRef, @Inject(PLATFORM_ID) private platformId: string) { }
 
 }

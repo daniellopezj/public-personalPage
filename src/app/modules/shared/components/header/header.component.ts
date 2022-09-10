@@ -28,15 +28,6 @@ type typeLanguage = {
 
 export class HeaderComponent implements OnInit {
   @Input() solid: boolean = false;
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll() {
-    let element = document.querySelector('.main-container') as HTMLElement;
-    if (window.pageYOffset > element.clientHeight) {
-      element.classList.add('scroll-nav');
-    } else {
-      element.classList.remove('scroll-nav');
-    }
-  }
   public faAngleDown = faAngleDown
   public faAngleUp = faAngleUp
   public faEllipsisVertical = faEllipsisVertical;

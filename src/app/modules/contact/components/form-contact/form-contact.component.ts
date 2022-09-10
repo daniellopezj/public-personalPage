@@ -1,9 +1,10 @@
 import { Router } from '@angular/router';
 import { environment } from '@/environments/environment';
 import { validationMessage } from '@/types/general.types';
-import { Component } from '@angular/core';
+import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+
 
 @Component({
   selector: 'app-form-contact',
@@ -56,7 +57,8 @@ export class FormContactComponent {
 
   constructor(
     private formBuilder: FormBuilder,
-    private router: Router
+    private router: Router,
+    @Inject(PLATFORM_ID) private platformId: string
   ) {
     this.formContact = this.formBuilder.group({
       name: ['', [Validators.required]],
@@ -86,14 +88,12 @@ export class FormContactComponent {
       this.sending = false
       return
     }
-    emailjs.send(environment.serviceMailID, environment.templateMailID, this.formContact.value, environment.publicKeyMailID)
-      .then((result: EmailJSResponseStatus) => {
-        console.log(result.text);
-        this.sending = false
-        this.router.navigate(['success'])
-      }, (error) => {
-        this.sending = false
-        console.log(error.text);
-      });
+      emailjs.send(environment.serviceMailID, environment.templateMailID, this.formContact.value, environment.publicKeyMailID)
+        .then(() => {
+          this.sending = false
+          this.router.navigate(['success'])
+        }, () => {
+          this.sending = false
+        });
   }
 }

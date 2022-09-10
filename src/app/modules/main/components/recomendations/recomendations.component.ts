@@ -1,12 +1,12 @@
 import { Testimony } from '@/types/general.types';
-import { Component, ElementRef, ViewChild } from '@angular/core';
-
+import { Component, ElementRef, Inject, PLATFORM_ID, ViewChild } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 @Component({
   selector: 'app-recomendations',
   templateUrl: './recomendations.component.html',
   styleUrls: ['./recomendations.component.scss']
 })
-export class RecomendationsComponent  {
+export class RecomendationsComponent {
   @ViewChild('testimonyComponent') testimonyComponent: ElementRef | undefined;
   private path = '../../../../../assets/reviews'
   public testimonies: Testimony[] = [
@@ -29,7 +29,7 @@ export class RecomendationsComponent  {
   public activeDot = 0
   public currentTestimony = this.testimonies[this.currentIndex]
 
-  constructor() { }
+  constructor(@Inject(PLATFORM_ID) private platformId: string) { }
 
 
   nextControl() {
@@ -51,14 +51,15 @@ export class RecomendationsComponent  {
   }
 
   controlDot(position: number) {
-    if (this.testimonyComponent) {
-
-      this.testimonyComponent.nativeElement.classList.add('fade')
-      setTimeout(() => {
-        this.testimonyComponent?.nativeElement.classList.remove('fade')
-      }, 2000);
+    if (isPlatformBrowser(this.platformId)) {
+      if (this.testimonyComponent) {
+        this.testimonyComponent.nativeElement.classList.add('fade')
+        setTimeout(() => {
+          this.testimonyComponent?.nativeElement.classList.remove('fade')
+        }, 2000);
+      }
+      this.activeDot = position
+      this.currentTestimony = this.testimonies[this.activeDot]
     }
-    this.activeDot = position
-    this.currentTestimony = this.testimonies[this.activeDot]
   }
 }

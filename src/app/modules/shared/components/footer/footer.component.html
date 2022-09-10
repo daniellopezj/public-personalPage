@@ -37,6 +37,7 @@
           *ngFor="let item of controls"
           [href]="item.link"
           target="_blank"
+          [attr.aria-label]="item.name"
         >
           <fa-icon [icon]="item.icon"></fa-icon>
         </a>

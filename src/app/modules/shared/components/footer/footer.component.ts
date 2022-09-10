@@ -10,19 +10,23 @@ export class FooterComponent {
   public controls = [
     {
       icon: faLinkedinIn,
+      name: 'linkedIn',
       link: 'https://www.linkedin.com/in/daniel-lopezj/'
     },
     {
       icon: faTwitter,
+      name: 'twitter',
       link: 'https://twitter.com/daniellopezj01'
     },
     {
       icon: faGithub,
+      name: 'hithub',
       link: 'https://github.com/daniellopezj01'
     },
 
     {
       icon: faInstagram,
+      name: 'instagram',
       link: 'https://www.instagram.com/daniellopezzj/'
     },
 
