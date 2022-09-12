@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,8 +7,13 @@ import { Router } from '@angular/router';
   templateUrl: './not-found.component.html',
   styleUrls: ['./not-found.component.scss']
 })
-export class NotFoundComponent {
-  constructor(private router: Router) { }
+export class NotFoundComponent implements OnInit {
+  constructor(private router: Router,private title: Title) { }
+  ngOnInit(): void {
+
+    this.title.setTitle(' Danidev | pagina no encontrada')
+
+  }
 
   goTo(route: string) {
     this.router.navigate([route]);

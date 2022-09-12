@@ -3,6 +3,7 @@ import { isPlatformBrowser } from '@angular/common';
 import { TranslateService } from '@ngx-translate/core';
 import { CookieService } from 'ngx-cookie-service';
 import { SharedService } from './services/shared.service';
+import { Meta } from '@angular/platform-browser';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -15,6 +16,7 @@ export class AppComponent implements OnInit {
     @Inject(PLATFORM_ID) private platformId: string,
     private cookieService: CookieService,
     private sharedService: SharedService,
+    private meta: Meta,
   ) {
   }
 

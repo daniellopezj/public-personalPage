@@ -2,7 +2,7 @@
   <div class="content-view content-collaborations">
     <div class="main-text">
       <h2 class="title">{{ "JOBS.TITULO" | translate }}</h2>
-      <span class="description">
+      <p class="description">
         {{ "JOBS.DESCRIPCION" | translate }}
 
         <a
@@ -12,7 +12,7 @@
         >
           {{ "JOBS.CLICK" | translate }}
         </a>
-      </span>
+      </p>
     </div>
     <div class="container-jobs">
       <div class="card-job" *ngFor="let job of jobs; let i = index">
