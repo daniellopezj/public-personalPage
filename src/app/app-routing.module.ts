@@ -30,7 +30,8 @@ const routes: Routes = [
     scrollPositionRestoration: 'enabled',
     preloadingStrategy: PreloadAllModules,
     enableTracing: false,
-  })],
+    initialNavigation: 'enabledBlocking'
+})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

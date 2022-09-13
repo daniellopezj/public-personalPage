@@ -1,13 +1,12 @@
 import { Skill } from '@/types/general.types';
-import { Component, OnInit } from '@angular/core';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { Component } from '@angular/core';
 import { faPersonCircleCheck, faGears, faChalkboard } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss']
 })
-export class SkillsComponent implements OnInit {
+export class SkillsComponent  {
   public skills: Skill[] = [
     {
       icon: faChalkboard,
@@ -38,8 +37,5 @@ export class SkillsComponent implements OnInit {
     }
   ]
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

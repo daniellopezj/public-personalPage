@@ -1,16 +1,17 @@
 import { Router } from '@angular/router';
 import { environment } from '@/environments/environment';
 import { validationMessage } from '@/types/general.types';
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+
 
 @Component({
   selector: 'app-form-contact',
   templateUrl: './form-contact.component.html',
   styleUrls: ['./form-contact.component.scss']
 })
-export class FormContactComponent implements OnInit {
+export class FormContactComponent {
 
   public formContact: FormGroup;
   public sending = false
@@ -56,7 +57,8 @@ export class FormContactComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    private router: Router
+    private router: Router,
+    @Inject(PLATFORM_ID) private platformId: string
   ) {
     this.formContact = this.formBuilder.group({
       name: ['', [Validators.required]],
@@ -64,10 +66,6 @@ export class FormContactComponent implements OnInit {
       message: ['', [Validators.required, Validators.minLength(30), Validators.maxLength(500)]],
     });
   }
-
-  ngOnInit(): void {
-  }
-
 
   inputValidate(key: string): validationMessage[] {
     const listValidationes = this.validations.find(i => i.input === key)
@@ -90,14 +88,12 @@ export class FormContactComponent implements OnInit {
       this.sending = false
       return
     }
-    emailjs.send(environment.serviceMailID, environment.templateMailID, this.formContact.value, environment.publicKeyMailID)
-      .then((result: EmailJSResponseStatus) => {
-        console.log(result.text);
-        this.sending = false
-        this.router.navigate(['success'])
-      }, (error) => {
-        this.sending = false
-        console.log(error.text);
-      });
+      emailjs.send(environment.serviceMailID, environment.templateMailID, this.formContact.value, environment.publicKeyMailID)
+        .then(() => {
+          this.sending = false
+          this.router.navigate(['success'])
+        }, () => {
+          this.sending = false
+        });
   }
 }

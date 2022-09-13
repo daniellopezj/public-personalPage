@@ -12,7 +12,7 @@ export class SharedService {
   constructor(
     private translate: TranslateService,
     private cookieService: CookieService,
-    @Inject(PLATFORM_ID) private platformId: any,
+    @Inject(PLATFORM_ID) private platformId: string,
   ) { }
 
   setLanguage(language: 'es' | 'en') {

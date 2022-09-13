@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 @Component({
@@ -6,12 +6,9 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './header-contact.component.html',
   styleUrls: ['./header-contact.component.scss']
 })
-export class HeaderContactComponent implements OnInit {
+export class HeaderContactComponent {
   faXmark = faXmark
   constructor(private router: Router) { }
-
-  ngOnInit(): void {
-  }
 
   goTo(route: string) {
     this.router.navigate([route])
