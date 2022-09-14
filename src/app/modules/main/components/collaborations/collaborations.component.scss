@@ -88,6 +88,12 @@ a {
   margin-right: 8px;
 }
 
+.card-container-company{
+  box-shadow: 0 0 5px 0 rgb(112 112 112 / 50%);
+  margin: 20px;
+  max-width: 350px;
+}
+
 //phone
 @media print, screen and (max-width: $max-screen-phone) {
   .content-collaborations {
@@ -130,6 +136,11 @@ a {
   .btn-contact {
     font-size: 1rem;
     padding: 0.6rem 30px;
+  }
+  .card-container-company{
+    margin: 20px 0;
+    width: 95%;
+    max-width: 95%;
   }
 }
 
