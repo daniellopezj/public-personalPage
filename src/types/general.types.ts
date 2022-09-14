@@ -18,6 +18,14 @@ export type Testimony = {
   profession: string
 }
 
+export type Company = {
+  logo: string
+  link: string
+  title: string
+  sector: string
+  description: string
+}
+
 export type validationMessage = {
   key: string,
   message: string

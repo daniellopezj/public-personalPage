@@ -14,6 +14,7 @@ import { RecomendationsComponent } from './components/recomendations/recomendati
 import { TestimonyComponent } from './components/recomendations/testimony/testimony.component';
 import { JobsComponent } from './components/jobs/jobs.component';
 import { CollaborationsComponent } from './components/collaborations/collaborations.component';
+import { CompanyComponent } from './components/collaborations/company/company.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { CollaborationsComponent } from './components/collaborations/collaborati
     RecomendationsComponent,
     TestimonyComponent,
     JobsComponent,
-    CollaborationsComponent
+    CollaborationsComponent,
+    CompanyComponent
   ],
   imports: [
     CommonModule,
