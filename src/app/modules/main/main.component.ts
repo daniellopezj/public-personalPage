@@ -12,7 +12,7 @@ export class MainComponent implements OnInit{
   ) { }
 
   ngOnInit(): void {
-    this.title.setTitle('Danidev | Desarrollador Frontend & freelance')
+    this.title.setTitle('danidev | Desarrollador Frontend & freelance')
   }
 
 }

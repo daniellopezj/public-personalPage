@@ -50,7 +50,7 @@
   "JOBS": {
     "TITULO": "Mi trabajo reciente",
     "DESCRIPCION": "Aquí hay algunos proyectos de desarrollo en los que he trabajado ¿Quieres ver más?",
-    "CLICK": "click aquí",
+    "VER_GITHUB": "ver github",
     "VER_VIDEO": "Ver video",
     "VISITAR_WEB": "Visitar sitio web",
     "TRABAJO1": {
