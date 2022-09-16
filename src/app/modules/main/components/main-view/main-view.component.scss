@@ -49,8 +49,9 @@
 //phone
 @media print, screen and (max-width: $max-screen-phone) {
   .setup {
-    width: 100%;
-    height: auto;
+   max-width: 100%;
+    width: 400px;
+    height: 200px;
   }
   .around-image {
     height: 160px;

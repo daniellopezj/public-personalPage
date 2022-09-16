@@ -16,28 +16,28 @@ export class CollaborationsComponent {
       link: 'https://www.kiteris.com/',
       title: 'Kiteris',
       sector: 'Consultora',
-      description: '',
+      description: 'COLLABORATIONS.EMPRESA1.DESCRIPCION',
     },
     {
       logo: `${this.path}/visyon.jpg`,
       link: 'https://visyon360.com/',
       title: 'Vysion 360',
       sector: 'Multimedia',
-      description: '',
+      description: 'COLLABORATIONS.EMPRESA2.DESCRIPCION',
     },
     {
       logo: `${this.path}/leanga.jpg`,
       link: 'https://leangasoftware.es/',
       title: 'Leanga Software',
       sector: 'Consultora',
-      description: '',
+      description: 'COLLABORATIONS.EMPRESA3.DESCRIPCION',
     },
     {
       logo: `${this.path}/mochileros.jpg`,
       link: 'https://mochileros.com.mx/',
       title: 'Mochileros',
       sector: 'Viajes',
-      description: '',
+      description: 'COLLABORATIONS.EMPRESA4.DESCRIPCION',
     },
 
     {
@@ -45,7 +45,7 @@ export class CollaborationsComponent {
       link: 'https://asitur.es/',
       title: 'Asitur',
       sector: 'Seguros',
-      description: '',
+      description: 'COLLABORATIONS.EMPRESA5.DESCRIPCION',
     },
   ]
   constructor(private router: Router) { }
