@@ -21,9 +21,8 @@ export class FooterComponent {
     {
       icon: faGithub,
       name: 'hithub',
-      link: 'https://github.com/daniellopezj01'
+      link: 'https://github.com/dlopez-dev'
     },
-
     {
       icon: faInstagram,
       name: 'instagram',

@@ -28,13 +28,14 @@
       "DESCRIPCION1": "I value the elaboration of code considering its maintainability and applying design patterns.",
       "SUBTITULO1": "I like to think of:",
       "DESCRIPCION2": "Security, scalability, availability.",
-      "SUBTITULO2": "Specialties"
+      "SUBTITULO2": "Specialties",
+      "HERRAMIENTA1": "Microservices"
     },
     "ITEM3": {
       "TITULO1": "Human warmth",
       "DESCRIPCION1": "To grow in the world of development, in addition to technical knowledge, human quality is important.",
       "SUBTITULO1": "I identify with:",
-      "DESCRIPCION2": "Discipline, empathy, commitment.",
+      "DESCRIPCION2": "Discipline, organization, commitment.",
       "SUBTITULO2": "General skills::",
       "HERRAMIENTA1": "Respeto por los demas",
       "HERRAMIENTA2": "Respect for others",
