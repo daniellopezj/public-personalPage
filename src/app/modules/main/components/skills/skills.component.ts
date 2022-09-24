@@ -24,7 +24,7 @@ export class SkillsComponent  {
       titleLanguage: 'SKILLS.ITEM2.SUBTITULO1',
       itemsLanguage: 'SKILLS.ITEM2.DESCRIPCION2',
       titleTools: 'SKILLS.ITEM2.SUBTITULO2',
-      itemsTools: ['Node js', 'Express', 'AWS', 'Mongo db', 'Mysql', 'Jest', 'Mocha', 'WebSocket', 'Microservicios'],
+      itemsTools: ['Node js', 'Express', 'AWS', 'Mongo db', 'Mysql', 'Jest', 'Mocha', 'WebSocket',"SKILLS.ITEM2.HERRAMIENTA1"],
     },
     {
       icon: faPersonCircleCheck,

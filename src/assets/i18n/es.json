@@ -28,13 +28,14 @@
       "DESCRIPCION1": "Valoro la elaboración de código pensando en su mantenibilidad y aplicando patrones de diseño.",
       "SUBTITULO1": "Me gusta pensar en:",
       "DESCRIPCION2": "Seguridad, escalabilidad, disponibilidad.",
-      "SUBTITULO2": "Especialidades"
+      "SUBTITULO2": "Especialidades",
+      "HERRAMIENTA1": "Microservicios"
     },
     "ITEM3": {
       "TITULO1": "Calidez Humana",
       "DESCRIPCION1": "Para crecer en el mundo del desarrollo, además de los conocimientos técnicos es importante la calidad humana.",
       "SUBTITULO1": "Me identifico con:",
-      "DESCRIPCION2": "Disciplina, empatía, compromiso.",
+      "DESCRIPCION2": "Disciplina, organización, compromiso.",
       "SUBTITULO2": "Habilidades generales:",
       "HERRAMIENTA1": "Respeto por los demás",
       "HERRAMIENTA2": "Deseo de aprender",
