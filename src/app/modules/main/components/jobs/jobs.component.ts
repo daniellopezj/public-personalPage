@@ -10,7 +10,7 @@ export class JobsComponent  {
   public faAngleRight = faAngleRight
   public jobs = [
     {
-      image: `${this.path}/mochileros.png`,
+      image: `${this.path}/mochileros.jpg`,
       title: 'Mochileros',
       description: 'JOBS.TRABAJO1.DESCRIPCION',
       link: 'https://mochileros.com.mx/'
@@ -36,7 +36,7 @@ export class JobsComponent  {
       type:'video'
     },
     {
-      image: `${this.path}/visyon.png`,
+      image: `${this.path}/visyon.jpg`,
       title: 'visyion 360',
       description: 'JOBS.TRABAJO5.DESCRIPCION',
       link: 'https://metahype-develop.visyonappsdev.com/landing'
