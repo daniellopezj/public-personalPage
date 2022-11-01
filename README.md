@@ -40,10 +40,8 @@ Puedes agregar todos los testimonios de las personas con las cuales has trabajad
 <br> 
 
 ## **Contacto**
-Esta seccion le permite a cualquier persona contactarte de una manera facil y rapida,  
-
-<img  aling="left" width=400 src="src/assets/readme/contacto.png" alt="Contacto">
-<br>
+Esta seccion le permite a cualquier persona contactarte de una manera facil y rapida. 
+<img  width=400 src="src/assets/readme/contacto.png" alt="Contacto">
 
 ### **- Contacto Exitoso**
 <img  width=400 src="src/assets/readme/contacto_exitoso.png" alt="Contacto Exitoso">
@@ -74,8 +72,6 @@ ng serve
 ```
 
 Tu aplicación se ejecutara automaticamente en la ruta `http://localhost:4200/`.
-
-<br>
 
 # Principales Funcionalidades
 
