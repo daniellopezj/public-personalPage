@@ -5,6 +5,7 @@ Página persona, desarrollado con ``Angular 14``. Este sistema te proporciona un
 ### **- Vista Principal**
 Esta es la vista principal de la página, donde puedes modificar tu icono y Nombre de la página. Además, se puede seleccionar el idioma de su preferencia (Actualmente `Inglés` o ``Español``)
 <br>
+<br>
 <img  width=400 src="src/assets/readme/vista_principal.png" alt="Vista principal">
 <br>
 
@@ -12,11 +13,13 @@ Esta es la vista principal de la página, donde puedes modificar tu icono y Nomb
 En esta sección puedes agregar toda tu información relevante.
 Además, cuenta con un segmento en donde puedes detallar todas tus habilidades ``técnicas`` y ``humanas``.
 <br>
+<br>
 <img  width=400 src="src/assets/readme/acerca_de.png" alt="Acerca de">  
 <br>
 
 ### **- Proyectos**
 En este apartado puedes agregar todos tus proyectos y darle a conocer al mundo tu ``maravilloso trabajo``.
+<br>
 <br>
 <img  width=400 src="src/assets/readme/proyectos.png" alt="Proyectos">
 <br>
@@ -24,11 +27,13 @@ En este apartado puedes agregar todos tus proyectos y darle a conocer al mundo t
 ### **- Empresas**
 En esta sección puedes agregar las empresas con las cuales hayas trabajado.
 <br>
+<br>
 <img  width=400 src="src/assets/readme/empresas.png" alt="Empresas">
 <br>
 
 ### **- Recomendaciones**
 Puedes agregar todos los testimonios de las personas con las cuales has trabajado.
+<br>
 <br>
 <img  width=400 src="src/assets/readme/testimonios.png" alt="Testimonios"> 
 <br>
@@ -39,8 +44,6 @@ Esta seccion le permite a cualquier persona contactarte de una manera facil y ra
 
 <img  aling="left" width=400 src="src/assets/readme/contacto.png" alt="Contacto">
 <br>
-<br>
-<br>  
 
 ### **- Contacto Exitoso**
 <img  width=400 src="src/assets/readme/contacto_exitoso.png" alt="Contacto Exitoso">
