@@ -41,6 +41,8 @@ Puedes agregar todos los testimonios de las personas con las cuales has trabajad
 
 ## **Contacto**
 Esta seccion le permite a cualquier persona contactarte de una manera facil y rapida. 
+<br> 
+
 <img  width=400 src="src/assets/readme/contacto.png" alt="Contacto">
 
 ### **- Contacto Exitoso**
@@ -96,4 +98,5 @@ El sistema utiliza [emailJs](https://www.emailjs.com/) para recibir todos los co
 
 <img  width=400px src="src/assets/readme/contacto.png" alt="contacto">
 <br>
+
 Crea una cuenta y coloca tus credencias en el archivo. `src/environments/environment.prod.ts` es completamente gratis!!
