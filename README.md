@@ -58,7 +58,7 @@ Esta seccion le permite a cualquier persona contactarte de una manera facil y ra
 Es necesario clonar el repositorio de ``github``, para ello,  ejecuta el siguiente comando.
 
 ```
-git clone https://github.com/dlopez-dev/public-personalPage.git
+git clone https://github.com/ldani-dev/public-personalPage.git
 ```
 
 Para instalar todas las dependencias necesarias ejecuta.
