@@ -1,0 +1,114 @@
+@import "./src/shared.scss";
+
+.section-recomendations {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-recomendations {
+  padding: 6rem 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.box-recomendations {
+  display: flex;
+  margin: 0 auto;
+  background-color: $white-color;
+  border-radius: 12px;
+  max-width: 700px;
+}
+
+.controls {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.main-text {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.description {
+  margin: 2rem auto;
+  font-size: 1.3rem;
+  font-weight: initial;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #a8a8a8;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot-active {
+  background-color: $base-color;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  75% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+//phone
+@media print, screen and (max-width: $max-screen-phone) {
+  .container-recomendations {
+    padding: 3rem 1.5rem;
+  }
+  .title {
+    font-size: 1.3rem !important;
+    font-weight: bold;
+  }
+  .description {
+    font-size: 1rem;
+    font-weight: initial;
+  }
+  .dot {
+    padding: 2px;
+  }
+  .container-dot {
+    padding: 10px;
+  }
+}
+
+//tablet
+@media print,
+  screen and (min-width: $min-screen-tablet) and (max-width: $max-screen-tablet) {
+  .main-text {
+    margin: 0;
+  }
+  .description {
+    font-size: 1.1rem;
+    font-weight: initial;
+  }
+}
+
+//desktop
+@media print, screen and (min-width: $min-screen-desktop) {
+}

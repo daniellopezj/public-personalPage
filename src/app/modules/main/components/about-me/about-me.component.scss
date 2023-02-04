@@ -1,0 +1,68 @@
+@import "./src/shared.scss";
+.container-about-me {
+  width: 100%;
+  background-color: $base-color;
+  min-height: 600px;
+  display: flex;
+}
+
+.content-about-me {
+  text-align: center;
+  max-width: 50%;
+  padding-bottom: 10rem;
+  color: $white-color;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.description {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+//phone
+@media print, screen and (max-width: $max-screen-phone) {
+  .title {
+    font-size: 1.3rem;
+  }
+  .description {
+    font-size: 1rem !important;
+    font-weight: initial;
+  }
+  .container-about-me {
+    margin: 1.5rem 0;
+  }
+  .content-about-me {
+    max-width: 90%;
+    padding-top: 2rem;
+    padding-bottom: 60%;
+  }
+}
+
+//tablet
+@media print,
+  screen and (min-width: $min-screen-tablet) and (max-width: $max-screen-tablet) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 1.1rem !important;
+    font-weight: initial !important;
+  }
+  .content-about-me {
+    max-width: 80%;
+    padding-top: 0;
+    padding-bottom: 20%;
+  }
+}
+
+//desktop
+@media print, screen and (min-width: $min-screen-desktop) {
+}

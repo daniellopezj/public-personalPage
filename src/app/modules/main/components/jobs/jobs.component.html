@@ -1,0 +1,33 @@
+<section #collaborations class="container-main-view">
+  <div class="content-view content-collaborations">
+    <div class="main-text">
+      <h2 class="title">{{ "JOBS.TITULO" | translate }}</h2>
+      <p class="description">
+        {{ "JOBS.DESCRIPCION" | translate }}
+
+        <a
+          class="link-github"
+          href="https://github.com/ldani-dev"
+          target="_blank"
+        >
+          {{ "JOBS.VER_GITHUB" | translate }}
+        </a>
+      </p>
+    </div>
+    <div class="container-jobs">
+      <div class="card-job" *ngFor="let job of jobs; let i = index">
+        <figure class="custom-figure">
+          <img class="job-image" [src]="job.image" alt="logo" />
+          <figcaption class="figcaption">
+            <h3>{{ job.title | translate }}</h3>
+            <h4 class="job-description">{{ job.description | translate }}</h4>
+            <a [href]="job.link" target="_blank" class="go-to-website">
+              {{ "JOBS.VISITAR_WEB" | translate }}
+              <fa-icon class="icon-angle-right" [icon]="faAngleRight"></fa-icon
+            ></a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>

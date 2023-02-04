@@ -1,0 +1,33 @@
+<div class="content-view custom-container">
+  <div class="logo-container">
+    <div class="around-image">
+      <img
+        class="custom-avatar"
+        src="../../../../../assets/avatar.svg"
+        alt="logo"
+      />
+    </div>
+  </div>
+</div>
+<div class="container-last-section">
+  <div class="content-view p-0">
+    <div class="body-success">
+      <h2 class="description-text">
+        {{ "SUCCESS.TITULO" | translate }}
+      </h2>
+      <h4>
+        {{ "SUCCESS.DESCRIPCION" | translate }}
+      </h4>
+      <img
+        class="image-send-message"
+        src="../../../../assets/send-email.svg"
+        alt="logo"
+      />
+      <div class="container-button">
+        <button class="button btn-contact is-outlined" (click)="goTo('')">
+          {{ "SUCCESS.CONTINUAR" | translate }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

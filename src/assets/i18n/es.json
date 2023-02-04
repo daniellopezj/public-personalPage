@@ -1,0 +1,141 @@
+{
+  "GENERAL": {
+    "IDIOMA_INGLES": "Ingles",
+    "IDIOMA_ESPANOL": "Español"
+  },
+  "HEADER": {
+    "IDIOMA":"Idioma",
+    "CONTACTO":"Contacto",
+    "DECIR_HOLA": "Decir Hola"
+  },
+  "MAIN_VIEW": {
+    "TITULO": "Desarrollador de Software y freelancer",
+    "DESCRIPCION": "Amante de los nuevos desafíos, siempre buscando la mejor solución."
+  },
+  "ABOUT_ME": {
+    "TITULO": "Hola, Soy Daniel. Encantado de conocerte.",
+    "DESCRIPCION": "Desde que comencé en el mundo del desarrollo he participado en grandes proyectos por más de 3 años, he trabajado de forma remota para agencias de diferentes países y he tenido la oportunidad de encontrar personas talentosas que han contribuido a mi crecimiento profesional. Me destaco por mi disciplina y mi compromiso con el aprendizaje continuo, busco mejorar día a día. Me encanta lo que hago."
+  },
+  "SKILLS": {
+    "ITEM1": {
+      "TITULO1": "Desarrollador Frontend",
+      "DESCRIPCION1": "Me gusta codificar desde cero y poder construir grandes soluciones para cualquier persona en el mundo",
+      "SUBTITULO1": "Disfruto desarrollar:",
+      "SUBTITULO2": "Especialidades"
+    },
+    "ITEM2": {
+      "TITULO1": "Desarrollador Backend",
+      "DESCRIPCION1": "Valoro la elaboración de código pensando en su mantenibilidad y aplicando patrones de diseño.",
+      "SUBTITULO1": "Me gusta pensar en:",
+      "DESCRIPCION2": "Seguridad, escalabilidad, disponibilidad.",
+      "SUBTITULO2": "Especialidades",
+      "HERRAMIENTA1": "Microservicios"
+    },
+    "ITEM3": {
+      "TITULO1": "Calidez Humana",
+      "DESCRIPCION1": "Para crecer en el mundo del desarrollo, además de los conocimientos técnicos es importante la calidad humana.",
+      "SUBTITULO1": "Me identifico con:",
+      "DESCRIPCION2": "Disciplina, organización, compromiso.",
+      "SUBTITULO2": "Habilidades generales:",
+      "HERRAMIENTA1": "Respeto por los demás",
+      "HERRAMIENTA2": "Deseo de aprender",
+      "HERRAMIENTA3": "Buena comunicación",
+      "HERRAMIENTA4": "Gestión del tiempo",
+      "HERRAMIENTA5": "Inteligencia emocional",
+      "HERRAMIENTA6": "Adaptación al cambio",
+      "HERRAMIENTA7": "Empatía",
+      "HERRAMIENTA8": "Innovación",
+      "HERRAMIENTA9": "Liderazgo"
+    }
+  },
+  "JOBS": {
+    "TITULO": "Mi trabajo reciente",
+    "DESCRIPCION": "Aquí hay algunos proyectos de desarrollo en los que he trabajado ¿Quieres ver más?",
+    "VER_GITHUB": "ver github",
+    "VER_VIDEO": "Ver video",
+    "VISITAR_WEB": "Visitar sitio web",
+    "TRABAJO1": {
+      "DESCRIPCION": "Plataforma de venta de tours a nivel mundial"
+    },
+    "TRABAJO2": {
+      "DESCRIPCION": "Manejo de inventarios para empresas"
+    },
+    "TRABAJO3": {
+      "DESCRIPCION": "Plataforma de venta de seguros a nivel Europeo"
+    },
+    "TRABAJO4": {
+      "DESCRIPCION": "Aplicación para venta de vuelos. Integración con 'sabre'"
+    },
+    "TRABAJO5": {
+      "DESCRIPCION": "Metaverso para autos Cupra"
+    },
+    "TRABAJO6": {
+      "DESCRIPCION": "Administración de tareas para empresas"
+    }
+  },
+  "COLLABORATIONS": {
+    "TITULO": "Estoy orgulloso de haber colaborado con algunas compañías increíbles.",
+    "SUBTITULO": "¿Interesada en colaborar conmigo?",
+    "DESCRIPCION": "Siempre estoy abierto a conversar sobre nuevos proyectos de desarrollo u oportunidades de asociación.",
+    "INICIAR_CONVERSACION": "Iniciar una conversación",
+    "EMPRESA1":{
+      "DESCRIPCION":"Consultora Española que ayuda a las compañías a hacer viable su Plan Estratégico, transformando su modelo actual mediante buenas prácticas, tecnología (herramientas) y control de gestión (analítica)."
+    },
+    "EMPRESA2":{
+      "DESCRIPCION":"Empresa creadora de multimedia implementando tecnologías XR. Tuve la oportunidad de contribuir al proyecto del METAVERSO para uno de sus principales clientes. Algunos de sus clientes son: Audi, BMW, cupra, ford..."
+    },
+    "EMPRESA3":{
+      "DESCRIPCION":"Consultora presente en 8 países y con operaciones comerciales en más de 30, mantenemos un ecosistema global de partners como modelo de innovación general y cooperativo que nos permite el desarrollo de iniciativas estratégicas en conjunto."
+    },
+    "EMPRESA4":{
+      "DESCRIPCION":"Empresa Mexicana dedicada a la comercialización de tours a nivel mundial, permitiendo vivir experiencias locales a sus viajeros en cada destino visitado. Contribuí al desarrollo de su plataforma y la integración de su módulo de venta de vuelos."
+    }
+  },
+  "RECOMMENDATIONS": {
+    "TITULO": "Testimonios",
+    "DESCRIPCION": "Las personas con las que he trabajado han dicho algunas cosas bonitas...",
+    "TESTIMONIO1": {
+      "DESCRIPCION": "Conozco a Daniel hace más de cinco años, fui su profesor de programación y puedo dar fe de sus habilidades técnicas, sus excelentes habilidades en términos de trabajo en equipo, comunicación, solución de problemas y liderazgo, y su disciplina y dedicación al trabajo. Además, he tenido la oportunidad de compartir con Daniel y sé que es una persona confiable. Entonces considero que él puede ser una excelente incorporación para cualquier equipo de trabajo.",
+      "PROFESION": "Ingeniero de Software"
+    },
+    "TESTIMONIO2": {
+      "DESCRIPCION": "Daniel es un excelente desarrollador proactivo ante todo y siempre en busca de las mejores prácticas, hemos participado y aún seguimos en desarrollo conjunto de plataformas que cuentan con un excelente rendimiento en tecnologías modernas.",
+      "PROFESION": "Desarrollador de Software, creador de contenido"
+    }
+  },
+  "FOOTER": {
+    "INICIAR_PROYECTO": "Iniciar un proyecto",
+    "ENCONTRARNOS": "¿Interesado en trabajar juntos? Deberíamos reunirnos y conversar. Yo compro el café.",
+    "HAGAMOSLO": "Hagámoslo",
+    "MOTIVACION": "Viviendo, aprendiendo y mejorando día a día.",
+    "CREADO_POR": "Creado por mí",
+    "CREADO_CON": "Hecho con"
+  },
+  "HEADER_CONTACT": {
+    "TITULO": "Gracias por tomar el tiempo para comunicarte. ¿Cómo puedo ayudarte hoy?"
+  },
+  "FORM_CONTACT": {
+    "NOMBRE": "Nombre",
+    "EMAIL": "Email",
+    "MENSAJE": "Mensaje",
+    "ENVIAR": "Enviar",
+    "ENVIANDO": "Enviando"
+  },
+  "VALIDATIONS": {
+    "NOMBRE_REQUERIDO": "Nombre es requerido",
+    "EMAIL_REQUERIDO": "Email es requerido",
+    "EMAIL_INVALIDO": "Email no es válido 'example@example.com'",
+    "MENSAJE_REQUERIDO": "El mensaje es requerido",
+    "MENSAJE_LONGITUD_MINIMA": "El mensaje debe contener mínimo 30 caracteres",
+    "MENSAJE_LONGITUD_MAXIMA": "El mensaje debe contener máximo 500 caracteres"
+  },
+  "SUCCESS": {
+    "TITULO": "!Genial! Juntos vamos a crear grandes cosas",
+    "DESCRIPCION": "Tu mensaje ha sido enviado, en breve me pondré en contacto",
+    "CONTINUAR": "Continuar"
+  },
+  "NOT_FOUND": {
+    "TITULO": "Parece que estás perdido. ¿Quizás probar con una página diferente?",
+    "RETORNAR": "Volver al Inicio"
+  }
+}

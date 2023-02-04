@@ -1,0 +1,195 @@
+@import "./src/shared.scss";
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white-color;
+  padding-top: 20px;
+}
+
+.custom-nav {
+  background-color: transparent;
+  z-index: 1001;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10%;
+  max-width: $big-max-width;
+  width: 100%;
+}
+
+.custom-logo {
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+}
+
+.title {
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: $base-color;
+}
+
+.navbar-end {
+  display: flex;
+  align-items: center;
+}
+
+.btn-contact {
+  font-weight: 400;
+  font-size: 18px;
+  padding: 0.7rem;
+  background-color: #0000;
+  color: $base-color;
+  border-radius: 9999px;
+  border: 2px solid $base-color;
+  padding-left: calc(1em + 0.25em);
+  padding-right: calc(1em + 0.25em);
+}
+
+.is-outlined:hover {
+  background-color: $base-color;
+  border-color: $base-color;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.pop-up-container {
+  display: none;
+}
+
+.language-button {
+  border: none;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  margin-right: 5px;
+  img {
+    height: 25px;
+    width: 25px;
+  }
+  span {
+    margin: 0 5px 0 10px;
+  }
+}
+
+.language-button:hover .pop-up-container {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: inline-block;
+  background-color: white;
+  box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+  width: auto;
+  min-width: 90%;
+}
+
+.items-languages {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.language {
+  padding: 15px;
+  display: flex;
+}
+
+.language:hover {
+  background-color: #e6cfff;
+}
+
+.language-button:hover {
+  background-color: #f4eaff;
+  fa-icon {
+    transform: rotateZ(-180deg);
+  }
+}
+
+.arrow-icon {
+  display: inline-block;
+  transition: all 0.3s ease-out;
+}
+
+//phone
+@media print, screen and (max-width: $max-screen-phone) {
+  .pop-up-button {
+    border: none;
+    position: relative;
+    transition: all 0.3s ease;
+    display: flex;
+    margin-right: 5px;
+    background-color: white;
+    img {
+      height: 25px;
+      width: 25px;
+    }
+  }
+  .custom-icon-pop-up {
+    font-size: 1rem;
+    padding: 7px 10px;
+    background-color: white;
+  }
+  .language {
+    padding: 13px;
+    display: flex;
+    align-items: center;
+  }
+  .text-language {
+    margin: 0 5px 0 10px;
+  }
+
+  .pop-up-container-small {
+    position: absolute;
+    right: 70%;
+    top: 80%;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+    width: auto;
+    min-width: 90%;
+    text-align: left;
+    padding: 10px 5px;
+  }
+  .pop-up-title {
+    margin: 0;
+    padding: 10px;
+    font-size: 0.7rem;
+    color: $base-color;
+  }
+
+  .custom-logo {
+    height: 40px;
+    width: 40px;
+  }
+  .title {
+    font-size: 1.3rem;
+  }
+  .main-container {
+    padding-top: 0;
+  }
+  .custom-nav {
+    margin: 0;
+    padding: 0 0.5rem;
+  }
+  .small-contact {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+    margin: auto;
+    margin-top: 0.5rem;
+    display: flex;
+  }
+}
+
+//tablet
+@media print,
+  screen and (min-width: $min-screen-tablet) and (max-width: $max-screen-tablet) {
+}
+
+//desktop
+@media print, screen and (min-width: $min-screen-desktop) {
+}

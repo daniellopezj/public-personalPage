@@ -1,0 +1,73 @@
+@import "./shared.scss";
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+html,
+body {
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+h1 {
+  margin: 0;
+}
+h2 {
+  font-family: "Open Sans", sans-serif;
+}
+
+input,
+textarea {
+  font-family: "Open Sans", sans-serif;
+}
+
+.button {
+  cursor: pointer;
+  background-color: #fff;
+  border-color: #dbdbdb;
+  border-width: 1px;
+  color: #363636;
+  justify-content: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: calc(0.5em - 1px);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.container-main-view {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.content-view {
+  margin: 0 auto;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: $big-max-width;
+  padding-bottom: 0;
+}
+
+
+//phone
+@media print, screen and (max-width: $max-screen-phone) {
+  .content-view {
+    padding: 0.5rem;
+  }
+  .container-main-view {
+    margin: 1rem 0;
+    width: 100%;
+  }
+}
+
+//tablet
+@media print,
+screen and (min-width: $min-screen-tablet) and ( max-width:$max-screen-tablet) {
+}
+
+//desktop
+@media print, screen and (min-width: $min-screen-desktop) {
+}

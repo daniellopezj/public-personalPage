@@ -1,0 +1,84 @@
+@import "./src/shared.scss";
+
+.title-work {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin: 0;
+  margin-bottom: 0rem;
+}
+
+.custom-main-view {
+  margin-bottom: -2rem;
+}
+
+.description-text {
+  margin: 0 auto;
+  font-size: 1.3rem;
+  font-weight: initial;
+  margin-bottom: 1rem;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0;
+}
+
+.around-image {
+  background-color: $base-color;
+  height: 240px;
+  border-radius: 50%;
+}
+
+.custom-logo {
+  height: 240px;
+  width: 225px;
+  border-radius: 50%;
+}
+
+.view-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.setup {
+  width: 660px;
+  height: 270px;
+}
+
+//phone
+@media print, screen and (max-width: $max-screen-phone) {
+  .setup {
+   max-width: 100%;
+    width: 400px;
+    height: 200px;
+  }
+  .around-image {
+    height: 160px;
+  }
+  .custom-logo {
+    height: 160px;
+    width: 150px;
+  }
+  .title-work {
+    font-size: 1.5rem;
+  }
+  h2{
+    font-size: 0.9rem !important;
+  }
+}
+
+//tablet
+@media print,
+  screen and (min-width: $min-screen-tablet) and ( max-width:$max-screen-tablet) {
+  .title-work {
+    font-size: 1.8rem !important;
+  }
+  h2{
+    font-size: 1.1rem !important;
+  }
+}
+
+//desktop
+@media print, screen and (min-width: $min-screen-desktop) {
+}

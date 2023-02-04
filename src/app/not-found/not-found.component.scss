@@ -1,0 +1,106 @@
+@import "src/shared.scss";
+
+.custom-container {
+  padding: 2rem 0 1rem 0;
+  margin-top: 5rem;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  width: 20%;
+  align-items: center;
+  margin: auto;
+  margin-top: -2rem;
+}
+
+.around-image {
+  background-color: $base-color;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.custom-avatar {
+  height: 120px;
+  border-radius: 50%;
+}
+
+.container-last-section {
+  width: 100%;
+  margin-top: -5rem;
+  padding: 5rem 0;
+  border-top: 1px solid rgb(117, 16, 245, 0.2);
+}
+
+.body-not-found {
+  max-width: 60%;
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.image-not-found {
+  margin: 2rem 0;
+  max-width: 400px;
+}
+
+.container-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.btn-contact {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  border-radius: 9999px;
+  border: 2px solid white;
+  padding: 0.8rem 80px;
+  border: 2px solid $base-color;
+  background-color: white;
+  color: $base-color;
+}
+
+.is-outlined:hover {
+  color: white;
+  background-color: $base-color;
+  transition: all 0.2s ease-in-out;
+}
+
+//phone
+@media print, screen and (max-width: $max-screen-phone) {
+  .image-not-found {
+    max-width: 60%;
+  }
+  .description-text{
+    font-size: 1.3rem;
+  }
+  .btn-contact {
+    padding: 0.6rem 55px;
+  }
+  .body-not-found {
+    max-width: 90%;
+  }
+}
+
+//tablet
+@media print,
+  screen and (min-width: $min-screen-tablet) and (max-width: $max-screen-tablet) {
+  .body-not-found {
+    max-width: 70%;
+  }
+  .description-text{
+    font-size: 1.5rem;
+  }
+}
+
+//desktop
+@media print, screen and (min-width: $min-screen-desktop) {
+}

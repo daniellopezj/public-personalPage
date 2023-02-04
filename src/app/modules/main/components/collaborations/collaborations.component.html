@@ -1,0 +1,46 @@
+<section #collaborations class="container-main-view">
+  <div class="content-view content-collaborations">
+    <div class="main-text">
+      <h2 class="title">
+        {{ "COLLABORATIONS.TITULO" | translate }}
+      </h2>
+    </div>
+    <div class="container-companies">
+      <!-- <a
+      *ngFor="let company of companies; let i = index"
+      [href]="company.link"
+      target="_blank"
+    >
+      <img
+        class="custom-logo"
+        [src]="company.logo"
+        alt="logo"
+        href="https://www.google.com/"
+      />
+    </a> -->
+      <div
+        class="card-container-company"
+        *ngFor="let company of companies; let i = index"
+      >
+        <app-company [company]="company"></app-company>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container-main-view collaborate-container">
+  <div class="content-view collaborate-with-me">
+    <h2>
+      {{ "COLLABORATIONS.SUBTITULO" | translate }}
+    </h2>
+    <span class="description">
+      {{ "COLLABORATIONS.DESCRIPCION" | translate }}
+    </span>
+    <div class="container-button">
+      <button class="button btn-contact is-outlined" (click)="goTo('contact')">
+        <fa-icon [icon]="faMessage" class="icon-message"></fa-icon>
+        {{ "COLLABORATIONS.INICIAR_CONVERSACION" | translate }}
+      </button>
+    </div>
+  </div>
+</div>

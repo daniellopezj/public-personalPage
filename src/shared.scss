@@ -1,0 +1,69 @@
+$base-color: #7510f7;
+$second-color: #5be9b9;
+$white-color: #ffffff;
+$big-max-width: 1200px;
+
+$max-screen-phone: 740px;
+$min-screen-tablet: 740px;
+$max-screen-tablet: 1140px;
+$min-screen-desktop: 600px;
+
+.w-100 {
+  width: 100%;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-6 {
+  width: 50%;
+}
+.col-12 {
+  width: 100%;
+}
+
+input,
+textarea {
+  outline: none;
+  -webkit-appearance: none;
+  align-items: center;
+  border: 1px solid #dbdbdb;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  box-shadow: none;
+  display: inline-flex;
+  justify-content: flex-start;
+  padding: calc(0.5em - 1px);
+}
+
+.form-control.ng-invalid.ng-dirty {
+  border-color: red !important;
+}
+
+:disabled {
+  opacity: 0.5 !important;
+  cursor: initial;
+}
+
+//phone
+@media print, screen and (max-width: $max-screen-phone) {
+  $big-max-width: 100%;
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+
+//tablet
+@media print,
+  screen and (max-width: $min-screen-tablet) and (min-width: $max-screen-tablet) {
+}
+
+//desktop
+@media print, screen and (min-width: $min-screen-desktop) {
+}

@@ -1,0 +1,180 @@
+@import "./src/shared.scss";
+
+.footer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: $base-color;
+  padding: 1rem 1.5rem 4rem;
+  color: #fff;
+}
+
+.section {
+  padding: 5rem 1.5rem;
+}
+
+.container-start-project {
+  display: flex;
+  padding: 3.5rem 1.25rem;
+  margin: 0 auto;
+  margin-top: -9rem;
+  background-color: #141c3a;
+  box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%), 0 0 0 1px #141c3a;
+  border-radius: 12px;
+  color: $white-color;
+  max-width: $big-max-width;
+}
+
+.start-project,
+.container-info-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.custom-logo {
+  height: 60px;
+  width: 60px;
+}
+
+.container-info-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.item-start-project {
+  flex-basis: 0;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.title-start-project {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.btn-contact {
+  font-weight: 400;
+  font-size: 18px;
+  padding: 0.7em 2rem;
+  background-color: #0000;
+  border-radius: 9999px;
+  border: 2px solid $second-color;
+  color: white;
+}
+
+.is-outlined:hover {
+  background-color: $second-color;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+.motivation-text {
+  margin-top: 2rem;
+  opacity: 0.7;
+  max-width: 320px;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.item-link {
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 7px 12px;
+  border-radius: 50%;
+  border: 2px solid #ffffff4d;
+  color: white;
+}
+
+.item-link:hover {
+  background-color: white;
+  color: $base-color;
+}
+
+.copy-right {
+  margin-top: 0.7rem;
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.small-text {
+  font-size: 0.7rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+//phone
+@media print, screen and (max-width: $max-screen-phone) {
+  .container-start-project {
+    padding: 1.5rem 1.25rem;
+    margin-top: -7rem;
+  }
+  .start-project {
+    flex-direction: column;
+    span {
+      font-size: 0.9rem;
+    }
+
+    button {
+      font-size: 1rem;
+    }
+  }
+
+  .item-start-project {
+    margin-bottom: 1rem;
+  }
+  .title-start-project {
+    font-size: 1.3rem;
+  }
+  .custom-logo {
+    height: 50px;
+    width: 50px;
+  }
+  .section {
+    padding: 3.5rem 1.5rem;
+  }
+  .motivation-text {
+    h1 {
+      font-size: 1.3rem;
+    }
+  }
+  .item-link {
+    margin-bottom: 7px;
+  }
+}
+
+//tablet
+@media print,
+  screen and (min-width: $min-screen-tablet) and (max-width: $max-screen-tablet) {
+  .title-start-project {
+    font-size: 1.5rem;
+  }
+  .start-project {
+    span {
+      font-size: 0.9rem;
+    }
+
+    button {
+      font-size: 1rem;
+    }
+  }
+  .container-start-project {
+    padding: 2.5rem 1.25rem;
+  }
+}
+
+//desktop
+@media print, screen and (min-width: $min-screen-desktop) {
+}

@@ -1,0 +1,24 @@
+<div class="card-company">
+  <div class="header-company">
+    <img
+      class="custom-logo"
+      [src]="company.logo"
+      alt="logo"
+      href="https://www.google.com/"
+    />
+  </div>
+  <div class="body-company">
+    <!-- <span class="sector-company"> {{ company.sector }} </span> -->
+    <h2 class="title-company">{{ company.title }}</h2>
+    <span class="description-company">
+      {{company.description | translate}}
+    </span>
+  </div>
+
+  <div class="footer-company">
+    <a [href]="company.link" target="_blank" class="go-to-website">
+      {{ "JOBS.VISITAR_WEB" | translate }}
+      <fa-icon class="icon-angle-right" [icon]="faAngleRight"></fa-icon
+    ></a>
+  </div>
+</div>

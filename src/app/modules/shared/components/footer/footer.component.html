@@ -1,0 +1,54 @@
+<section class="footer">
+  <div class="section">
+    <div class="container-start-project">
+      <div class="start-project">
+        <h1 class="item-start-project title-start-project">
+          {{ "FOOTER.INICIAR_PROYECTO" | translate }}
+        </h1>
+        <span class="item-start-project">
+          {{ "FOOTER.ENCONTRARNOS" | translate }}
+        </span>
+        <div class="item-start-project">
+          <button
+            class="button btn-contact is-outlined"
+            (click)="goTo('contact')"
+          >
+            {{ "FOOTER.HAGAMOSLO" | translate }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="section-footer">
+    <div class="container-info-footer">
+      <img
+        class="custom-logo"
+        src="../../../../../assets/logo-inverse.png"
+        alt="logo"
+      />
+      <div class="motivation-text">
+        <h1>
+          {{ "FOOTER.MOTIVACION" | translate }}
+        </h1>
+      </div>
+      <div class="controls">
+        <a
+          class="item-link"
+          *ngFor="let item of controls"
+          [href]="item.link"
+          target="_blank"
+          [attr.aria-label]="item.name"
+        >
+          <fa-icon [icon]="item.icon"></fa-icon>
+        </a>
+      </div>
+      <div class="copy-right">
+        {{ "FOOTER.CREADO_POR" | translate }} &copy; 2022
+      </div>
+      <div class="copy-right">
+        <span class="small-text"> {{ "FOOTER.CREADO_CON" | translate }} </span>
+        <span class="bold"> Angular</span>
+      </div>
+    </div>
+  </footer>
+</section>

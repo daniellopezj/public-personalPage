@@ -1,0 +1,30 @@
+<div class="content-view custom-container">
+  <nav class="custom-nav">
+    <div (click)="goTo('')">
+      <img
+        class="custom-logo"
+        src="../../../../../assets/logo.png"
+        alt="logo"
+      />
+    </div>
+    <fa-icon (click)="goTo('')" [icon]="faXmark" class="icon-message"></fa-icon>
+  </nav>
+  <div class="logo-container">
+    <div class="around-image">
+      <img
+        class="custom-avatar"
+        src="../../../../../assets/avatar.svg"
+        alt="logo"
+      />
+    </div>
+  </div>
+</div>
+<div class="container-last-section">
+  <div class="content-view p-0">
+    <div class="title-container">
+      <h2 class="description-text">
+        {{ "HEADER_CONTACT.TITULO" | translate }}
+      </h2>
+    </div>
+  </div>
+</div>
