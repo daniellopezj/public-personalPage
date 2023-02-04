@@ -11,12 +11,13 @@ export class CollaborationsComponent {
   private path = '../../../../../assets/companies'
   public faMessage = faEnvelope
   public companies: Company[] = [
+
     {
-      logo: `${this.path}/kiteris.png`,
-      link: 'https://www.kiteris.com/',
-      title: 'Kiteris',
+      logo: `${this.path}/leanga.jpg`,
+      link: 'https://leangasoftware.es/',
+      title: 'Leanga Software',
       sector: 'Consultora',
-      description: 'COLLABORATIONS.EMPRESA1.DESCRIPCION',
+      description: 'COLLABORATIONS.EMPRESA3.DESCRIPCION',
     },
     {
       logo: `${this.path}/leanga.jpg`,
@@ -24,6 +25,13 @@ export class CollaborationsComponent {
       title: 'Leanga Software',
       sector: 'Consultora',
       description: 'COLLABORATIONS.EMPRESA3.DESCRIPCION',
+    },
+    {
+      logo: `${this.path}/mochileros.jpg`,
+      link: 'https://mochileros.com.mx/',
+      title: 'Mochileros',
+      sector: 'Viajes',
+      description: 'COLLABORATIONS.EMPRESA4.DESCRIPCION',
     },
     {
       logo: `${this.path}/mochileros.jpg`,
