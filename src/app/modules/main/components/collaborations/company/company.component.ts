@@ -1,5 +1,5 @@
 import { Company } from '@/types/general.types';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -7,7 +7,7 @@ import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './company.component.html',
   styleUrls: ['./company.component.scss']
 })
-export class CompanyComponent implements OnInit {
+export class CompanyComponent {
 
   public faAngleRight = faAngleRight
   @Input() public company: Company = {
@@ -18,9 +18,5 @@ export class CompanyComponent implements OnInit {
     description: '',
   };
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
