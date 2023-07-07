@@ -1,6 +1,18 @@
-# Pagina Personal(Codigo libre)
+# Pagina Personal
+![React Version](https://img.shields.io/badge/angular-v14.2.0-red.svg)
+![Netlify](https://img.shields.io/badge/Netlify-green.svg)
+![TypeScript](https://img.shields.io/badge/TypeScript-blue)
+![Open Source](https://img.shields.io/badge/Open%20Source-%20yes-green)
 
 Página persona, desarrollado con ``Angular 14``. Este sistema te proporciona una plantilla de página personal fácil de personalizar y que además cuenta con un diseño adaptativo a diferentes dispositivos.
+
+[Demo](https://64a80dbff4cdb31116a9c9ae--peaceful-halva-65ccc1.netlify.app/)
+## Contacto 🚀
+
+- Website: https://danidev.me/
+- LinkedIn: [@dani-dev](https://www.linkedin.com/in/dani-dev/)
+- Github: [@ldanidev](https://github.com/ldani-dev)
+- Twitter: [@ldanidev](https://twitter.com/ldanidev)
 ## Contenido
 ### **- Vista Principal**
 Esta es la vista principal de la página, donde puedes modificar tu icono y Nombre de la página. Además, se puede seleccionar el idioma de su preferencia (Actualmente `Inglés` o ``Español``)
