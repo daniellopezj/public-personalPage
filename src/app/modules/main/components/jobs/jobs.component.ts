@@ -10,37 +10,37 @@ export class JobsComponent  {
   public faAngleRight = faAngleRight
   public jobs = [
     {
-      image: `${this.path}/mochileros.jpg`,
+      image: `${this.path}/mochileros.webp`,
       title: 'Mochileros',
       description: 'JOBS.TRABAJO1.DESCRIPCION',
       link: 'https://mochileros.com.mx/'
     },
     {
-      image: `${this.path}/mochileros.jpg`,
+      image: `${this.path}/mochileros.webp`,
       title: 'Mochileros',
       description: 'JOBS.TRABAJO1.DESCRIPCION',
       link: 'https://mochileros.com.mx/'
     },
     {
-      image: `${this.path}/mochileros.jpg`,
+      image: `${this.path}/mochileros.webp`,
       title: 'Mochileros',
       description: 'JOBS.TRABAJO1.DESCRIPCION',
       link: 'https://mochileros.com.mx/'
     },
     {
-      image: `${this.path}/mochileros.jpg`,
+      image: `${this.path}/mochileros.webp`,
       title: 'Mochileros',
       description: 'JOBS.TRABAJO1.DESCRIPCION',
       link: 'https://mochileros.com.mx/'
     },
     {
-      image: `${this.path}/mochileros.jpg`,
+      image: `${this.path}/mochileros.webp`,
       title: 'Mochileros',
       description: 'JOBS.TRABAJO1.DESCRIPCION',
       link: 'https://mochileros.com.mx/'
     },
     {
-      image: `${this.path}/mochileros.jpg`,
+      image: `${this.path}/mochileros.webp`,
       title: 'Mochileros',
       description: 'JOBS.TRABAJO1.DESCRIPCION',
       link: 'https://mochileros.com.mx/'

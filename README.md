@@ -1,12 +1,24 @@
-# Pagina Personal(Codigo libre)
+# Pagina Personal
+![React Version](https://img.shields.io/badge/angular-v14.2.0-red.svg)
+![Netlify](https://img.shields.io/badge/Netlify-green.svg)
+![TypeScript](https://img.shields.io/badge/TypeScript-blue)
+![Open Source](https://img.shields.io/badge/Open%20Source-%20yes-green)
 
 Página persona, desarrollado con ``Angular 14``. Este sistema te proporciona una plantilla de página personal fácil de personalizar y que además cuenta con un diseño adaptativo a diferentes dispositivos.
+
+[Demo](https://64a80dbff4cdb31116a9c9ae--peaceful-halva-65ccc1.netlify.app/)
+## Contacto 🚀
+
+- Website: https://danidev.me/
+- LinkedIn: [@dani-dev](https://www.linkedin.com/in/dani-dev/)
+- Github: [@ldanidev](https://github.com/ldani-dev)
+- Twitter: [@ldanidev](https://twitter.com/ldanidev)
 ## Contenido
 ### **- Vista Principal**
 Esta es la vista principal de la página, donde puedes modificar tu icono y Nombre de la página. Además, se puede seleccionar el idioma de su preferencia (Actualmente `Inglés` o ``Español``)
 <br>
 <br>
-<img  width=400 src="src/assets/readme/vista_principal.png" alt="Vista principal">
+<img  width=400 src="src/assets/readme/vista_principal.webp" alt="Vista principal">
 <br>
 
 ### **- Acerca de**
@@ -14,14 +26,14 @@ En esta sección puedes agregar toda tu información relevante.
 Además, cuenta con un segmento en donde puedes detallar todas tus habilidades ``técnicas`` y ``humanas``.
 <br>
 <br>
-<img  width=400 src="src/assets/readme/acerca_de.png" alt="Acerca de">  
+<img  width=400 src="src/assets/readme/acerca_de.webp" alt="Acerca de">  
 <br>
 
 ### **- Proyectos**
 En este apartado puedes agregar todos tus proyectos y darle a conocer al mundo tu ``maravilloso trabajo``.
 <br>
 <br>
-<img  width=400 src="src/assets/readme/proyectos.png" alt="Proyectos">
+<img  width=400 src="src/assets/readme/proyectos.webp" alt="Proyectos">
 <br>
 
 
@@ -29,7 +41,7 @@ En este apartado puedes agregar todos tus proyectos y darle a conocer al mundo t
 Puedes agregar todos los testimonios de las personas con las cuales has trabajado.
 <br>
 <br>
-<img  width=400 src="src/assets/readme/testimonios.png" alt="Testimonios"> 
+<img  width=400 src="src/assets/readme/testimonios.webp" alt="Testimonios"> 
 <br>
 <br> 
 
@@ -37,14 +49,14 @@ Puedes agregar todos los testimonios de las personas con las cuales has trabajad
 Esta seccion le permite a cualquier persona contactarte de una manera facil y rapida. 
 <br> 
 
-<img  width=400 src="src/assets/readme/contacto.png" alt="Contacto">
+<img  width=400 src="src/assets/readme/contacto.webp" alt="Contacto">
 
 ### **- Contacto Exitoso**
-<img  width=400 src="src/assets/readme/contacto_exitoso.png" alt="Contacto Exitoso">
+<img  width=400 src="src/assets/readme/contacto_exitoso.webp" alt="Contacto Exitoso">
 <br>
 
 ### **- Pagina No encontrada** 
-<img  width=400 src="src/assets/readme/no_encontrado.png" alt="No encontrado">
+<img  width=400 src="src/assets/readme/no_encontrado.webp" alt="No encontrado">
 <br>
 
 ## Instalación
@@ -92,7 +104,7 @@ El sistema es adaptativo a varios dispositivos utilizando la libreria [ngx-devic
 El sistema utiliza [emailJs](https://www.emailjs.com/) para recibir todos los correos enviados desde el formulario de contacto.
 <br>
 
-<img  width=400px src="src/assets/readme/contacto.png" alt="contacto">
+<img  width=400px src="src/assets/readme/contacto.webp" alt="contacto">
 <br>
 
 Crea una cuenta y coloca tus credencias en el archivo. `src/environments/environment.prod.ts` es completamente gratis!!
