@@ -12,14 +12,14 @@ export class RecomendationsComponent {
   public testimonies: Testimony[] = [
     {
       idTestimony: 0,
-      avatar: `${this.path}/alexander.jpg`,
+      avatar: `${this.path}/alexander.webp`,
       description: 'RECOMMENDATIONS.TESTIMONIO1.DESCRIPCION',
       name: 'Alexander Castro',
       profession: 'RECOMMENDATIONS.TESTIMONIO1.PROFESION'
     },
     {
       idTestimony: 1,
-      avatar: `${this.path}/leifer.jpg`,
+      avatar: `${this.path}/leifer.webp`,
       description: 'RECOMMENDATIONS.TESTIMONIO2.DESCRIPCION',
       name: 'Leifer Mendez',
       profession: 'RECOMMENDATIONS.TESTIMONIO2.PROFESION'

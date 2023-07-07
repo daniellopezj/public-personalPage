@@ -13,29 +13,29 @@ export class CollaborationsComponent {
   public companies: Company[] = [
 
     {
-      logo: `${this.path}/leanga.jpg`,
+      logo: `${this.path}/leanga.webp`,
       link: 'https://leangasoftware.es/',
       title: 'Leanga Software',
       sector: 'Consultora',
       description: 'COLLABORATIONS.EMPRESA3.DESCRIPCION',
     },
     {
-      logo: `${this.path}/leanga.jpg`,
+      logo: `${this.path}/leanga.webp`,
       link: 'https://leangasoftware.es/',
       title: 'Leanga Software',
       sector: 'Consultora',
       description: 'COLLABORATIONS.EMPRESA3.DESCRIPCION',
     },
     {
-      logo: `${this.path}/mochileros.jpg`,
-      link: 'https://mochileros.com.mx/',
+      logo: `${this.path}/mochileros.webp`,
+      link: 'https://danidev.me/',
       title: 'Mochileros',
       sector: 'Viajes',
       description: 'COLLABORATIONS.EMPRESA4.DESCRIPCION',
     },
     {
-      logo: `${this.path}/mochileros.jpg`,
-      link: 'https://mochileros.com.mx/',
+      logo: `${this.path}/mochileros.webp`,
+      link: 'https://danidev.me/',
       title: 'Mochileros',
       sector: 'Viajes',
       description: 'COLLABORATIONS.EMPRESA4.DESCRIPCION',
