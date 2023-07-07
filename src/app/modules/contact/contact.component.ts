@@ -12,7 +12,7 @@ export class ContactComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.title.setTitle('☕ danidev | contact ')
+    this.title.setTitle('☕ contact ')
     this.meta.updateTag({
       name: 'description',
       content:'Disponible para iniciar nuevos proyectos y de generar nuevas oportunidades de asociación. ¡contáctame!'

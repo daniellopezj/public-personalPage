@@ -12,7 +12,7 @@ export class SuccessComponent  implements OnInit{
   constructor(private router: Router,private title: Title) { }
   ngOnInit(): void {
 
-    this.title.setTitle('✨🎉danidev | contacto exitoso')
+    this.title.setTitle('✨🎉contacto exitoso')
 
   }
 
