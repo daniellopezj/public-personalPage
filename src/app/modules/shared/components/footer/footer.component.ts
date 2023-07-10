@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faLinkedinIn, faGithub, faGitlab, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn, faGithub, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-footer',
@@ -11,7 +11,7 @@ export class FooterComponent {
     {
       icon: faLinkedinIn,
       name: 'linkedIn',
-      link: 'https://www.linkedin.com/in/dani-dev/'
+      link: 'https://linkedin.com/in/dani-dev/'
     },
     {
       icon: faTwitter,

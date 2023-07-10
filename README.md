@@ -97,7 +97,7 @@ En esta ruta se encuentran dos archivos `en.json` y `es.json` Cada uno contiene 
 
 ## - Diseño responsive
 
-El sistema es adaptativo a varios dispositivos utilizando la libreria [ngx-device-detector](https://www.npmjs.com/package/ngx-device-detector).  y `estilos css`.
+  El sistema es adaptativo a varios dispositivos utilizando `scss`.
 
 ## - Envio de Correo
 
