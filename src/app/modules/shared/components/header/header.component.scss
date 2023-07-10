@@ -67,7 +67,6 @@
   position: relative;
   transition: all 0.3s ease;
   display: flex;
-  margin-right: 5px;
   img {
     height: 25px;
     width: 25px;
@@ -182,13 +181,22 @@
     margin-top: 0.5rem;
     display: flex;
   }
+  .big-view{
+    display: none;
+  }
 }
 
 //tablet
 @media print,
   screen and (min-width: $min-screen-tablet) and (max-width: $max-screen-tablet) {
+  .small-view {
+    display: none;
+  }
 }
 
 //desktop
 @media print, screen and (min-width: $min-screen-desktop) {
+  .small-view {
+    display: none;
+  }
 }

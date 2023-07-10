@@ -8,7 +8,7 @@
       />
       <span class="title"> Daniel López</span>
     </div>
-    <div class="navbar-end" *ngIf="!deviceService.isMobile()">
+    <div class="navbar-end big-view">
       <button
         class="button btn-contact language-button"
         (mouseover)="hoverLanguage = true"
@@ -41,7 +41,7 @@
         {{ "HEADER.DECIR_HOLA" | translate }}
       </button>
     </div>
-    <div *ngIf="deviceService.isMobile()">
+    <div class="small-view" *ngIf="deviceService.isMobile()">
       <button
         name="managerMenu"
         (click)="showPopUp = !showPopUp"
