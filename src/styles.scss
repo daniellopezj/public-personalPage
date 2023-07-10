@@ -6,7 +6,7 @@ body {
   text-rendering: optimizeLegibility;
   margin: 0;
   padding: 0;
-  font-family: "Hind Siliguri", sans-serif;
+  font-family: "Hind Siliguri", fallback-font, sans-serif;
 }
 
 h1 {
@@ -51,7 +51,6 @@ textarea {
   padding-bottom: 0;
 }
 
-
 //phone
 @media print, screen and (max-width: $max-screen-phone) {
   .content-view {
@@ -65,7 +64,7 @@ textarea {
 
 //tablet
 @media print,
-screen and (min-width: $min-screen-tablet) and ( max-width:$max-screen-tablet) {
+  screen and (min-width: $min-screen-tablet) and (max-width: $max-screen-tablet) {
 }
 
 //desktop
