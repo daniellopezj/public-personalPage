@@ -9,23 +9,15 @@ import { Meta } from '@angular/platform-browser';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'personalPage';
   constructor(
     private translate: TranslateService,
     @Inject(PLATFORM_ID) private platformId: string,
     private cookieService: CookieService,
     private sharedService: SharedService,
-    private meta: Meta,
   ) {
-  }
-
-  ngOnInit(): void {
     this.checkLanguage();
-    this.sharedService.changeLanguage.subscribe((res: 'es' | 'en') => {
-      this.translate.setDefaultLang(res);
-    });
-
   }
 
   checkLanguage(): any {
@@ -35,13 +27,7 @@ export class AppComponent implements OnInit {
         this.translate.setDefaultLang(currentLanguage)
         return
       }
-      const initialLanguage = window.navigator.language.split('-')[0] || 'es';
-
-      this.translate.setDefaultLang(initialLanguage.toLowerCase());
-      this.translate.use(initialLanguage.toLowerCase());
-      this.cookieService.set('languageSelect', initialLanguage, 4);
-    } else {
-      this.translate.setDefaultLang('es');
+      this.cookieService.set('languageSelect', this.translate.getDefaultLang(), 4);
     }
   }
 }
