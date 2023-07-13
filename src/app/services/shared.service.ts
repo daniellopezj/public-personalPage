@@ -27,11 +27,8 @@ export class SharedService {
   getLanguageSelect(): 'es' | 'en' {
     if (isPlatformBrowser(this.platformId)) {
       let lenguage = this.cookieService.get('languageSelect');
-      if (lenguage === 'es') {
-        return 'es'
-      }
-      if (lenguage === 'en') {
-        return 'en'
+      if (['es', 'en'].includes(lenguage)) {
+        return lenguage as 'es' | 'en'
       }
     }
     return 'en'
