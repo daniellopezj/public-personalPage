@@ -13,32 +13,44 @@ export class CollaborationsComponent {
   public companies: Company[] = [
 
     {
-      logo: `${this.path}/leanga.webp`,
-      link: 'https://leangasoftware.es/',
-      title: 'Leanga Software',
-      sector: 'Consultora',
-      description: 'COLLABORATIONS.EMPRESA3.DESCRIPCION',
+      logo: `${this.path}/facebook.svg`,
+      link: 'https://www.facebook.com/',
     },
     {
-      logo: `${this.path}/leanga.webp`,
-      link: 'https://leangasoftware.es/',
-      title: 'Leanga Software',
-      sector: 'Consultora',
-      description: 'COLLABORATIONS.EMPRESA3.DESCRIPCION',
+      logo: `${this.path}/airbnb.png`,
+      link: 'https://www.airbnb.com/',
     },
     {
-      logo: `${this.path}/mochileros.webp`,
-      link: 'https://danidev.me/',
-      title: 'Mochileros',
-      sector: 'Viajes',
-      description: 'COLLABORATIONS.EMPRESA4.DESCRIPCION',
+      logo: `${this.path}/apple.png`,
+      link: 'https://www.apple.com/',
     },
     {
-      logo: `${this.path}/mochileros.webp`,
-      link: 'https://danidev.me/',
-      title: 'Mochileros',
-      sector: 'Viajes',
-      description: 'COLLABORATIONS.EMPRESA4.DESCRIPCION',
+      logo: `${this.path}/google.png`,
+      link: 'https://www.google.com/',
+    },
+    {
+      logo: `${this.path}/microsoft.png`,
+      link: 'https://www.microsoft.com/',
+    },
+    {
+      logo: `${this.path}/uber.png`,
+      link: 'https://www.uber.com/',
+    },
+    {
+      logo: `${this.path}/adidas.png`,
+      link: 'https://www.adidas.com/',
+    },
+    {
+      logo: `${this.path}/play.png`,
+      link: 'https://store.playstation.com',
+    },
+    {
+      logo: `${this.path}/nike.png`,
+      link: 'https://www.nike.com/',
+    },
+    {
+      logo: `${this.path}/sony.png`,
+      link: 'https://nike.com/',
     },
   ]
   constructor(private router: Router) { }
