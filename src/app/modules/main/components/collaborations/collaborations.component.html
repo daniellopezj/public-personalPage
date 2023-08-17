@@ -6,24 +6,18 @@
       </h2>
     </div>
     <div class="container-companies">
-      <!-- <a
-      *ngFor="let company of companies; let i = index"
-      [href]="company.link"
-      target="_blank"
-    >
-      <img
-        class="custom-logo"
-        [src]="company.logo"
-        alt="logo"
-        href="https://www.google.com/"
-      />
-    </a> -->
-      <div
-        class="card-container-company"
+      <a
         *ngFor="let company of companies; let i = index"
+        [href]="company.link"
+        target="_blank"
       >
-        <app-company [company]="company"></app-company>
-      </div>
+        <img
+          class="custom-logo"
+          [src]="company.logo"
+          alt="logo"
+          href="https://www.google.com/"
+        />
+      </a>
     </div>
   </div>
 </section>

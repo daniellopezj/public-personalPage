@@ -58,7 +58,6 @@ export class FormContactComponent {
   constructor(
     private formBuilder: FormBuilder,
     private router: Router,
-    @Inject(PLATFORM_ID) private platformId: string
   ) {
     this.formContact = this.formBuilder.group({
       name: ['', [Validators.required]],

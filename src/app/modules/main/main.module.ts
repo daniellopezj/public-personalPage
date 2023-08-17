@@ -14,9 +14,6 @@ import { RecomendationsComponent } from './components/recomendations/recomendati
 import { TestimonyComponent } from './components/recomendations/testimony/testimony.component';
 import { JobsComponent } from './components/jobs/jobs.component';
 import { CollaborationsComponent } from './components/collaborations/collaborations.component';
-import { CompanyComponent } from './components/collaborations/company/company.component';
-
-
 @NgModule({
   declarations: [
     MainComponent,
@@ -28,7 +25,6 @@ import { CompanyComponent } from './components/collaborations/company/company.co
     TestimonyComponent,
     JobsComponent,
     CollaborationsComponent,
-    CompanyComponent
   ],
   imports: [
     CommonModule,

@@ -4,14 +4,18 @@
   margin: 10rem auto;
   border-top: 1px solid #e6ecf8;
   padding-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .container-companies {
-  max-width: $big-max-width;
+  width: 80%;
   margin: auto;
   display: flex;
   justify-content: inherit;
   flex-wrap: wrap;
+  gap: 4rem;
 }
 
 a {
@@ -21,13 +25,11 @@ a {
 }
 .custom-logo {
   cursor: pointer;
-  margin: 20px 80px;
   height: auto;
-  width: 125px;
+  width: 70px;
 }
 
 .title {
-  // font-size: 1.3rem;
   font-weight: bolder;
   margin: 0;
 }
@@ -35,7 +37,6 @@ a {
 .main-text {
   text-align: center;
   margin: 0 20%;
-  margin-bottom: 3rem;
 }
 
 .collaborate-container {
@@ -109,11 +110,11 @@ a {
     margin-bottom: 0;
   }
   .container-companies {
-    max-width: initial;
+    width: 100%;
+    gap: 2rem;
   }
   .custom-logo {
-    margin: 30px;
-    width: 125px;
+    width: 48px;
   }
 
   .collaborate-with-me {
@@ -151,6 +152,10 @@ a {
     margin: 3rem auto;
     padding-top: 2rem;
   }
+  .container-companies {
+    width: 80%;
+    gap: 3rem;
+  }
   .main-text {
     margin: 0;
   }
@@ -164,8 +169,7 @@ a {
     padding: 0.7rem 35px;
   }
   .custom-logo {
-    margin: 30px;
-    width: 125px;
+    width: 65px;
   }
 }
 

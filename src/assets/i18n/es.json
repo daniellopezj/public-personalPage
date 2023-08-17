@@ -55,41 +55,15 @@
     "VER_VIDEO": "Ver video",
     "VISITAR_WEB": "Visitar sitio web",
     "TRABAJO1": {
-      "DESCRIPCION": "Plataforma de venta de tours a nivel mundial"
-    },
-    "TRABAJO2": {
-      "DESCRIPCION": "Manejo de inventarios para empresas"
-    },
-    "TRABAJO3": {
-      "DESCRIPCION": "Plataforma de venta de seguros a nivel Europeo"
-    },
-    "TRABAJO4": {
-      "DESCRIPCION": "Aplicación para venta de vuelos. Integración con 'sabre'"
-    },
-    "TRABAJO5": {
-      "DESCRIPCION": "Metaverso para autos Cupra"
-    },
-    "TRABAJO6": {
-      "DESCRIPCION": "Administración de tareas para empresas"
+     "TITLE":"Titulo de tu Proyecto",
+      "DESCRIPCION": "La mejor descripción para tu Proyecto"
     }
   },
   "COLLABORATIONS": {
     "TITULO": "Estoy orgulloso de haber colaborado con algunas compañías increíbles.",
     "SUBTITULO": "¿Interesada en colaborar conmigo?",
     "DESCRIPCION": "Siempre estoy abierto a conversar sobre nuevos proyectos de desarrollo u oportunidades de asociación.",
-    "INICIAR_CONVERSACION": "Iniciar una conversación",
-    "EMPRESA1":{
-      "DESCRIPCION":"Consultora Española que ayuda a las compañías a hacer viable su Plan Estratégico, transformando su modelo actual mediante buenas prácticas, tecnología (herramientas) y control de gestión (analítica)."
-    },
-    "EMPRESA2":{
-      "DESCRIPCION":"Empresa creadora de multimedia implementando tecnologías XR. Tuve la oportunidad de contribuir al proyecto del METAVERSO para uno de sus principales clientes. Algunos de sus clientes son: Audi, BMW, cupra, ford..."
-    },
-    "EMPRESA3":{
-      "DESCRIPCION":"Consultora presente en 8 países y con operaciones comerciales en más de 30, mantenemos un ecosistema global de partners como modelo de innovación general y cooperativo que nos permite el desarrollo de iniciativas estratégicas en conjunto."
-    },
-    "EMPRESA4":{
-      "DESCRIPCION":"Empresa Mexicana dedicada a la comercialización de tours a nivel mundial, permitiendo vivir experiencias locales a sus viajeros en cada destino visitado. Contribuí al desarrollo de su plataforma y la integración de su módulo de venta de vuelos."
-    }
+    "INICIAR_CONVERSACION": "Iniciar una conversación"
   },
   "RECOMMENDATIONS": {
     "TITULO": "Testimonios",

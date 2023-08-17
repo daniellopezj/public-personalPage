@@ -21,9 +21,8 @@ export type Testimony = {
 export type Company = {
   logo: string
   link: string
-  title: string
-  sector: string
-  description: string
+  title?: string
+  description?: string
 }
 
 export type validationMessage = {

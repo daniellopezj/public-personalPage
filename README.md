@@ -1,67 +1,83 @@
 # Pagina Personal
+
 ![React Version](https://img.shields.io/badge/angular-v14.2.0-red.svg)
 ![Netlify](https://img.shields.io/badge/Netlify-green.svg)
 ![TypeScript](https://img.shields.io/badge/TypeScript-blue)
 ![Open Source](https://img.shields.io/badge/Open%20Source-%20yes-green)
 
-Página persona, desarrollado con ``Angular 14``. Este sistema te proporciona una plantilla de página personal fácil de personalizar y que además cuenta con un diseño adaptativo a diferentes dispositivos.
+Página persona, desarrollado con `Angular 14`. Este sistema te proporciona una plantilla de página personal fácil de personalizar y que además cuenta con un diseño adaptativo a diferentes dispositivos.
 
 [Demo](https://danidev-portafolio.netlify.app/)
+
 ## Contacto 🚀
 
-- Website: https://danidev.me/
-- LinkedIn: [@dani-dev](https://www.linkedin.com/in/dani-dev/)
-- Github: [@ldanidev](https://github.com/ldani-dev)
-- Twitter: [@ldanidev](https://twitter.com/ldanidev)
+[sitio web](https://www.daniellopezj.com/)
+| [LinkedIn](https://www.linkedin.com/in/daniel-lopezj/)
+| [Github](https://github.com/daniellopezj)
+| [Twitter](https://twitter.com/daniellopezj_)
+
 ## Contenido
+
 ### **- Vista Principal**
-Esta es la vista principal de la página, donde puedes modificar tu icono y Nombre de la página. Además, se puede seleccionar el idioma de su preferencia (Actualmente `Inglés` o ``Español``)
+
+Esta es la vista principal de la página, donde puedes modificar tu icono y Nombre de la página. Además, se puede seleccionar el idioma de su preferencia (Actualmente `Inglés` o `Español`)
 <br>
 <br>
 <img  width=400 src="src/assets/readme/vista_principal.webp" alt="Vista principal">
 <br>
 
 ### **- Acerca de**
+
 En esta sección puedes agregar toda tu información relevante.
-Además, cuenta con un segmento en donde puedes detallar todas tus habilidades ``técnicas`` y ``humanas``.
+Además, cuenta con un segmento en donde puedes detallar todas tus habilidades `técnicas` y `humanas`.
 <br>
 <br>
 <img  width=400 src="src/assets/readme/acerca_de.webp" alt="Acerca de">  
 <br>
 
 ### **- Proyectos**
-En este apartado puedes agregar todos tus proyectos y darle a conocer al mundo tu ``maravilloso trabajo``.
+
+En este apartado puedes agregar todos tus proyectos y darle a conocer al mundo tu `maravilloso trabajo`.
 <br>
 <br>
 <img  width=400 src="src/assets/readme/proyectos.webp" alt="Proyectos">
 <br>
 
+### **- Colaboraciones**
+Puedes mostrar todas las empresas con las que has participado.
+<br>
+<br>
+<img  width=400 src="src/assets/readme/contribuciones.webp" alt="contribuciones">
+<br>
 
 ### **- Recomendaciones**
 Puedes agregar todos los testimonios de las personas con las cuales has trabajado.
 <br>
 <br>
-<img  width=400 src="src/assets/readme/testimonios.webp" alt="Testimonios"> 
+<img  width=400 src="src/assets/readme/testimonios.webp" alt="Testimonios">
 <br>
-<br> 
+<br>
 
 ## **Contacto**
-Esta seccion le permite a cualquier persona contactarte de una manera facil y rapida. 
-<br> 
+
+Esta seccion le permite a cualquier persona contactarte de una manera facil y rapida.
+<br>
 
 <img  width=400 src="src/assets/readme/contacto.webp" alt="Contacto">
 
 ### **- Contacto Exitoso**
+
 <img  width=400 src="src/assets/readme/contacto_exitoso.webp" alt="Contacto Exitoso">
 <br>
 
-### **- Pagina No encontrada** 
+### **- Pagina No encontrada**
+
 <img  width=400 src="src/assets/readme/no_encontrado.webp" alt="No encontrado">
 <br>
 
 ## Instalación
 
-Es necesario clonar el repositorio de ``github``, para ello,  ejecuta el siguiente comando.
+Es necesario clonar el repositorio de `github`, para ello, ejecuta el siguiente comando.
 
 ```
 git clone https://github.com/ldani-dev/public-personalPage.git
@@ -97,7 +113,7 @@ En esta ruta se encuentran dos archivos `en.json` y `es.json` Cada uno contiene 
 
 ## - Diseño responsive
 
-  El sistema es adaptativo a varios dispositivos utilizando `scss`.
+El sistema es adaptativo a varios dispositivos utilizando `scss`.
 
 ## - Envio de Correo
 
