@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
+  public year =  new Date().getFullYear()
   public controls = [
     {
       icon: faLinkedinIn,

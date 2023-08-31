@@ -7,7 +7,7 @@
 
 Página persona, desarrollado con `Angular 14`. Este sistema te proporciona una plantilla de página personal fácil de personalizar y que además cuenta con un diseño adaptativo a diferentes dispositivos.
 
-[Demo](https://danidev-portafolio.netlify.app/)
+[Demo](https://daniellopezj-portafolio.netlify.app/)
 
 ## Contacto 🚀
 
