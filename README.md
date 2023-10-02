@@ -11,7 +11,7 @@ Página persona, desarrollado con `Angular 14`. Este sistema te proporciona una 
 
 ## Contacto 🚀
 
-[sitio web](https://www.daniellopezj.com/)
+[sitio web](https://daniellopezj.com/)
 | [LinkedIn](https://www.linkedin.com/in/daniel-lopezj/)
 | [Github](https://github.com/daniellopezj)
 | [Twitter](https://twitter.com/daniellopezj_)
