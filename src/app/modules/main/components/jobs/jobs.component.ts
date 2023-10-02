@@ -13,37 +13,37 @@ export class JobsComponent  {
       image: `${this.path}/item-1.webp`,
       title: 'JOBS.TRABAJO1.TITLE',
       description: 'JOBS.TRABAJO1.DESCRIPCION',
-      link: 'https://daniellopezj.com/'
+      link: 'https://daniellopezj.com'
     },
     {
       image: `${this.path}/item-2.webp`,
       title: 'JOBS.TRABAJO1.TITLE',
       description: 'JOBS.TRABAJO1.DESCRIPCION',
-      link: 'https://daniellopezj.com/'
+      link: 'https://daniellopezj.com'
     },
     {
       image: `${this.path}/item-3.webp`,
       title: 'JOBS.TRABAJO1.TITLE',
       description: 'JOBS.TRABAJO1.DESCRIPCION',
-      link: 'https://daniellopezj.com/'
+      link: 'https://daniellopezj.com'
     },
     {
       image: `${this.path}/item-4.webp`,
       title: 'JOBS.TRABAJO1.TITLE',
       description: 'JOBS.TRABAJO1.DESCRIPCION',
-      link: 'https://daniellopezj.com/'
+      link: 'https://daniellopezj.com'
     },
     {
       image: `${this.path}/item-5.webp`,
       title: 'JOBS.TRABAJO1.TITLE',
       description: 'JOBS.TRABAJO1.DESCRIPCION',
-      link: 'https://daniellopezj.com/'
+      link: 'https://daniellopezj.com'
     },
     {
       image: `${this.path}/item-6.webp`,
       title: 'JOBS.TRABAJO1.TITLE',
       description: 'JOBS.TRABAJO1.DESCRIPCION',
-      link: 'https://daniellopezj.com/'
+      link: 'https://daniellopezj.com'
     },
   ]
 
